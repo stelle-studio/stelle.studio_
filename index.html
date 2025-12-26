@@ -383,6 +383,7 @@
             font-size: 2rem;
             color: var(--morandi-light-brown);
             margin-top: 1rem;
+            text-align: right; /* 新增：讓簽名靠右對齊 */
         }
 
         /* --- 常見問題區塊 (FAQ Section) --- */
@@ -527,6 +528,12 @@
         .footer-divider {
             border-color: rgba(255,255,255,0.1);
         }
+
+        /* 新增：文字連結 Hover 效果 */
+        a.text-decoration-none:hover {
+            text-decoration: underline !important;
+            opacity: 0.9;
+        }
         
         /* 錨點定位偏移修正 (避免被導覽列遮擋) */
         section {
@@ -620,7 +627,7 @@
                             <p class="mb-2"><i class="fas fa-check-circle me-2" style="color: var(--morandi-light-brown);"></i> 定期進修最新的各國技術</p>
                             <p class="mb-0"><i class="fas fa-check-circle me-2" style="color: var(--morandi-light-brown);"></i> 堅持使用認證色乳，安全無虞</p>
                         </div>
-                        <div class="signature">Jyun</div>
+                        <div class="signature">－Jyun</div>
                     </div>
                 </div>
             </div>
@@ -858,8 +865,13 @@
                             <div>
                                 <h5 class="mb-1">工作室位置</h5>
                                 <p class="mb-0 small text-white" style="line-height: 1.8;">
-                                    <span class="d-block mb-1"><b>桃園店：</b>桃園市桃園區南海街</span>
-                                    <span class="d-block"><b>中壢店：</b>桃園市中壢區龍和一街</span>
+                                    <!-- 新增：可點擊的地址連結 (開啟 Google Maps) -->
+                                    <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" class="d-block mb-1 text-white text-decoration-none">
+                                        <b>桃園店：</b>桃園市桃園區南海街
+                                    </a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" class="d-block text-white text-decoration-none">
+                                        <b>中壢店：</b>桃園市中壢區龍和一街
+                                    </a>
                                 </p>
                             </div>
                         </div>
@@ -904,11 +916,20 @@
                     <div class="mb-2 small" style="line-height: 1.8;">
                         <i class="fas fa-map-marker-alt me-2"></i>
                         <span class="d-inline-block align-top">
-                            桃園店：桃園市桃園區南海街<br>
-                            中壢店：桃園市中壢區龍和一街
+                            <!-- 新增：可點擊的地址連結 (開啟 Google Maps) -->
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" class="text-decoration-none" style="color: var(--morandi-text-light);">
+                                桃園店：桃園市桃園區南海街
+                            </a><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" class="text-decoration-none" style="color: var(--morandi-text-light);">
+                                中壢店：桃園市中壢區龍和一街
+                            </a>
                         </span>
                     </div>
-                    <p class="mb-1 small"><i class="fas fa-phone me-2"></i>電話：0925-299-653</p>
+                    <p class="mb-1 small">
+                        <i class="fas fa-phone me-2"></i>
+                        <!-- 新增：可點擊的電話連結 -->
+                        <a href="tel:0925299653" class="text-decoration-none" style="color: var(--morandi-text-light);">電話：0925-299-653</a>
+                    </p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <p class="mb-2 small">Follow Us</p>
