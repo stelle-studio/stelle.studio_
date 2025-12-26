@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO 優化：標題與描述強化地域性與核心競爭力 -->
-    <meta name="description" content="桃園中壢霧眉推薦【蒔黛美學 Stelle studio】。主理人均均擁有美術設計背景，專精骨相分析，拒絕套版眉型。提供客製化手工霧眉、飄眉、韓式霧唇、無創除色及角蛋白睫毛管理。近桃園高鐵、機捷A18，全預約制。">
-    <meta name="keywords" content="蒔黛美學, 桃園霧眉, 中壢霧眉, 青埔霧眉, 桃園飄眉, 骨相眉型設計, 美術背景紋繡師, 桃園霧唇, 中壢角蛋白, 無創除色, 桃園紋繡推薦, 中壢紋繡, 均均老師">
+    <meta name="description" content="桃園中壢霧眉推薦【蒔黛美學 Stelle studio】。主理人均均擁有美術設計背景，專精骨相分析，拒絕套版眉型。提供客製化手工霧眉、飄眉、韓式霧唇、無創除色及角蛋白睫毛管理。工作室位於桃園市區及中壢市區，提供雙據點服務，全預約制。">
+    <meta name="keywords" content="蒔黛美學, 桃園霧眉, 中壢霧眉, 桃園市區霧眉, 中壢市區霧眉, 桃園飄眉, 骨相眉型設計, 中壢霧唇, 桃園霧唇, 中壢角蛋白, 無創除色, 桃園紋繡推薦, 中壢紋繡推薦, 洗眉, 淡色">
     <meta name="author" content="均均">
     <meta property="og:title" content="蒔黛美學 Stelle studio | 桃園中壢霧眉推薦・美術背景骨相設計">
     <meta property="og:description" content="專屬您的精緻美學管理。美術設計背景主理人親自操刀，拒絕公版眉型，打造宛如天生的自然妝感。">
@@ -53,33 +53,28 @@
         .navbar-custom {
             background-color: var(--morandi-nav-bg); 
             box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
-            
-            /* 新增：高度與背景的平滑過渡動畫 */
             transition: padding 0.3s ease-in-out, background-color 0.3s ease;
-            padding-top: 1.5rem;    /* 初始狀態：較高的上方內距 */
-            padding-bottom: 1.5rem; /* 初始狀態：較高的下方內距 */
+            padding-top: 1.5rem;    
+            padding-bottom: 1.5rem; 
         }
 
-        /* 新增：滾動後的縮小狀態 (JS 會加入此 class) */
+        /* 滾動後的縮小狀態 */
         .navbar-custom.navbar-shrink {
-            padding-top: 0.5rem;    /* 縮小後：標準內距 */
-            padding-bottom: 0.5rem; /* 縮小後：標準內距 */
-            background-color: rgba(59, 46, 42, 0.98); /* 微微增加透明度質感 */
+            padding-top: 0.5rem;    
+            padding-bottom: 0.5rem; 
+            background-color: rgba(59, 46, 42, 0.98); 
         }
 
         .navbar-brand {
             font-weight: 500;
             letter-spacing: 1px;
             color: #fff !important; 
-            
-            /* 新增：Logo 大小的過渡動畫 */
             transition: font-size 0.3s ease-in-out;
-            font-size: 1.75rem; /* 初始狀態：較大 Logo */
+            font-size: 1.75rem; 
         }
         
-        /* 新增：滾動後 Logo 縮小 */
         .navbar-custom.navbar-shrink .navbar-brand {
-            font-size: 1.25rem; /* 縮小後：標準 Logo 大小 */
+            font-size: 1.25rem; 
         }
         
         .navbar-brand span {
@@ -97,18 +92,16 @@
             font-weight: 500;
         }
 
-        /* 下拉選單客製化樣式 */
+        /* 下拉選單客製化樣式 (預設為電腦版樣式) */
         .dropdown-menu {
             background-color: var(--morandi-nav-bg);
             border: 1px solid rgba(255,255,255,0.1);
             padding: 0.5rem 0;
             margin-top: 0;
-            
-            /* 修改：置中設定 */
             left: 50%;
-            transform: translate(-50%, 0); /* 初始位置 */
-            text-align: center; /* 文字置中 */
-            min-width: 120px; /* 避免選單太窄 */
+            transform: translate(-50%, 0); 
+            text-align: center; 
+            min-width: 120px; 
         }
 
         .dropdown-item {
@@ -122,7 +115,7 @@
             color: #fff;
         }
 
-        /* --- 滑鼠懸停即展開選單 (僅限電腦版) + 修正置中動畫 --- */
+        /* --- 電腦版互動 (min-width: 992px) --- */
         @media (min-width: 992px) {
             .dropdown:hover .dropdown-menu {
                 display: block;
@@ -135,11 +128,69 @@
             to { opacity: 1; transform: translate(-50%, 0); }
         }
 
+        /* --- 手機版優化區塊 (max-width: 991px) --- */
+        @media (max-width: 991.98px) {
+            /* 1. 導覽列高度優化：手機版預設就稍微窄一點，避免佔太高 */
+            .navbar-custom {
+                padding-top: 0.8rem;
+                padding-bottom: 0.8rem;
+            }
+            
+            .navbar-brand {
+                font-size: 1.4rem; /* 手機版 Logo 字體調小 */
+            }
+
+            /* 2. 下拉選單優化：手機版改為嵌入式展開，不是浮動視窗 */
+            .dropdown-menu {
+                position: static; /* 取消絕對定位 */
+                transform: none !important; /* 取消置中位移 */
+                background-color: rgba(0,0,0,0.2); /* 加深背景區隔 */
+                border: none;
+                margin-top: 0.5rem;
+                width: 100%; /* 寬度佔滿 */
+                box-shadow: none;
+            }
+            
+            /* 3. 手機版導覽列展開後的背景與內距 */
+            .navbar-collapse {
+                background-color: var(--morandi-nav-bg);
+                padding: 1rem;
+                border-radius: 0 0 8px 8px; /* 下方圓角 */
+                max-height: 80vh; /* 防止選單太長超出螢幕 */
+                overflow-y: auto; /* 若太長可捲動 */
+            }
+
+            /* 4. Hero 區塊手機版調整 */
+            .hero-section {
+                min-height: auto; /* 手機版不強制 100vh，避免被網址列影響 */
+                padding-top: 100px; /* 預留導覽列空間 */
+                padding-bottom: 3rem;
+            }
+
+            .hero-overlay {
+                margin-top: 20px;
+                padding: 2rem 1.5rem; /* 內距縮小 */
+                width: 95%; /* 寬度增加 */
+            }
+            
+            .hero-title {
+                font-size: 1.8rem; /* 標題字體縮小 */
+            }
+
+            /* 5. 服務項目卡片間距調整 */
+            .service-item {
+                padding: 1rem;
+            }
+        }
+
         .navbar-toggler {
-            border-color: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.3);
+        }
+        .navbar-toggler:focus {
+            box-shadow: none; /* 移除點擊時的藍色光暈 */
         }
         .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
 
         /* 預約諮詢按鈕樣式 (保留) */
@@ -188,7 +239,7 @@
             text-align: center;
             box-shadow: 0 15px 40px rgba(60, 45, 40, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.5);
-            margin-top: 60px; 
+            /* margin-top: 60px;  <-- 移除這個固定值，改由 flex 與 padding 控制 */
         }
 
         .hero-title {
@@ -483,51 +534,46 @@
         }
     </style>
 </head>
-<body id="hero">
+<body id="home">
 
     <!-- 導覽列 -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#hero">蒔黛美學 <span style="font-size: 0.8em; font-weight: 300;">Stelle studio</span></a>
+            <!-- 點擊 Logo 回到最上方 (#home) -->
+            <a class="navbar-brand" href="#home">蒔黛美學 <span style="font-size: 0.8em; font-weight: 300;">Stelle studio</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav text-center align-items-center">
                     
-                    <!-- 1. 首頁 -->
-                    <li class="nav-item"><a class="nav-link active" href="#hero">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">首頁</a></li>
                     
-                    <!-- 2. 關於蒔黛 -->
-                    <li class="nav-item"><a class="nav-link" href="#about">關於蒔黛</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-stelle-studio.html">關於蒔黛</a></li>
                     
-                    <!-- 3. 服務項目 (下拉置中) -->
+                    <!-- 3. 服務項目 (連結更新：加入 data-bs-toggle="dropdown" 修復手機版點擊) -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" aria-expanded="false">
+                        <!-- 注意：加入 data-bs-toggle 後，點擊文字會觸發下拉，若需跳轉需點擊子選單 -->
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             服務項目
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="#services">眉部</a></li>
-                            <li><a class="dropdown-item" href="#services">眼部</a></li>
-                            <li><a class="dropdown-item" href="#services">唇部</a></li>
+                            <li><a class="dropdown-item" href="services.html">眉部</a></li>
+                            <li><a class="dropdown-item" href="services.html">眼部</a></li>
+                            <li><a class="dropdown-item" href="services.html">唇部</a></li>
                         </ul>
                     </li>
 
-                    <!-- 4. 常見問題 (新增) -->
-                    <li class="nav-item"><a class="nav-link" href="#faq">常見問題</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">常見問題</a></li>
 
-                    <!-- 5. 預約須知 -->
-                    <li class="nav-item"><a class="nav-link" href="#notice">預約須知</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking-policy.html">預約須知</a></li>
 
-                    <!-- 6. 顧客好評 -->
-                    <li class="nav-item"><a class="nav-link" href="#reviews">顧客好評</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">顧客好評</a></li>
 
-                    <!-- 7. 地點位置 -->
-                    <li class="nav-item"><a class="nav-link" href="#location">地點位置</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">地點位置</a></li>
 
-                    <!-- 預約諮詢按鈕 (保留作為 CTA) -->
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-reserve rounded-pill" href="#contact">預約諮詢</a>
+                        <a class="btn btn-reserve rounded-pill" href="https://lin.ee/rYp0iyy" target="_blank">預約諮詢</a>
                     </li>
                 </ul>
             </div>
@@ -543,7 +589,7 @@
                 <div class="divider-custom"></div>
                 <p class="lead hero-subtitle" style="font-family: 'Playfair Display', serif; letter-spacing: 1px;">Stelle Studio</p>
                 <p class="hero-subtitle mb-4">桃園中壢紋繡推薦<br>霧眉 ‧ 飄眉 ‧ 霧唇 ‧ 韓式睫毛管理 ‧ 無創除色</p>
-                <a href="#services" class="btn btn-hero rounded-pill px-5 py-2 mt-2">查看服務項目</a>
+                <a href="services.html" class="btn btn-hero rounded-pill px-5 py-2 mt-2">查看服務項目</a>
             </div>
         </section>
 
@@ -580,17 +626,15 @@
             </div>
         </section>
 
-        <!-- 服務項目區塊 Services Section -->
+        <!-- 服務項目區塊 Services Section (精華版) -->
         <section id="services" class="py-5 bg-light">
             <div class="container">
-                <!-- 區塊標題 -->
                 <div class="section-title" data-aos="fade-up">
                     <h2>我們的專業服務</h2>
                     <div class="divider-custom" style="width: 40px; margin: 15px auto;"></div>
                     <p>量身打造適合您的自然妝感，讓美麗成為日常</p>
                 </div>
 
-                <!-- 服務項目列表 -->
                 <div class="row g-4 justify-content-center">
                     <!-- 項目 1：粉黛柔霧眉 -->
                     <div class="col-12 col-md-6 col-lg-4">
@@ -668,7 +712,7 @@
             </div>
         </section>
 
-        <!-- 新增：常見問題區塊 (FAQ) -->
+        <!-- 新增：常見問題區塊 (FAQ) - (精華版) -->
         <section id="faq" class="faq-section py-5">
             <div class="container">
                 <div class="section-title">
