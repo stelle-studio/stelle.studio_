@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO 優化：強化「桃園中壢霧唇」、「烏唇轉色」、「酸性淡色」等在地與技術關鍵字 -->
+    <!-- 修正 Description：移除「從根源代謝」等絕對用語，改為「改善視覺暗沉」 -->
+    <meta name="description" content="桃園中壢霧唇推薦蒔黛美學。均均老師專精輕染潤霧唇、還原潤色唇與唇淡色還原。針對黑唇採用酸性淡色技術，不堆疊色料，專業處理唇部暗沉色調，還原宛如天生的粉嫩裸妝感。">
+    <meta name="keywords" content="桃園霧唇, 中壢霧唇, 桃園紋唇, 烏唇轉色, 唇色還原, 輕染潤霧唇, 酸性淡色, 改善暗沉, 唇部除色, 蒔黛美學, 不蓋色轉色">
+    <meta property="og:title" content="唇部柔光 | 輕染潤霧唇 & 酸性唇淡色 | 蒔黛美學 Stelle studio">
+    <meta property="og:description" content="告別氣色蒼白與唇色暗沉。桃園中壢專屬客製化唇部色彩管理，不只蓋色，更還原粉嫩美唇。">
+    <meta property="og:image" content="https://i.meee.com.tw/41ktZbU.png"> 
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_TW">
+
+    <title>唇部柔光 | 霧唇・酸性唇淡色・桃園中壢紋繡推薦 | 蒔黛美學 Stelle studio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Schema.org 結構化資料 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "蒔黛美學 Stelle studio",
+      "image": "https://i.meee.com.tw/41ktZbU.png",
+      "description": "桃園中壢專業紋繡工作室，提供輕染潤霧唇、還原潤色唇及專業酸性唇淡色服務。",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Taoyuan City",
+        "addressRegion": "TW"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <style>
+        /* --- 繼承原本的 CSS 變數與基礎設定 (完全同步 services-eyebrows.html) --- */
+        :root {
+            --morandi-dark-brown: #5E4B45;
+            --morandi-light-brown: #8F766B;
+            --morandi-bg: #F5F2EF;
+            --morandi-nav-bg: #3B2E2A;
+            --morandi-footer: #3B2E2A;
+            --morandi-text-light: #e0dcd9;
+            --morandi-accent: #D7C4BB;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--morandi-bg);
+            color: var(--morandi-dark-brown);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 0;
+            line-height: 1.7; 
+        }
+
+        h1, h2, h3, h4, h5 { color: var(--morandi-dark-brown); }
+
+        /* --- 導覽列樣式 (完全一致) --- */
+        .navbar-custom {
+            background-color: var(--morandi-nav-bg); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+            transition: padding 0.3s ease-in-out, background-color 0.3s ease;
+            padding-top: 1.5rem;    
+            padding-bottom: 1.5rem; 
+        }
+
+        .navbar-custom.navbar-shrink {
+            padding-top: 0.5rem;    
+            padding-bottom: 0.5rem; 
+            background-color: rgba(59, 46, 42, 0.98); 
+        }
+
+        .navbar-brand {
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #fff !important; 
+            transition: font-size 0.3s ease-in-out;
+            font-size: 1.75rem; 
+        }
+        
+        .navbar-custom.navbar-shrink .navbar-brand { font-size: 1.25rem; }
+        .navbar-brand span { color: var(--morandi-text-light); }
+
+        .nav-link {
+            color: var(--morandi-text-light) !important;
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #fff !important; 
+            font-weight: 500;
+        }
+
+        .dropdown-menu {
+            background-color: var(--morandi-nav-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 0.5rem 0;
+            margin-top: 0;
+            left: 50%;
+            transform: translate(-50%, 0); 
+            text-align: center; 
+            min-width: 120px; 
+        }
+
+        .dropdown-item {
+            color: var(--morandi-text-light);
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover, .dropdown-item:focus {
+            background-color: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+
+        @media (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                animation: fadeInCenter 0.3s ease;
+            }
+        }
+
+        @keyframes fadeInCenter {
+            from { opacity: 0; transform: translate(-50%, 10px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-custom { padding-top: 0.8rem; padding-bottom: 0.8rem; }
+            .navbar-brand { font-size: 1.4rem; }
+            .dropdown-menu { 
+                position: static; transform: none !important; 
+                background-color: rgba(0,0,0,0.2); border: none; 
+                margin-top: 0.5rem; width: 100%; box-shadow: none; 
+            }
+            .navbar-collapse { 
+                background-color: var(--morandi-nav-bg); 
+                padding: 1rem; border-radius: 0 0 8px 8px; 
+                max-height: 80vh; overflow-y: auto; 
+            }
+            .page-header { padding-top: 120px !important; } 
+        }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.3); }
+        .navbar-toggler:focus { box-shadow: none; }
+        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+        .btn-reserve {
+            border: 1px solid #fff !important;
+            color: #fff !important;
+            background-color: transparent;
+            font-weight: 400 !important;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.5rem !important;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-reserve:hover {
+            background-color: #fff !important;
+            color: var(--morandi-footer) !important;
+            border-color: #fff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+        }
+
+        /* --- 頁面標題區塊 --- */
+        .page-header {
+            background-color: #e8e4e1;
+            padding-top: 130px; 
+            padding-bottom: 2.5rem;
+            text-align: center;
+            margin-top: 0;
+            border-bottom: 1px solid rgba(94, 75, 69, 0.1);
+        }
+        
+        .page-title { 
+            font-size: 2.2rem; 
+            letter-spacing: 2px; 
+            margin-bottom: 0.8rem; 
+            color: var(--morandi-dark-brown);
+        }
+        
+        .page-subtitle { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--morandi-light-brown); 
+            font-size: 1.1rem; 
+            font-style: italic; 
+            margin-bottom: 0; 
+        }
+
+        /* --- 介紹與分隔線 --- */
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto 0.5rem;
+            text-align: center;
+            color: #666;
+        }
+        
+        section.intro-section {
+            padding-top: 3rem;
+            padding-bottom: 1.5rem;
+            background-color: #fff;
+        }
+        
+        .intro-divider {
+            width: 80px;
+            height: 1px;
+            background-color: var(--morandi-light-brown);
+            border: none;
+            margin: 1.5rem auto 0;
+            opacity: 0.6;
+        }
+
+        /* --- 服務項目區塊樣式 --- */
+        .service-item-section {
+            padding: 4rem 0;
+            border-bottom: 1px solid rgba(94, 75, 69, 0.08);
+        }
+        .service-item-section:first-of-type {
+            padding-top: 1rem;
+        }
+
+        .service-item-section:nth-child(odd) {
+            background-color: #fff;
+        }
+        
+        .service-img-box {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(94, 75, 69, 0.1);
+        }
+        .service-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.6s ease;
+        }
+        .service-img-box:hover .service-img {
+            transform: scale(1.03);
+        }
+
+        .service-title {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .service-title::after {
+            content: ''; display: block; width: 30px; height: 2px;
+            background-color: var(--morandi-light-brown);
+            margin-top: 8px;
+        }
+
+        .service-eng-name {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: var(--morandi-light-brown);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        /* 打勾列表樣式 */
+        .check-list { 
+            list-style: none; 
+            padding: 0; 
+            margin-bottom: 1rem;
+        }
+        .check-list li { 
+            margin-bottom: 0.8rem; 
+            position: relative; 
+            padding-left: 1.8rem; 
+            color: #666;
+            font-size: 0.95rem;
+        }
+        
+        .check-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            color: var(--morandi-light-brown);
+        }
+
+        /* 價格資訊盒樣式 */
+        .price-info-box {
+            background-color: #fafafa;
+            border-radius: 8px;
+            border-left: 4px solid var(--morandi-light-brown);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        /* --- 環境氛圍 CTA 樣式 --- */
+        .environment-cta-section {
+            background-image: linear-gradient(rgba(59, 46, 42, 0.9), rgba(59, 46, 42, 0.9)), url('https://i.meee.com.tw/o6NV6M6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 6rem 0;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .environment-cta-section h2, .environment-cta-section p { color: #fff !important; }
+
+        .btn-white-solid {
+            background-color: #fff !important;
+            color: var(--morandi-dark-brown) !important;
+            border: 1px solid #fff !important;
+            font-weight: 500 !important;
+            letter-spacing: 1px;
+            padding: 0.8rem 2rem !important;
+            transition: all 0.3s ease;
+            white-space: nowrap; 
+        }
+
+        .btn-white-solid:hover {
+            background-color: #f0f0f0 !important;
+            color: #000 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        main { flex: 1; }
+
+        footer { background-color: #2b221f; color: var(--morandi-text-light); padding: 3rem 0; }
+        .social-icon { color: var(--morandi-text-light); margin: 0 10px; font-size: 1.2rem; }
+        .footer-divider { border-color: rgba(255,255,255,0.1); }
+        a { text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">蒔黛美學 <span style="font-size: 0.8em; font-weight: 300;">Stelle studio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-stelle-studio.html">關於蒔黛</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            服務項目
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services-eyebrows.html">眉部美學</a></li>
+                            <li><a class="dropdown-item" href="services-eyes.html">眼部凝視</a></li>
+                            <!-- 設定當前頁面 Active -->
+                            <li><a class="dropdown-item active" href="services-lips.html">唇部柔光</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="faq.html">常見問題</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking-policy.html">預約須知</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">顧客好評</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">地點位置</a></li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-reserve rounded-pill" href="https://lin.ee/rYp0iyy" target="_blank">預約諮詢</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Header -->
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">唇部柔光</h1>
+                <p class="page-subtitle">Lip Blush & Correction</p>
+            </div>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-text">
+                    <p class="lead" style="color: var(--morandi-dark-brown); font-weight: 400;">
+                        「最好的顏色，是您天生健康的紅潤氣色。」
+                    </p>
+                    <p class="mt-3">
+                        在蒔黛美學，我們不追求厚重的妝感，而是專注於「氣色管理」。
+                        均均老師運用專業色彩學與獨家酸性淡色技術，為不同唇況量身訂製方案。
+                        無論是想要改善蒼白、修飾暗沉，或是追求媽生感的裸嫩雙唇，
+                        都能在這裡找回自信的微笑曲線。
+                    </p>
+                    <hr class="intro-divider">
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 1: 輕染潤霧唇 -->
+        <section class="service-item-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="service-img-box">
+                            <img src="https://i.meee.com.tw/OLEIDE6.jpg" alt="桃園中壢輕染潤霧唇作品-自然粉嫩妝感" class="service-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <h2 class="service-title">輕染潤霧唇</h2>
+                        <span class="service-eng-name">Soft Mist Lips</span>
+                        <p class="text-secondary">
+                            針對唇部基礎條件較好，或已完成轉色的顧客設計。擺脫傳統紋唇的邊框感，透過輕透細膩的上色手法，打造如晨露般自然的粉嫩色澤。
+                        </p>
+                        <p class="text-secondary">
+                            完工後呈現通透的「媽生感」好氣色，素顏也不突兀。修復期後不結厚痂，留色自然，讓您隨時擁有彷彿擦了潤色護唇膏般的健康光澤。
+                        </p>
+                        
+                        <ul class="check-list">
+                            <li>適合對象：唇色均勻、無嚴重暗沉者</li>
+                            <li>留色時間：約 2 - 3 年（視個人代謝狀況而定）</li>
+                            <li>特點：通透自然、無邊框感、素顏顯白</li>
+                        </ul>
+                        
+                        <!-- 價格資訊盒 -->
+                        <div class="price-info-box">
+                            <div class="d-flex justify-content-between align-items-baseline mb-2">
+                                <h5 class="mb-0" style="color: var(--morandi-dark-brown); font-weight: 500;">專屬訂製價</h5>
+                                <span style="font-size: 1.5rem; color: var(--morandi-light-brown); font-family: 'Playfair Display', serif;">NT$ 13,990</span>
+                            </div>
+                            <p class="small text-muted mb-3">操作時間約 3 - 3.5 小時 • 包含術後修護包</p>
+                            
+                            <div class="pt-3 border-top" style="border-color: rgba(94, 75, 69, 0.1) !important;">
+                                <span class="badge rounded-pill mb-2" style="background-color: var(--morandi-light-brown); font-weight: 400; letter-spacing: 1px;">Bonus</span>
+                                <p class="mb-0" style="color: var(--morandi-dark-brown); font-weight: 500;">
+                                    <i class="fas fa-gift me-1" style="color: var(--morandi-light-brown);"></i> 
+                                    贈 <span style="font-size: 0.9em; opacity: 0.8; font-weight: normal;">三個月內補色一次</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 2: 還原潤色唇 -->
+        <section class="service-item-section">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="service-img-box">
+                            <img src="https://i.meee.com.tw/omqqGnR.jpg" alt="桃園還原潤色唇-改善蒼白唇色" class="service-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pe-lg-5">
+                        <h2 class="service-title">還原潤色唇</h2>
+                        <span class="service-eng-name">Color Restoration</span>
+                        <p class="text-secondary">
+                            專為蒼白無血色、唇緣模糊或氣色不佳的雙唇設計。我們著重於「校正」唇部的色彩，還原健康紅潤感。
+                        </p>
+                        <p class="text-secondary">
+                            透過精細的色彩暈染技術，注入暖色調修飾蒼白底色。視覺上讓氣色更加飽滿，讓整個人看起來更有精神與活力。
+                        </p>
+                        
+                        <ul class="check-list">
+                            <!-- 修正：移除唇紋、輪廓修飾相關描述 -->
+                            <li>適合對象：唇色蒼白、唇緣不明顯者</li>
+                            <li>留色時間：約 2 - 4 年</li>
+                            <li>特點：提升氣色、改善蒼白底色</li>
+                        </ul>
+                        
+                        <!-- 價格資訊盒 -->
+                        <div class="price-info-box">
+                            <div class="d-flex justify-content-between align-items-baseline mb-2">
+                                <h5 class="mb-0" style="color: var(--morandi-dark-brown); font-weight: 500;">高階訂製價</h5>
+                                <span style="font-size: 1.5rem; color: var(--morandi-light-brown); font-family: 'Playfair Display', serif;">NT$ 16,990</span>
+                            </div>
+                            <p class="small text-muted mb-3">操作時間約 3.5 - 4 小時 • 色彩暈染層次技術</p>
+                            
+                            <div class="pt-3 border-top" style="border-color: rgba(94, 75, 69, 0.1) !important;">
+                                <span class="badge rounded-pill mb-2" style="background-color: var(--morandi-light-brown); font-weight: 400; letter-spacing: 1px;">Bonus</span>
+                                <p class="mb-0" style="color: var(--morandi-dark-brown); font-weight: 500;">
+                                    <i class="fas fa-gift me-1" style="color: var(--morandi-light-brown);"></i> 
+                                    贈 <span style="font-size: 0.9em; opacity: 0.8; font-weight: normal;">三個月內補色一次</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service 3: 唇淡色還原 -->
+        <section class="service-item-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="service-img-box">
+                            <img src="https://i.meee.com.tw/pwZJ1MM.jpg" alt="中壢酸性淡色-唇淡色還原" class="service-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <h2 class="service-title">唇淡色還原</h2>
+                        <span class="service-eng-name">Dark Lip Correction</span>
+                        <p class="text-secondary">
+                            專為「烏唇」、「紫唇」或嚴重色素沉澱設計。<strong>不同於傳統利用色料堆疊、蓋色的方式</strong>，我們採用專業的「酸性淡色液」進行護理。
+                        </p>
+                        <p class="text-secondary">
+                            <!-- 修正：移除「促進循環代謝」、「排出色素」等生理性/醫療性詞彙 -->
+                            透過溫和的方式，針對唇部深層暗沉色素進行處理。這是一項<strong>針對暗沉底色</strong>的技術，不依賴色料覆蓋，而是協助雙唇視覺上回到較為淨透的狀態，為後續的美感設計打下基礎。
+                        </p>
+                        
+                        <ul class="check-list">
+                            <li>適合對象：唇色發黑/發紫、色素沉澱、想改善暗沉底色者</li>
+                            <li>技術特點：<strong>不使用色料堆疊</strong>、酸性淡色技術、無厚重感</li>
+                            <li>操作說明：視暗沉程度，可能需分次進行</li>
+                        </ul>
+                        
+                        <!-- 價格資訊盒 -->
+                        <div class="price-info-box">
+                            <div class="d-flex justify-content-between align-items-baseline mb-2">
+                                <h5 class="mb-0" style="color: var(--morandi-dark-brown); font-weight: 500;">單次操作價</h5>
+                                <span style="font-size: 1.5rem; color: var(--morandi-light-brown); font-family: 'Playfair Display', serif;">NT$ 5,990</span>
+                            </div>
+                            <p class="small text-muted mb-3">針對暗沉根源進行淡化 • 不含後續上色</p>
+                            
+                            <div class="pt-3 border-top" style="border-color: rgba(94, 75, 69, 0.1) !important;">
+                                <span class="badge rounded-pill mb-2" style="background-color: var(--morandi-light-brown); font-weight: 400; letter-spacing: 1px;">Note</span>
+                                <p class="mb-0" style="color: var(--morandi-dark-brown); font-weight: 500;">
+                                    <i class="fas fa-info-circle me-1" style="color: var(--morandi-light-brown);"></i> 
+                                    需經由 <span style="font-size: 0.9em; opacity: 0.8; font-weight: normal;">專業評估後操作</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA 區塊 -->
+        <section class="environment-cta-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4">找不到適合的口紅色號？</h2>
+                        <p class="lead mb-5" style="opacity: 0.9;">
+                            傳送一張自然光下的素唇照片，讓均均老師為您建議適合的唇部方案。
+                        </p>
+                        <a href="https://lin.ee/rYp0iyy" target="_blank" class="btn btn-white-solid rounded-pill px-5 py-3">
+                            <i class="fab fa-line me-2"></i> 上傳唇照 / 線上諮詢
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="font-weight: 400; color: #fff;">蒔黛美學 Stelle studio</h5>
+                    <div class="mb-2 small" style="line-height: 1.8;">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span class="d-inline-block align-top">
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" style="color: var(--morandi-text-light);">桃園店：桃園市桃園區南海街</a><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" style="color: var(--morandi-text-light);">中壢店：桃園市中壢區龍和一街</a>
+                        </span>
+                    </div>
+                    <p class="mb-1 small">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:0925299653" style="color: var(--morandi-text-light);">電話：0925-299-653</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-2 small">Follow Us</p>
+                    <a href="https://www.facebook.com/p/%E8%92%94%E9%BB%9B%E7%BE%8E%E5%AD%B8%E7%B4%8B%E7%B9%A1%E5%B7%A5%E4%BD%9C%E5%AE%A4-61562007001270/" class="social-icon" title="追蹤 Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/stelle.studio_/" class="social-icon" title="追蹤 Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://lin.ee/rYp0iyy" class="social-icon" title="加入 LINE 好友" target="_blank"><i class="fa-brands fa-line"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="text-center small" style="opacity: 0.6;">
+                &copy; 2024 蒔黛美學 Stelle studio. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-shrink');
+            } else {
+                navbar.classList.remove('navbar-shrink');
+            }
+        });
+    </script>
+</body>
+</html>
