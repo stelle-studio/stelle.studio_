@@ -22,7 +22,8 @@
         :root {
             --morandi-dark-brown: #5E4B45;
             --morandi-light-brown: #8F766B;
-            --morandi-bg: #F5F2EF;
+            /* 修改：背景改為純白 */
+            --morandi-bg: #ffffff;
             --morandi-nav-bg: #3B2E2A;
             --morandi-footer: #3B2E2A;
             --morandi-text-light: #e0dcd9;
@@ -201,6 +202,7 @@
             color: #fff !important;
         }
 
+        /* 手機版按鈕修正：防止切掉與增加滑動體驗 */
         @media (max-width: 768px) {
             .faq-nav-pills {
                 flex-wrap: nowrap;
@@ -209,12 +211,19 @@
                 padding-bottom: 10px;
                 -ms-overflow-style: none;
                 scrollbar-width: none;
+                /* 增加左右內距，避免第一個和最後一個按鈕貼齊邊緣 */
+                padding-left: 5px;
+                padding-right: 5px;
             }
             .faq-nav-pills::-webkit-scrollbar {
                 display: none;
             }
             .faq-nav-pills .nav-link {
                 white-space: nowrap;
+            }
+            /* 強制項目不縮放，確保文字完整顯示 */
+            .faq-nav-pills .nav-item {
+                flex: 0 0 auto;
             }
         }
 
