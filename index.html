@@ -168,15 +168,24 @@
                 padding-bottom: 3rem;
             }
 
+            /* Hero 文字框手機版優化：增加兩側間距，避免貼邊 */
             .hero-overlay {
                 margin-top: 20px;
-                padding: 2rem 1.5rem; 
-                width: 95%; 
+                padding: 2.5rem 1.5rem; /* 增加上下內距 */
+                width: 92%; /* 縮小寬度比例，留出邊界 */
             }
             
-            /* H1 在手機版稍微縮小 */
+            /* H1 在手機版：字體調整與斷詞優化 */
             .hero-title {
-                font-size: 1.6rem; 
+                font-size: 1.5rem; 
+                line-height: 1.5;
+                word-break: keep-all; /* 防止中文字被不當切斷 */
+            }
+
+            /* 5. 內容區塊手機版邊緣優化 */
+            .container {
+                padding-left: 20px; /* 增加全域容器左右 padding */
+                padding-right: 20px;
             }
 
             .service-item {
@@ -581,11 +590,19 @@
         <!-- 首圖區塊 Hero Section -->
         <section class="hero-section">
             <div class="hero-overlay">
-                <h1 class="display-5 hero-title">蒔黛美學｜桃園中壢霧眉推薦<br><span style="font-size: 0.7em;">美術背景骨相設計</span></h1>
+                <!-- 修改：H1 標題在手機版優化，加入 d-md-none 控制換行，讓排版更平衡 -->
+                <h1 class="display-5 hero-title">
+                    蒔黛美學<span class="d-md-none"><br></span>｜桃園中壢霧眉推薦<br>
+                    <span style="font-size: 0.7em; display: inline-block; margin-top: 5px;">美術背景骨相設計</span>
+                </h1>
                 <div class="divider-custom"></div>
                 <p class="lead hero-subtitle" style="font-family: 'Playfair Display', serif; letter-spacing: 1px;">Stelle Studio</p>
-                <!-- 修改：將「無創」改為「溫和」 -->
-                <p class="hero-subtitle mb-4">專屬訂製美學<br>霧眉 ‧ 飄眉 ‧ 霧唇 ‧ 韓式睫毛管理 ‧ 溫和除色</p>
+                <!-- 修改：副標題改為兩行顯示 -->
+                <p class="hero-subtitle mb-4">
+                    專屬訂製美學<br>
+                    霧眉 ‧ 飄眉 ‧ 霧唇<br>
+                    韓式睫毛管理 ‧ 溫和除色
+                </p>
                 <a href="services.html" class="btn btn-hero rounded-pill px-5 py-2 mt-2">查看服務項目</a>
             </div>
         </section>
@@ -697,10 +714,8 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="service-item">
                             <div class="service-img-wrapper">
-                                <!-- 修改：Alt 文字避雷 -->
                                 <img src="https://i.meee.com.tw/l66dHeJ.png" alt="桃園中壢除眉-溫和除色">
                             </div>
-                            <!-- 修改：標題與內文避雷 -->
                             <h3 class="service-title">專業溫和除色</h3>
                             <p class="service-desc">
                                 採用安全溫和技術，不傷毛囊、不留疤，溫和告別失敗眉型與變色紅眉。
