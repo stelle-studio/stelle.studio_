@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO 優化：強化地域關鍵字 (桃園/中壢) 與長尾問答詞組 -->
+    <meta name="description" content="桃園中壢蒔黛美學常見問題 Q&A。專業解答霧眉痛感、飄眉維持度、霧唇修復期及韓式睫毛管理細節。提供非雷射溫和眉部除色諮詢，讓您安心變美。美術背景均均老師親自操作。">
+    <meta name="keywords" content="桃園霧眉推薦, 中壢霧眉, 霧眉會痛嗎, 霧唇修復期, 韓式睫毛管理, 桃園除色推薦, 紋繡常見問題, 蒔黛美學">
+    <meta property="og:title" content="常見問題 Q&A | 桃園中壢紋繡推薦 | 蒔黛美學 Stelle studio">
+    <meta property="og:image" content="https://i.meee.com.tw/2fi65ui.png">
+    <title>常見問題 Q&A | 桃園中壢紋繡推薦 | 蒔黛美學 Stelle studio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- 繼承原本的 CSS 變數與基礎設定 --- */
+        :root {
+            --morandi-dark-brown: #5E4B45;
+            --morandi-light-brown: #8F766B;
+            --morandi-bg: #F5F2EF;
+            --morandi-nav-bg: #3B2E2A;
+            --morandi-footer: #3B2E2A;
+            --morandi-text-light: #e0dcd9;
+            --morandi-accent: #D6C6B9;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--morandi-bg);
+            color: var(--morandi-dark-brown);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 0;
+        }
+
+        h1, h2, h3, h4, h5 { color: var(--morandi-dark-brown); }
+
+        /* --- 導覽列樣式 --- */
+        .navbar-custom {
+            background-color: var(--morandi-nav-bg); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+            transition: padding 0.3s ease-in-out, background-color 0.3s ease;
+            padding-top: 1.5rem;    
+            padding-bottom: 1.5rem; 
+        }
+
+        .navbar-custom.navbar-shrink {
+            padding-top: 0.5rem;    
+            padding-bottom: 0.5rem; 
+            background-color: rgba(59, 46, 42, 0.98); 
+        }
+
+        .navbar-brand {
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #fff !important; 
+            transition: font-size 0.3s ease-in-out;
+            font-size: 1.75rem; 
+        }
+        
+        .navbar-custom.navbar-shrink .navbar-brand {
+            font-size: 1.25rem; 
+        }
+        
+        .navbar-brand span {
+            color: var(--morandi-text-light); 
+        }
+
+        .nav-link {
+            color: var(--morandi-text-light) !important;
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #fff !important; 
+            font-weight: 500;
+        }
+
+        .dropdown-menu {
+            background-color: var(--morandi-nav-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 0.5rem 0;
+            margin-top: 0;
+            left: 50%;
+            transform: translate(-50%, 0); 
+            text-align: center; 
+            min-width: 120px; 
+        }
+
+        .dropdown-item {
+            color: var(--morandi-text-light);
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover, .dropdown-item:focus {
+            background-color: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+
+        @media (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                animation: fadeInCenter 0.3s ease;
+            }
+        }
+
+        @keyframes fadeInCenter {
+            from { opacity: 0; transform: translate(-50%, 10px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-custom { padding-top: 0.8rem; padding-bottom: 0.8rem; }
+            .navbar-brand { font-size: 1.4rem; }
+            .dropdown-menu { 
+                position: static; transform: none !important; 
+                background-color: rgba(0,0,0,0.2); border: none; 
+                margin-top: 0.5rem; width: 100%; box-shadow: none; 
+            }
+            .navbar-collapse { 
+                background-color: var(--morandi-nav-bg); 
+                padding: 1rem; border-radius: 0 0 8px 8px; 
+                max-height: 80vh; overflow-y: auto; 
+            }
+            .page-header { padding-top: 120px !important; } 
+        }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.3); }
+        .navbar-toggler:focus { box-shadow: none; }
+        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+        .btn-reserve {
+            border: 1px solid #fff !important;
+            color: #fff !important;
+            background-color: transparent;
+            font-weight: 400 !important;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.5rem !important;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-reserve:hover {
+            background-color: #fff !important;
+            color: var(--morandi-footer) !important;
+            border-color: #fff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+        }
+
+        /* --- 頁面標題區塊 --- */
+        .page-header {
+            background-color: #e8e4e1;
+            padding-top: 130px; 
+            padding-bottom: 2.5rem;
+            text-align: center;
+            margin-top: 0;
+        }
+        
+        .page-title { 
+            font-size: 2.2rem; 
+            letter-spacing: 2px; 
+            margin-bottom: 0.8rem; 
+            color: var(--morandi-dark-brown);
+        }
+        
+        .page-subtitle { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--morandi-light-brown); 
+            font-size: 1.1rem; 
+            font-style: italic; 
+            margin-bottom: 0; 
+        }
+
+        /* --- FAQ 特定樣式 --- */
+        .faq-nav-pills {
+            justify-content: center;
+            margin-bottom: 3rem;
+            gap: 10px;
+        }
+        
+        .faq-nav-pills .nav-link {
+            border-radius: 50px;
+            padding: 0.6rem 2rem;
+            color: var(--morandi-dark-brown) !important;
+            background-color: transparent;
+            border: 1px solid var(--morandi-dark-brown);
+            font-weight: 400;
+        }
+        
+        .faq-nav-pills .nav-link.active, 
+        .faq-nav-pills .nav-link:hover {
+            background-color: var(--morandi-dark-brown);
+            color: #fff !important;
+        }
+
+        @media (max-width: 768px) {
+            .faq-nav-pills {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                justify-content: flex-start;
+                padding-bottom: 10px;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .faq-nav-pills::-webkit-scrollbar {
+                display: none;
+            }
+            .faq-nav-pills .nav-link {
+                white-space: nowrap;
+            }
+        }
+
+        .accordion-item {
+            border: none;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            border-radius: 8px !important;
+            box-shadow: 0 4px 6px rgba(94, 75, 69, 0.05);
+            overflow: hidden;
+        }
+
+        .accordion-button {
+            color: var(--morandi-dark-brown);
+            font-weight: 500;
+            background-color: #fff;
+            padding: 1.25rem;
+            font-size: 1.05rem;
+            box-shadow: none !important;
+            transition: background-color 0.3s ease; /* 增加過渡效果 */
+        }
+
+        /* 修正：加深展開時的背景色，並增加左側標示線 */
+        .accordion-button:not(.collapsed) {
+            color: var(--morandi-dark-brown);
+            background-color: #E0D0C6; /* 改為更明顯的暖藕色，與頁面 #F5F2EF 區分 */
+            font-weight: 700;
+            border-left: 5px solid var(--morandi-light-brown); /* 左側強調線 */
+        }
+
+        .accordion-button::after {
+            filter: grayscale(100%) brightness(0.5) sepia(1) hue-rotate(350deg) saturate(50%);
+        }
+
+        .accordion-body {
+            color: #666;
+            line-height: 1.8;
+            padding: 1.5rem;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .faq-icon {
+            color: var(--morandi-light-brown);
+            margin-right: 10px;
+        }
+
+        main { flex: 1; }
+
+        /* Footer */
+        footer { background-color: #2b221f; color: var(--morandi-text-light); padding: 3rem 0; }
+        .social-icon { color: var(--morandi-text-light); margin: 0 10px; font-size: 1.2rem; }
+        .footer-divider { border-color: rgba(255,255,255,0.1); }
+        a { text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">蒔黛美學 <span style="font-size: 0.8em; font-weight: 300;">Stelle studio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-stelle-studio.html">關於蒔黛</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            服務項目
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services-eyebrows.html">眉部美學</a></li>
+                            <li><a class="dropdown-item" href="services-eyes.html">眼部凝視</a></li>
+                            <li><a class="dropdown-item" href="services-lips.html">唇部柔光</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="faq.html">常見問題</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking-policy.html">預約須知</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">顧客好評</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">地點位置</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-reserve rounded-pill" href="https://lin.ee/rYp0iyy" target="_blank">預約諮詢</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Header -->
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">常見問題</h1>
+                <p class="page-subtitle">Q & A</p>
+            </div>
+        </header>
+
+        <!-- FAQ Content Section -->
+        <section class="py-5">
+            <div class="container">
+                
+                <!-- 分類導覽 Tabs -->
+                <ul class="nav nav-pills faq-nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-brows-tab" data-bs-toggle="pill" data-bs-target="#pills-brows" type="button" role="tab" aria-controls="pills-brows" aria-selected="true">
+                            霧眉/飄眉
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-lips-tab" data-bs-toggle="pill" data-bs-target="#pills-lips" type="button" role="tab" aria-controls="pills-lips" aria-selected="false">
+                            霧唇
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-lashes-tab" data-bs-toggle="pill" data-bs-target="#pills-lashes" type="button" role="tab" aria-controls="pills-lashes" aria-selected="false">
+                            韓式睫毛管理
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-removal-tab" data-bs-toggle="pill" data-bs-target="#pills-removal" type="button" role="tab" aria-controls="pills-removal" aria-selected="false">
+                            眉部淡色
+                        </button>
+                    </li>
+                </ul>
+
+                <!-- Tabs 內容 -->
+                <div class="tab-content" id="pills-tabContent">
+                    
+                    <!-- 1. 霧眉/飄眉 FAQ -->
+                    <div class="tab-pane fade show active" id="pills-brows" role="tabpanel" aria-labelledby="pills-brows-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="accordion" id="accordionBrows">
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingBrows1">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrows1" aria-expanded="true" aria-controls="collapseBrows1">
+                                                <i class="far fa-question-circle faq-icon"></i> 霧眉跟飄眉(野生眉)有什麼不同？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseBrows1" class="accordion-collapse collapse show" aria-labelledby="headingBrows1" data-bs-parent="#accordionBrows">
+                                            <div class="accordion-body">
+                                                <strong>霧眉 (Mist Brows)</strong> 呈現的是片狀、帶有妝感的柔霧效果，就像是用眉粉掃過的感覺，適合喜歡出門自帶底妝感的女孩。<br><br>
+                                                <strong>飄眉/野生眉 (Hairstroke Brows)</strong> 則是模擬真實毛流的線條感，根根分明，適合追求自然、宛如原生眉毛效果的人，或是原本眉毛較稀疏想要增加毛流感的人。均均老師會根據您的骨相與風格建議最適合的方案。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 法規修正：避免絕對「不痛」，改用「低痛感」、「舒適」 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingBrows2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrows2" aria-expanded="false" aria-controls="collapseBrows2">
+                                                <i class="far fa-question-circle faq-icon"></i> 施作過程會痛嗎？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseBrows2" class="accordion-collapse collapse" aria-labelledby="headingBrows2" data-bs-parent="#accordionBrows">
+                                            <div class="accordion-body">
+                                                均均老師非常重視顧客的舒適度。操作前我們會使用美容專用舒緩膏，且手法輕柔。大多數客人在過程中感受相當舒適、痛感極低，甚至有許多客人在過程中會放鬆到睡著。如果您比較敏感，也可以隨時告知，我們會隨時調整。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingBrows3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrows3" aria-expanded="false" aria-controls="collapseBrows3">
+                                                <i class="far fa-question-circle faq-icon"></i> 做完會變「蠟筆小新」嗎？有修復期嗎？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseBrows3" class="accordion-collapse collapse" aria-labelledby="headingBrows3" data-bs-parent="#accordionBrows">
+                                            <div class="accordion-body">
+                                                現在的技術已經非常進步，蒔黛美學主打「做完即自然」。剛操作完的顏色會稍微深一點點，但不會像傳統紋繡那樣又黑又粗。修復期大約 5-7 天，期間會有薄薄的皮屑脫落（結痂），過程很自然，不影響日常生活與上班。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingBrows4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrows4" aria-expanded="false" aria-controls="collapseBrows4">
+                                                <i class="far fa-question-circle faq-icon"></i> 眉毛可以維持多久？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseBrows4" class="accordion-collapse collapse" aria-labelledby="headingBrows4" data-bs-parent="#accordionBrows">
+                                            <div class="accordion-body">
+                                                半永久紋繡一般可維持 <strong>1 ~ 2 年</strong>，具體時間會因個人的膚質（油性肌膚代謝較快）、生活習慣（常運動流汗、美白保養品使用）而有所不同。顏色會隨著時間慢慢變淡，這也是半永久紋繡的優點，方便日後根據流行趨勢調整眉型。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. 霧唇 FAQ -->
+                    <div class="tab-pane fade" id="pills-lips" role="tabpanel" aria-labelledby="pills-lips-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="accordion" id="accordionLips">
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingLips1">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips1" aria-expanded="true" aria-controls="collapseLips1">
+                                                <i class="far fa-question-circle faq-icon"></i> 霧唇後嘴巴會腫嗎？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseLips1" class="accordion-collapse collapse show" aria-labelledby="headingLips1" data-bs-parent="#accordionLips">
+                                            <div class="accordion-body">
+                                                每個人的體質不同，大部分人在操作後會有輕微的腫脹感，類似剛吃完麻辣鍋的感覺，通常在數小時內就會自然緩解。我們採用輕柔的手法操作，盡量減少不適感與腫脹程度。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 法規修正：使用「操作」、「課程」取代「治療」、「療程」 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingLips2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips2" aria-expanded="false" aria-controls="collapseLips2">
+                                                <i class="far fa-question-circle faq-icon"></i> 唇色很深/烏唇可以做嗎？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseLips2" class="accordion-collapse collapse" aria-labelledby="headingLips2" data-bs-parent="#accordionLips">
+                                            <div class="accordion-body">
+                                                可以的！這正是我們擅長的項目。針對烏唇或暗沉唇，我們會先進行「轉色/調整底色」的步驟，將底色修飾回健康的粉嫩色調，再上目標色。嚴重烏唇通常建議需要 2 次以上的操作，才能達到最完美的效果。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingLips3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips3" aria-expanded="false" aria-controls="collapseLips3">
+                                                <i class="far fa-question-circle faq-icon"></i> 霧唇後可以擦口紅嗎？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseLips3" class="accordion-collapse collapse" aria-labelledby="headingLips3" data-bs-parent="#accordionLips">
+                                            <div class="accordion-body">
+                                                修復期間（約 3-5 天）建議保持唇部清潔與滋潤，避免塗抹口紅。待脫痂完全結束後，您的雙唇會呈現自然的粉嫩感，平時只要擦護唇膏就很有氣色！如果遇到重要場合想要更換妝感，直接疊擦口紅也是完全沒問題的。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 法規修正：強調「藥局諮詢藥師」，不直接建議用藥 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingLips4">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips4" aria-expanded="false" aria-controls="collapseLips4">
+                                                <i class="far fa-question-circle faq-icon"></i> 曾經得過單純皰疹可以霧唇嗎？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseLips4" class="accordion-collapse collapse" aria-labelledby="headingLips4" data-bs-parent="#accordionLips">
+                                            <div class="accordion-body">
+                                                如果您有皰疹體質（免疫力低下時嘴唇容易長水泡），建議在操作前先至藥局諮詢專業藥師，詢問是否適合服用抗病毒保健品或塗抹藥膏，以降低皰疹復發的機率。預約時請務必先告知均均老師喔！
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. 韓式睫毛管理 FAQ -->
+                    <div class="tab-pane fade" id="pills-lashes" role="tabpanel" aria-labelledby="pills-lashes-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="accordion" id="accordionLashes">
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingLashes1">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLashes1" aria-expanded="true" aria-controls="collapseLashes1">
+                                                <i class="far fa-question-circle faq-icon"></i> 韓式睫毛管理跟接睫毛一樣嗎？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseLashes1" class="accordion-collapse collapse show" aria-labelledby="headingLashes1" data-bs-parent="#accordionLashes">
+                                            <div class="accordion-body">
+                                                不一樣喔！<br>
+                                                <strong>接睫毛</strong> 是將假睫毛黏在真睫毛上，會有異物感，需要小心維護。<br>
+                                                <strong>韓式睫毛管理 (Lash Lift)</strong> 則是完全使用您「自己的真睫毛」，透過技術調整毛流與捲翹度，並搭配角蛋白保養。做完後睫毛會自然捲翹，且可以正常洗臉、揉眼睛，非常方便。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingLashes2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLashes2" aria-expanded="false" aria-controls="collapseLashes2">
+                                                <i class="far fa-question-circle faq-icon"></i> 可以維持多久？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseLashes2" class="accordion-collapse collapse" aria-labelledby="headingLashes2" data-bs-parent="#accordionLashes">
+                                            <div class="accordion-body">
+                                                一般可以維持 <strong>4 ~ 6 週</strong> 左右。這取決於您個人睫毛的生長週期。當新的直睫毛長出來，舊的捲翹睫毛自然脫落後，捲度就會慢慢變得沒那麼整齊，這時候就可以回來重新整理囉！
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingLashes3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLashes3" aria-expanded="false" aria-controls="collapseLashes3">
+                                                <i class="far fa-question-circle faq-icon"></i> 做完後需要注意什麼？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseLashes3" class="accordion-collapse collapse" aria-labelledby="headingLashes3" data-bs-parent="#accordionLashes">
+                                            <div class="accordion-body">
+                                                操作後 <strong>4-6 小時內</strong> 請保持乾燥，避免碰水或處於高溫蒸氣環境（如溫泉、桑拿），以讓捲度定型。之後就可以正常洗臉、化妝。若想要維持更久，建議每天早晚使用睫毛滋養液，保持睫毛健康強韌。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. 眉部淡色 FAQ -->
+                    <div class="tab-pane fade" id="pills-removal" role="tabpanel" aria-labelledby="pills-removal-tab">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="accordion" id="accordionRemoval">
+                                    
+                                    <!-- 法規修正：使用「淡色」強調非醫療 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingRemoval1">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemoval1" aria-expanded="true" aria-controls="collapseRemoval1">
+                                                <i class="far fa-question-circle faq-icon"></i> 什麼情況需要做眉部淡色？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseRemoval1" class="accordion-collapse collapse show" aria-labelledby="headingRemoval1" data-bs-parent="#accordionRemoval">
+                                            <div class="accordion-body">
+                                                如果您以前做過的眉毛變成了紅眉、藍眉，或者是眉型過時、太粗太黑不滿意，都可以透過眉部淡色/除色來修飾。我們會先評估底色殘留的狀況，再建議是需要完全除色，還是可以直接透過「改眉」的方式調整。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 法規修正：避免「無創」（醫療器材用語），改用「溫和」、「非雷射」 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingRemoval2">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemoval2" aria-expanded="false" aria-controls="collapseRemoval2">
+                                                <i class="far fa-question-circle faq-icon"></i> 除色會傷害毛囊讓眉毛長不出來嗎？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseRemoval2" class="accordion-collapse collapse" aria-labelledby="headingRemoval2" data-bs-parent="#accordionRemoval">
+                                            <div class="accordion-body">
+                                                不用擔心！我們使用的是<strong>專業溫和除色</strong>技術，主要針對皮膚表層的色素進行淡化，非雷射強烈破壞，因此在正確操作下<strong>不會傷害到毛囊</strong>，不會影響眉毛的正常生長。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 法規修正：將「療程」改為「課程」或「操作次數」 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingRemoval3">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemoval3" aria-expanded="false" aria-controls="collapseRemoval3">
+                                                <i class="far fa-question-circle faq-icon"></i> 需要做幾次才能乾淨？
+                                            </button>
+                                        </h2>
+                                        <div id="collapseRemoval3" class="accordion-collapse collapse" aria-labelledby="headingRemoval3" data-bs-parent="#accordionRemoval">
+                                            <div class="accordion-body">
+                                                除色的次數因人而異，取決於您舊眉毛的「入針深度」、「色料品質」以及「殘留顏色深淺」。淺色的眉毛可能 1-2 次就能淡化到可以重新設計的程度；顏色較深或卡色嚴重的眉毛則可能需要 3 次以上的操作課程。建議傳照片給均均老師進行初步評估。
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-5 text-center" style="background-color: var(--morandi-dark-brown); color: #fff;">
+            <div class="container">
+                <h3 class="mb-4" style="color: #fff;">還有其他疑問嗎？</h3>
+                <p class="lead mb-4" style="opacity: 0.9;">歡迎加入官方 LINE，直接與均均老師諮詢，我們會盡快回覆您！</p>
+                <a href="https://lin.ee/rYp0iyy" target="_blank" class="btn btn-light rounded-pill px-5 py-3" style="color: var(--morandi-dark-brown); font-weight: bold;">
+                    <i class="fab fa-line me-2"></i> 立即諮詢 / 預約
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="font-weight: 400; color: #fff;">蒔黛美學 Stelle studio</h5>
+                    <div class="mb-2 small" style="line-height: 1.8;">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span class="d-inline-block align-top">
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" style="color: var(--morandi-text-light);">桃園店：桃園市桃園區南海街</a><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" style="color: var(--morandi-text-light);">中壢店：桃園市中壢區龍和一街</a>
+                        </span>
+                    </div>
+                    <p class="mb-1 small">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:0925299653" style="color: var(--morandi-text-light);">電話：0925-299-653</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-2 small">Follow Us</p>
+                    <a href="https://www.facebook.com/p/%E8%92%94%E9%BB%9B%E7%BE%8E%E5%AD%B8%E7%B4%8B%E7%B9%A1%E5%B7%A5%E4%BD%9C%E5%AE%A4-61562007001270/" class="social-icon" title="追蹤 Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/stelle.studio_/" class="social-icon" title="追蹤 Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://lin.ee/rYp0iyy" class="social-icon" title="加入 LINE 好友" target="_blank"><i class="fa-brands fa-line"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="text-center small" style="opacity: 0.6;">
+                &copy; 2024 蒔黛美學 Stelle studio. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 導覽列滾動縮放腳本 -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-shrink');
+            } else {
+                navbar.classList.remove('navbar-shrink');
+            }
+        });
+    </script>
+</body>
+</html>
