@@ -167,6 +167,38 @@
             box-shadow: 0 4px 10px rgba(255,255,255,0.2);
         }
 
+        /* 修正後的實心白色按鈕 (用於底部 CTA) */
+        .btn-white-solid {
+            background-color: #fff !important;
+            color: var(--morandi-dark-brown) !important;
+            border: 1px solid #fff !important;
+            font-weight: 500 !important;
+            letter-spacing: 1px;
+            padding: 0.8rem 2rem !important;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-white-solid:hover {
+            background-color: #f0f0f0 !important;
+            color: #000 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        /* 環境與CTA區域 */
+        .environment-cta-section {
+            background-image: linear-gradient(rgba(59, 46, 42, 0.9), rgba(59, 46, 42, 0.9)), url('https://i.meee.com.tw/o6NV6M6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 6rem 0;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .environment-cta-section h2 { color: #fff; }
+
         /* 頁面標題區塊 */
         main { flex: 1; }
 
@@ -681,6 +713,27 @@
                     </div>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- 服務據點與行動呼籲 (Environment & CTA) -->
+        <section class="environment-cta-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4">準備好遇見更美的自己了嗎？</h2>
+                        <p class="lead mb-5" style="opacity: 0.9;">
+                            雙據點服務：桃園市區 / 中壢龍岡<br>
+                            立即預約，開啟您的專屬美學之旅
+                        </p>
+                        
+                        <!-- 按鈕容器與樣式 -->
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+                            <a href="services.html" class="btn btn-outline-light rounded-pill px-5 py-3 w-100 w-sm-auto">瀏覽服務項目</a>
+                            <a href="https://lin.ee/rYp0iyy" target="_blank" class="btn btn-white-solid rounded-pill w-100 w-sm-auto">立即預約諮詢</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

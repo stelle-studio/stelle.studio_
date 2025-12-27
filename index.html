@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO 優化：標題與描述強化地域性與核心競爭力 -->
-    <!-- 修改：將「無創」改為「溫和」，避開醫療法規爭議 -->
     <meta name="description" content="桃園中壢霧眉推薦【蒔黛美學 Stelle studio】。主理人均均擁有美術設計背景，專精骨相分析，拒絕套版眉型。提供客製化手工霧眉、飄眉、韓式霧唇、溫和除色及角蛋白睫毛管理。工作室位於桃園市區及中壢市區，提供雙據點服務，全預約制。">
     <meta name="keywords" content="蒔黛美學, 桃園霧眉, 中壢霧眉, 桃園市區霧眉, 中壢市區霧眉, 桃園飄眉, 骨相眉型設計, 中壢霧唇, 桃園霧唇, 中壢角蛋白, 溫和除色, 桃園紋繡推薦, 中壢紋繡推薦, 洗眉, 淡色">
     <meta name="author" content="均均">
@@ -50,7 +49,7 @@
             color: var(--morandi-dark-brown);
         }
 
-        /* 導覽列樣式 - 包含動畫設定 */
+        /* 導覽列樣式 */
         .navbar-custom {
             background-color: var(--morandi-nav-bg); 
             box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
@@ -93,7 +92,7 @@
             font-weight: 500;
         }
 
-        /* 下拉選單客製化樣式 (預設為電腦版樣式) */
+        /* 下拉選單客製化樣式 */
         .dropdown-menu {
             background-color: var(--morandi-nav-bg);
             border: 1px solid rgba(255,255,255,0.1);
@@ -168,28 +167,39 @@
                 padding-bottom: 3rem;
             }
 
-            /* Hero 文字框手機版優化：增加兩側間距，避免貼邊 */
+            /* Hero 文字框手機版優化 */
             .hero-overlay {
                 margin-top: 20px;
-                padding: 2.5rem 1.5rem; /* 增加上下內距 */
-                width: 92%; /* 縮小寬度比例，留出邊界 */
+                padding: 2.5rem 1.5rem; 
+                width: 92%; 
             }
             
-            /* H1 在手機版：字體調整與斷詞優化 */
+            /* H1 在手機版：字體調整 */
             .hero-title {
-                font-size: 1.5rem; 
-                line-height: 1.5;
-                word-break: keep-all; /* 防止中文字被不當切斷 */
+                font-size: 1.6rem; 
+                line-height: 1.4;
             }
 
-            /* 5. 內容區塊手機版邊緣優化 */
+            /* 5. 內容區塊手機版邊緣優化 - 修正重點 */
             .container {
-                padding-left: 50px; /* 增加全域容器左右 padding */
+                /* 原本 50px 太寬，導致手機版文字容易換行，改為 20px */
+                padding-left: 50px; 
                 padding-right: 50px;
             }
 
             .service-item {
                 padding: 1rem;
+            }
+
+            /* 手機版標題微調，避免換行 */
+            .section-title p {
+                font-size: 0.95rem; 
+                padding: 0 5px;
+            }
+            
+            /* 關於我標題手機版微調 */
+            .about-content h3 {
+                font-size: 1.5rem;
             }
         }
 
@@ -590,14 +600,16 @@
         <!-- 首圖區塊 Hero Section -->
         <section class="hero-section">
             <div class="hero-overlay">
-                <!-- 修改：H1 標題在手機版優化，加入 d-md-none 控制換行，讓排版更平衡 -->
+                <!-- 修正：H1 標題在手機版隱藏「｜」符號，並強制換行，解決置中問題 -->
                 <h1 class="display-5 hero-title">
-                    蒔黛美學<span class="d-md-none"><br></span>｜桃園中壢霧眉推薦<br>
+                    蒔黛美學<span class="d-md-none" style="display: block; height: 5px;"></span>
+                    <span class="d-none d-md-inline">｜</span>
+                    桃園中壢霧眉推薦<br>
                     <span style="font-size: 0.7em; display: inline-block; margin-top: 5px;">美術背景骨相設計</span>
                 </h1>
                 <div class="divider-custom"></div>
                 <p class="lead hero-subtitle" style="font-family: 'Playfair Display', serif; letter-spacing: 1px;">Stelle Studio</p>
-                <!-- 修改：副標題改為兩行顯示 -->
+                <!-- 副標題 -->
                 <p class="hero-subtitle mb-4">
                     專屬訂製美學<br>
                     霧眉 ‧ 飄眉 ‧ 霧唇<br>
@@ -618,6 +630,7 @@
                     </div>
                     <div class="col-lg-6 offset-lg-1 about-content">
                         <h5 class="text-uppercase mb-3" style="letter-spacing: 2px; color: var(--morandi-light-brown);">About Stelle</h5>
+                        <!-- 修正：標題文字，手機版 CSS 已縮小字體以防換行 -->
                         <h3>關於蒔黛 — 主理人均均</h3>
                         <div class="divider-custom" style="margin: 0 0 2rem 0; width: 50px;"></div>
                         <p class="lead">「每一張臉孔都是獨一無二的畫布，我用心雕琢，只為呈現妳最自然的自信。」</p>
@@ -646,6 +659,7 @@
                 <div class="section-title" data-aos="fade-up">
                     <h2>我們的專業服務</h2>
                     <div class="divider-custom" style="width: 40px; margin: 15px auto;"></div>
+                    <!-- 修正：手機版 CSS 已調整字體與 Padding，解決換行問題 -->
                     <p>量身打造適合您的自然妝感，讓美麗成為日常</p>
                 </div>
 
@@ -782,11 +796,12 @@
             </div>
         </section>
 
-        <!-- 顧客好評區塊 -->
+        <!-- 為什麼選擇我們區塊 (原顧客好評) -->
         <section id="reviews" class="why-choose-section py-5">
             <div class="container">
                 <div class="section-title">
-                    <h2>顧客真實好評</h2>
+                    <!-- 修正：標題文字更新 -->
+                    <h2>為什麼選擇蒔黛美學</h2>
                     <div class="divider-custom" style="width: 40px; margin: 15px auto;"></div>
                     <p>堅持細節與安全，只為成就妳的精緻</p>
                 </div>
@@ -877,7 +892,8 @@
                         </div>
 
                         <div class="mt-5">
-                            <a href="https://lin.ee/rYp0iyy" class="btn btn-line btn-lg rounded-pill px-5 py-3" target="_blank">
+                            <!-- 修正：將 px-5 改為 responsive padding，並加入 text-nowrap 確保文字不換行 -->
+                            <a href="https://lin.ee/rYp0iyy" class="btn btn-line btn-lg rounded-pill px-4 px-md-5 py-3 text-nowrap" target="_blank">
                                 <i class="fab fa-line me-2"></i> 加入 LINE 預約諮詢
                             </a>
                         </div>

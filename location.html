@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO 優化 -->
+    <meta name="description" content="蒔黛美學 Stelle studio 服務據點資訊。桃園店位於桃園區南海街，中壢店位於龍岡龍和一街。提供舒適隱私的紋繡空間與便捷的交通資訊。">
+    <meta name="keywords" content="蒔黛美學地址, 桃園霧眉地點, 中壢霧眉地點, 龍岡紋繡工作室, 蒔黛美學交通, 桃園停車資訊">
+    <meta name="author" content="均均">
+    <meta property="og:title" content="地點位置 | 桃園中壢霧眉推薦 - 蒔黛美學 Stelle studio">
+    <meta property="og:description" content="雙據點服務：桃園市區與中壢龍岡。查詢蒔黛美學工作室詳細地址、交通方式與停車資訊。">
+    <meta property="og:type" content="website">
+    
+    <title>地點位置 | 桃園中壢霧眉推薦 - 蒔黛美學 Stelle studio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- 莫蘭迪深咖色系定義 (與原檔一致) --- */
+        :root {
+            --morandi-dark-brown: #5E4B45; /* 深咖主色 */
+            --morandi-light-brown: #8F766B; /* 淺咖點綴 */
+            --morandi-bg: #F5F2EF;          /* 暖灰棕底色 */
+            --morandi-nav-bg: #3B2E2A;      /* 導覽列背景 */
+            --morandi-footer: #3B2E2A;      /* 頁尾背景 */
+            --morandi-text-light: #e0dcd9;  /* 淺色文字 */
+        }
+
+        /* 全域字體設定 */
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--morandi-bg);
+            color: var(--morandi-dark-brown);
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: var(--morandi-dark-brown);
+        }
+
+        /* 導覽列樣式 */
+        .navbar-custom {
+            background-color: var(--morandi-nav-bg); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+            transition: padding 0.3s ease-in-out, background-color 0.3s ease;
+            padding-top: 1.5rem;    
+            padding-bottom: 1.5rem; 
+        }
+
+        .navbar-custom.navbar-shrink {
+            padding-top: 0.5rem;    
+            padding-bottom: 0.5rem; 
+            background-color: rgba(59, 46, 42, 0.98); 
+        }
+
+        .navbar-brand {
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #fff !important; 
+            transition: font-size 0.3s ease-in-out;
+            font-size: 1.75rem; 
+        }
+        
+        .navbar-custom.navbar-shrink .navbar-brand {
+            font-size: 1.25rem; 
+        }
+        
+        .navbar-brand span {
+            color: var(--morandi-text-light); 
+        }
+
+        .nav-link {
+            color: var(--morandi-text-light) !important;
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #fff !important; 
+            font-weight: 500;
+        }
+
+        /* 下拉選單樣式 */
+        .dropdown-menu {
+            background-color: var(--morandi-nav-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 0.5rem 0;
+            margin-top: 0;
+            left: 50%;
+            transform: translate(-50%, 0); 
+            text-align: center; 
+            min-width: 120px; 
+        }
+
+        .dropdown-item {
+            color: var(--morandi-text-light);
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover, .dropdown-item:focus {
+            background-color: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+
+        @media (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                animation: fadeInCenter 0.3s ease;
+            }
+        }
+
+        @keyframes fadeInCenter {
+            from { opacity: 0; transform: translate(-50%, 10px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-custom { padding-top: 0.8rem; padding-bottom: 0.8rem; }
+            .navbar-brand { font-size: 1.4rem; }
+            .dropdown-menu { position: static; transform: none !important; background-color: rgba(0,0,0,0.2); border: none; margin-top: 0.5rem; width: 100%; box-shadow: none; }
+            .navbar-collapse { background-color: var(--morandi-nav-bg); padding: 1rem; border-radius: 0 0 8px 8px; max-height: 80vh; overflow-y: auto; }
+            .page-header { padding-top: 120px; } 
+            .container {
+                padding-left: 30px !important;
+                padding-right: 30px !important;
+            }
+        }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.3); }
+        .navbar-toggler:focus { box-shadow: none; }
+        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+        .btn-reserve {
+            border: 1px solid #fff !important;
+            color: #fff !important;
+            background-color: transparent;
+            font-weight: 400 !important;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.5rem !important;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-reserve:hover {
+            background-color: #fff !important;
+            color: var(--morandi-footer) !important;
+            border-color: #fff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+        }
+
+        /* 新增：白色實心按鈕 (配合深色背景區塊) */
+        .btn-white-solid {
+            background-color: #fff !important;
+            color: var(--morandi-dark-brown) !important;
+            border: 1px solid #fff !important;
+            font-weight: 500 !important;
+            letter-spacing: 1px;
+            padding: 0.8rem 2rem !important;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .btn-white-solid:hover {
+            background-color: #f0f0f0 !important;
+            color: #000 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        /* --- 頁面標題樣式 (一致) --- */
+        main { flex: 1; }
+
+        .page-header {
+            background-color: #e8e4e1;
+            padding-top: 130px; 
+            padding-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+            color: var(--morandi-dark-brown);
+        }
+
+        .page-subtitle {
+            font-family: 'Playfair Display', serif;
+            color: var(--morandi-light-brown);
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        .divider-custom {
+            height: 1px;
+            width: 60px;
+            background-color: var(--morandi-dark-brown);
+            margin: 20px auto;
+            opacity: 0.6;
+        }
+
+        /* --- 地點頁面專屬樣式 --- */
+        .location-section {
+            padding: 4rem 0 2rem 0; /* 調整下方 padding */
+        }
+
+        .location-card {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(94, 75, 69, 0.08);
+            margin-bottom: 4rem;
+            transition: transform 0.3s ease;
+        }
+
+        .location-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .location-info {
+            padding: 3rem;
+        }
+
+        .store-badge {
+            display: inline-block;
+            background-color: var(--morandi-light-brown);
+            color: #fff;
+            padding: 0.3rem 1rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info-list li {
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .info-list i {
+            color: var(--morandi-light-brown);
+            margin-top: 5px;
+            margin-right: 15px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .info-label {
+            font-weight: 500;
+            color: var(--morandi-dark-brown);
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .info-text {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* 地圖容器 */
+        .map-container {
+            height: 100%;
+            min-height: 400px;
+            background-color: #eee;
+            position: relative;
+        }
+
+        .map-frame {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* 按鈕樣式微調 */
+        .btn-outline-morandi {
+            border: 1px solid var(--morandi-light-brown);
+            color: var(--morandi-light-brown);
+            border-radius: 50px;
+            padding: 0.6rem 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-morandi:hover {
+            background-color: var(--morandi-light-brown);
+            color: #fff;
+        }
+
+        /* 新增：預約提醒/CTA 全寬區塊 (與 About 頁面一致) */
+        .environment-cta-section {
+            background-image: linear-gradient(rgba(59, 46, 42, 0.9), rgba(59, 46, 42, 0.9)), url('https://i.meee.com.tw/o6NV6M6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 6rem 0;
+            color: #fff;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .environment-cta-section h2, .environment-cta-section h4 { color: #fff; }
+        .environment-cta-section .divider-custom { background-color: #fff; opacity: 0.8; }
+        .environment-cta-section .lead { opacity: 0.9; font-weight: 300; }
+
+        /* 頁尾樣式 (一致) */
+        footer {
+            background-color: #2b221f;
+            color: var(--morandi-text-light);
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+        
+        .social-icon {
+            color: var(--morandi-text-light);
+            font-size: 1.5rem;
+            margin: 0 8px;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icon:hover {
+            opacity: 0.8;
+            color: #fff;
+        }
+        
+        .footer-divider { border-color: rgba(255,255,255,0.1); }
+        a.text-decoration-none:hover { text-decoration: underline !important; opacity: 0.9; }
+
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">蒔黛美學 <span style="font-size: 0.8em; font-weight: 300;">Stelle studio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center align-items-center">
+                    
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="about-stelle-studio.html">關於蒔黛</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button">
+                            服務項目
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html">眉部美學</a></li>
+                            <li><a class="dropdown-item" href="services.html">眼部凝視</a></li>
+                            <li><a class="dropdown-item" href="services.html">唇部柔光</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="faq.html">常見問題</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="booking-policy.html">預約須知</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">顧客好評</a></li>
+
+                    <!-- Active 狀態標記 -->
+                    <li class="nav-item"><a class="nav-link active" href="location.html">地點位置</a></li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-reserve rounded-pill" href="https://lin.ee/rYp0iyy" target="_blank">預約諮詢</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要內容區 -->
+    <main>
+        <!-- 頁面標題 -->
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">地點位置</h1>
+                <p class="page-subtitle">Studio Locations</p>
+            </div>
+        </header>
+
+        <!-- 地點內容區 -->
+        <section class="location-section">
+            <div class="container">
+                
+                <!-- 桃園店區塊 -->
+                <div class="location-card" id="taoyuan">
+                    <div class="row g-0">
+                        <!-- 文字資訊 -->
+                        <div class="col-lg-5 order-lg-1">
+                            <div class="location-info">
+                                <span class="store-badge">Taoyuan</span>
+                                <h3 class="mb-4">桃園店</h3>
+                                <ul class="info-list">
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <span class="info-label">地址 Address</span>
+                                            <span class="info-text">桃園市桃園區南海街 28 號</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <span class="info-label">營業時間 Opening Hours</span>
+                                            <span class="info-text">全預約制（請透過 LINE 預約）</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-parking"></i>
+                                        <div>
+                                            <span class="info-label">停車資訊 Parking</span>
+                                            <span class="info-text">附近設有路邊停車格與收費停車場，步行約 3-5 分鐘可抵達。</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="mt-4 pt-3">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" class="btn btn-outline-morandi">
+                                        <i class="fas fa-location-arrow me-2"></i>開啟 Google 地圖
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 地圖嵌入 (示意) -->
+                        <div class="col-lg-7 order-lg-2">
+                            <div class="map-container">
+                                <!-- 建議：正式上線請更換為 Google Maps Embed iframe -->
+                                <iframe class="map-frame" src="https://maps.google.com/maps?q=桃園市桃園區南海街28號&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中壢店區塊 -->
+                <div class="location-card" id="zhongli">
+                    <div class="row g-0">
+                        <!-- 文字資訊 (為了視覺層次，這裡也可以調整順序，但保持一致性會比較整齊，此處維持文字在左) -->
+                        <div class="col-lg-5">
+                            <div class="location-info">
+                                <span class="store-badge">Zhongli</span>
+                                <h3 class="mb-4">中壢店（龍岡）</h3>
+                                <ul class="info-list">
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div>
+                                            <span class="info-label">地址 Address</span>
+                                            <span class="info-text">桃園市中壢區龍和一街 249 巷 7 號</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-clock"></i>
+                                        <div>
+                                            <span class="info-label">營業時間 Opening Hours</span>
+                                            <span class="info-text">全預約制（請透過 LINE 預約）</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-parking"></i>
+                                        <div>
+                                            <span class="info-label">停車資訊 Parking</span>
+                                            <span class="info-text">工作室前方可暫停機車。汽車請利用龍和一街沿線路邊停車格。</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="mt-4 pt-3">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" class="btn btn-outline-morandi">
+                                        <i class="fas fa-location-arrow me-2"></i>開啟 Google 地圖
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 地圖嵌入 -->
+                        <div class="col-lg-7">
+                            <div class="map-container">
+                                <iframe class="map-frame" src="https://maps.google.com/maps?q=桃園市中壢區龍和一街249巷7號&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 預約小提醒 (全寬度樣式更新) -->
+        <section class="environment-cta-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h4 class="mb-3" style="font-weight: 400; letter-spacing: 2px;">預約小提醒</h4>
+                        <div class="divider-custom"></div>
+                        <p class="lead mb-4" style="line-height: 1.8;">
+                            為了維護服務品質，目前兩間工作室皆採<b>「完全預約制」</b>。<br>
+                            請務必提前透過官方 LINE 確認時段，切勿直接前往以免向隅。<br>
+                            抵達後請按門鈴或透過 LINE 告知，我們將親自接待您。
+                        </p>
+                        
+                        <a href="https://lin.ee/rYp0iyy" target="_blank" class="btn btn-white-solid rounded-pill px-5">
+                            立即預約
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="font-weight: 400; color: #fff;">蒔黛美學 Stelle studio</h5>
+                    <div class="mb-2 small" style="line-height: 1.8;">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span class="d-inline-block align-top">
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" class="text-decoration-none" style="color: var(--morandi-text-light);">
+                                桃園店：桃園市桃園區南海街 28 號
+                            </a><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" class="text-decoration-none" style="color: var(--morandi-text-light);">
+                                中壢店：桃園市中壢區龍和一街 249 巷 7 號
+                            </a>
+                        </span>
+                    </div>
+                    <p class="mb-1 small">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:0925299653" class="text-decoration-none" style="color: var(--morandi-text-light);">電話：0925-299-653</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-2 small">Follow Us</p>
+                    <a href="https://www.facebook.com/p/%E8%92%94%E9%BB%9B%E7%BE%8E%E5%AD%B8%E7%B4%8B%E7%B9%A1%E5%B7%A5%E4%BD%9C%E5%AE%A4-61562007001270/" class="social-icon" title="追蹤 Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/stelle.studio_/" class="social-icon" title="追蹤 Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://lin.ee/rYp0iyy" class="social-icon" title="加入 LINE 好友" target="_blank"><i class="fa-brands fa-line"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="text-center small" style="opacity: 0.6;">
+                &copy; 2024 蒔黛美學 Stelle studio. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 導覽列滾動縮放腳本 -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-shrink');
+            } else {
+                navbar.classList.remove('navbar-shrink');
+            }
+        });
+    </script>
+</body>
+</html>
