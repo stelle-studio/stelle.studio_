@@ -186,31 +186,39 @@
 
         .page-header {
             background-color: #e8e4e1;
-            padding-top: 160px;
-            padding-bottom: 4rem;
+            /* 調整高度：原 160px -> 130px，原 bottom 4rem -> 2.5rem */
+            padding-top: 130px; 
+            padding-bottom: 2.5rem;
             text-align: center;
         }
 
         .page-title {
-            font-size: 2.5rem;
+            /* 調整字體大小：原 2.5rem -> 2.2rem */
+            font-size: 2.2rem;
             letter-spacing: 2px;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             color: var(--morandi-dark-brown);
         }
 
         .page-subtitle {
             font-family: 'Playfair Display', serif;
             color: var(--morandi-light-brown);
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-style: italic;
+            margin-bottom: 0;
         }
 
         .divider-custom {
             height: 1px;
             width: 60px;
             background-color: var(--morandi-dark-brown);
-            margin: 25px auto;
+            margin: 20px auto;
             opacity: 0.6;
+        }
+
+        .header-desc {
+            font-size: 0.9rem;
+            color: #777;
         }
 
         /* 關於我內容區 */
@@ -424,13 +432,12 @@
 
     <!-- 主要內容區 -->
     <main>
-        <!-- 頁面標題 -->
+        <!-- 頁面標題 (已調整大小) -->
         <header class="page-header">
             <div class="container">
                 <h1 class="page-title">關於蒔黛</h1>
                 <p class="page-subtitle">About Stelle Studio</p>
-                <div class="divider-custom"></div>
-                <p class="text-muted">Artistry meets Beauty</p>
+
             </div>
         </header>
 
@@ -479,7 +486,6 @@
                     <!-- 圖片放右邊 (桌面版) -->
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <div class="studio-img-container">
-                             <!-- 已更新為指定的工作室照片 -->
                              <img src="https://i.meee.com.tw/o6NV6M6.jpg" alt="蒔黛美學中壢龍岡工作室環境-舒適隱私紋繡空間" class="studio-img">
                         </div>
                     </div>
@@ -516,7 +522,7 @@
                         <div class="divider-custom" style="margin: 0 0 2rem 0;"></div>
                         <p class="lead" style="color: var(--morandi-light-brown);">您的安心，是我們最重視的責任。</p>
                         <p style="color: #666; line-height: 1.8;">
-                            在蒔黛美學，美麗不應有負擔。我們以醫療級的高標準嚴格把關每一個細節，
+                            在蒔黛美學，美麗不應有負擔。我們以<b>最高規格的衛生標準</b>嚴格把關每一個細節，
                             從色乳的來源、操作的器具到環境的衛生，絕不妥協。
                             因為我們知道，唯有安全無虞的基底，才能成就最完美的自信作品。
                         </p>
@@ -552,7 +558,7 @@
                             </div>
                             <div class="safety-content">
                                 <h4>完善消毒滅菌流程</h4>
-                                <p>操作前後針對環境、美容床及儀器進行全面消毒。操作人員全程配戴口罩與手套，以醫療級的衛生標準，守護您的健康與美麗。</p>
+                                <p>操作前後針對環境、美容床及儀器進行全面消毒。操作人員全程配戴口罩與手套，以<b>嚴格的衛生標準</b>，守護您的健康與美麗。</p>
                             </div>
                         </div>
                     </div>
@@ -571,10 +577,9 @@
                             立即預約，開啟您的專屬美學之旅
                         </p>
                         
-                        <!-- 修正：按鈕容器與樣式，解決跑框問題 -->
+                        <!-- 按鈕容器與樣式 -->
                         <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
                             <a href="services.html" class="btn btn-outline-light rounded-pill px-5 py-3 w-100 w-sm-auto">瀏覽服務項目</a>
-                            <!-- 使用新的 .btn-white-solid 樣式，避免樣式衝突 -->
                             <a href="https://lin.ee/rYp0iyy" target="_blank" class="btn btn-white-solid rounded-pill w-100 w-sm-auto">立即預約諮詢</a>
                         </div>
                     </div>
