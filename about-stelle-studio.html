@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO 優化：標題與描述強化 -->
+    <meta name="description" content="桃園中壢霧眉推薦【蒔黛美學 Stelle studio】主理人均均擁有美術設計背景，專精骨相分析眉型設計。工作室位於桃園中壢龍岡，提供舒適隱私的獨立紋繡空間。堅持使用SGS認證植物色乳與拋棄式耗材，給您最安心的霧眉、飄眉、霧唇與角蛋白體驗。">
+    <meta name="keywords" content="關於蒔黛, 桃園霧眉推薦, 中壢霧眉推薦, 中壢龍岡霧眉, 美術背景紋繡師, 均均, 骨相眉型, 紋繡工作室環境, 桃園飄眉, 紋繡衛生安全">
+    <meta name="author" content="均均">
+    <meta property="og:title" content="關於蒔黛 | 桃園中壢霧眉推薦 - 美術背景主理人均均 | Stelle studio">
+    <meta property="og:description" content="從畫紙到臉龐的藝術旅程。主理人均均以美術背景為基底，在中壢龍岡打造舒適隱私的紋繡空間，為您量身訂製專屬美學。">
+    <meta property="og:image" content="https://i.meee.com.tw/y9JIk5v.jpg">
+    <meta property="og:url" content="about-stelle-studio.html">
+    <meta property="og:type" content="website">
+    
+    <title>關於蒔黛 | 桃園中壢霧眉推薦 - 美術背景主理人均均 | 蒔黛美學</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- 莫蘭迪深咖色系定義 --- */
+        :root {
+            --morandi-dark-brown: #5E4B45; /* 深咖主色 */
+            --morandi-light-brown: #8F766B; /* 淺咖點綴 */
+            --morandi-bg: #F5F2EF;          /* 暖灰棕底色 */
+            --morandi-nav-bg: #3B2E2A;      /* 導覽列背景 */
+            --morandi-footer: #3B2E2A;      /* 頁尾背景 */
+            --morandi-text-light: #e0dcd9;  /* 淺色文字 */
+        }
+
+        /* 全域字體設定 */
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--morandi-bg);
+            color: var(--morandi-dark-brown);
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: var(--morandi-dark-brown);
+        }
+
+        /* 導覽列樣式 */
+        .navbar-custom {
+            background-color: var(--morandi-nav-bg); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+            transition: padding 0.3s ease-in-out, background-color 0.3s ease;
+            padding-top: 1.5rem;    
+            padding-bottom: 1.5rem; 
+        }
+
+        .navbar-custom.navbar-shrink {
+            padding-top: 0.5rem;    
+            padding-bottom: 0.5rem; 
+            background-color: rgba(59, 46, 42, 0.98); 
+        }
+
+        .navbar-brand {
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #fff !important; 
+            transition: font-size 0.3s ease-in-out;
+            font-size: 1.75rem; 
+        }
+        
+        .navbar-custom.navbar-shrink .navbar-brand {
+            font-size: 1.25rem; 
+        }
+        
+        .navbar-brand span {
+            color: var(--morandi-text-light); 
+        }
+
+        .nav-link {
+            color: var(--morandi-text-light) !important;
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #fff !important; 
+            font-weight: 500;
+        }
+
+        /* 下拉選單樣式 */
+        .dropdown-menu {
+            background-color: var(--morandi-nav-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 0.5rem 0;
+            margin-top: 0;
+            left: 50%;
+            transform: translate(-50%, 0); 
+            text-align: center; 
+            min-width: 120px; 
+        }
+
+        .dropdown-item {
+            color: var(--morandi-text-light);
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover, .dropdown-item:focus {
+            background-color: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+
+        /* 電腦版 hover 效果 */
+        @media (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                animation: fadeInCenter 0.3s ease;
+            }
+        }
+
+        @keyframes fadeInCenter {
+            from { opacity: 0; transform: translate(-50%, 10px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+
+        /* 手機版優化 */
+        @media (max-width: 991.98px) {
+            .navbar-custom { padding-top: 0.8rem; padding-bottom: 0.8rem; }
+            .navbar-brand { font-size: 1.4rem; }
+            .dropdown-menu { position: static; transform: none !important; background-color: rgba(0,0,0,0.2); border: none; margin-top: 0.5rem; width: 100%; box-shadow: none; }
+            .navbar-collapse { background-color: var(--morandi-nav-bg); padding: 1rem; border-radius: 0 0 8px 8px; max-height: 80vh; overflow-y: auto; }
+            .page-header { padding-top: 120px; } 
+        }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.3); }
+        .navbar-toggler:focus { box-shadow: none; }
+        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+        /* 通用空心按鈕 (用於導覽列或深色背景) */
+        .btn-reserve {
+            border: 1px solid #fff !important;
+            color: #fff !important;
+            background-color: transparent;
+            font-weight: 400 !important;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.5rem !important;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-reserve:hover {
+            background-color: #fff !important;
+            color: var(--morandi-footer) !important;
+            border-color: #fff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+        }
+
+        /* 修正後的實心白色按鈕 (用於底部 CTA，解決跑框問題) */
+        .btn-white-solid {
+            background-color: #fff !important;
+            color: var(--morandi-dark-brown) !important;
+            border: 1px solid #fff !important;
+            font-weight: 500 !important;
+            letter-spacing: 1px;
+            padding: 0.8rem 2rem !important;
+            transition: all 0.3s ease;
+            white-space: nowrap; /* 防止文字換行導致跑框 */
+        }
+
+        .btn-white-solid:hover {
+            background-color: #f0f0f0 !important;
+            color: #000 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        /* --- 內頁專屬樣式 --- */
+        main { flex: 1; }
+
+        .page-header {
+            background-color: #e8e4e1;
+            padding-top: 160px;
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            color: var(--morandi-dark-brown);
+        }
+
+        .page-subtitle {
+            font-family: 'Playfair Display', serif;
+            color: var(--morandi-light-brown);
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .divider-custom {
+            height: 1px;
+            width: 60px;
+            background-color: var(--morandi-dark-brown);
+            margin: 25px auto;
+            opacity: 0.6;
+        }
+
+        /* 關於我內容區 */
+        .bio-section {
+            padding: 5rem 0;
+            background-color: #fff;
+        }
+
+        .bio-image-wrapper {
+            position: relative;
+            padding: 15px;
+            border: 1px solid var(--morandi-light-brown);
+        }
+        
+        .bio-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .bio-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .bio-text .lead-text {
+            color: var(--morandi-dark-brown);
+            font-weight: 500;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .bio-text p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--morandi-light-brown);
+            margin-top: 2rem;
+            text-align: right;
+        }
+
+        /* 工作室環境介紹 */
+        .studio-intro-section {
+            background-color: var(--morandi-bg);
+            padding: 5rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .studio-img-container {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(94, 75, 69, 0.1);
+        }
+
+        .studio-img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .studio-img:hover {
+            transform: scale(1.03);
+        }
+
+        .studio-text-box {
+            padding: 2rem;
+        }
+
+        .studio-text-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+        
+        .studio-deco-line {
+            width: 40px;
+            height: 2px;
+            background-color: var(--morandi-light-brown);
+            margin-bottom: 20px;
+        }
+
+        /* 品質安全承諾 */
+        .safety-section {
+            background-color: #fff;
+            padding: 5rem 0;
+        }
+
+        .safety-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .safety-icon-wrapper {
+            min-width: 60px;
+            height: 60px;
+            background-color: var(--morandi-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            color: var(--morandi-dark-brown);
+            font-size: 1.5rem;
+        }
+
+        .safety-content h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--morandi-dark-brown);
+        }
+
+        .safety-content p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        /* 環境與CTA區域 */
+        .environment-cta-section {
+            background-image: linear-gradient(rgba(59, 46, 42, 0.9), rgba(59, 46, 42, 0.9)), url('https://i.meee.com.tw/o6NV6M6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 6rem 0;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .environment-cta-section h2 { color: #fff; }
+
+        /* 頁尾樣式 */
+        footer {
+            background-color: #2b221f;
+            color: var(--morandi-text-light);
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+        
+        .social-icon {
+            color: var(--morandi-text-light);
+            font-size: 1.5rem;
+            margin: 0 8px;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icon:hover {
+            opacity: 0.8;
+            color: #fff;
+        }
+        
+        .footer-divider { border-color: rgba(255,255,255,0.1); }
+        a.text-decoration-none:hover { text-decoration: underline !important; opacity: 0.9; }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">蒔黛美學 <span style="font-size: 0.8em; font-weight: 300;">Stelle studio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center align-items-center">
+                    
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link active" href="about-stelle-studio.html">關於蒔黛</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            服務項目
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html">眉部</a></li>
+                            <li><a class="dropdown-item" href="services.html">眼部</a></li>
+                            <li><a class="dropdown-item" href="services.html">唇部</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="faq.html">常見問題</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="booking-policy.html">預約須知</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">顧客好評</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="location.html">地點位置</a></li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-reserve rounded-pill" href="https://lin.ee/rYp0iyy" target="_blank">預約諮詢</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要內容區 -->
+    <main>
+        <!-- 頁面標題 -->
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">關於蒔黛</h1>
+                <p class="page-subtitle">About Stelle Studio</p>
+                <div class="divider-custom"></div>
+                <p class="text-muted">Artistry meets Beauty</p>
+            </div>
+        </header>
+
+        <!-- 主理人介紹 (Bio Section) -->
+        <section class="bio-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- 圖片區塊 -->
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <div class="bio-image-wrapper">
+                            <img src="https://i.meee.com.tw/y9JIk5v.jpg" alt="蒔黛美學主理人均均-美術設計背景" class="bio-image">
+                        </div>
+                    </div>
+                    
+                    <!-- 文字區塊 -->
+                    <div class="col-lg-6 offset-lg-1 bio-text">
+                        <h5 class="text-uppercase mb-3" style="letter-spacing: 2px; color: var(--morandi-light-brown);">Founder</h5>
+                        <h3>主理人 — 均均 Jyun</h3>
+                        <div class="divider-custom" style="margin: 0 0 2rem 0; width: 50px;"></div>
+                        
+                        <p class="lead-text">
+                            「美術系的背景，讓我習慣用光影與線條去思考。<br>
+                            對我來說，紋繡不只是技術，更是在臉龐上作畫的藝術。」
+                        </p>
+
+                        <p>
+                            嗨，我是均均。從手握畫筆到操作紋繡機，這段旅程源於對美的極致追求。擁有正規美術設計背景的我，對於色彩學、立體結構與美感比例有著近乎偏執的堅持。
+                        </p>
+                        <p>
+                            市面上有許多標準化的「公版眉型」，但每個人的骨骼高低、肌肉走向與五官氣質都是獨一無二的。在蒔黛美學，我堅持<b>「先分析骨相，再設計眉型」</b>。透過專業的美學視角，找出最能修飾您臉型缺點、凸顯優點的黃金比例。
+                        </p>
+                        <p>
+                            身為一位母親，我深知現代女性在忙碌生活中，依然渴望保持優雅自信。蒔黛美學希望能成為您變美路上的安心夥伴，用最溫柔細膩的手法，為您省去每日化妝的繁瑣，隨時隨地展現宛如天生的自信光彩。
+                        </p>
+
+                        <div class="signature">Jyun.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 舒適隱私的紋繡空間 (Studio Intro Section) -->
+        <section class="studio-intro-section">
+            <div class="container">
+                <div class="row align-items-center flex-row-reverse">
+                    <!-- 圖片放右邊 (桌面版) -->
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="studio-img-container">
+                             <!-- 已更新為指定的工作室照片 -->
+                             <img src="https://i.meee.com.tw/o6NV6M6.jpg" alt="蒔黛美學中壢龍岡工作室環境-舒適隱私紋繡空間" class="studio-img">
+                        </div>
+                    </div>
+                    
+                    <!-- 文字放左邊 -->
+                    <div class="col-lg-6">
+                        <div class="studio-text-box">
+                            <h5 class="text-uppercase" style="letter-spacing: 2px; color: var(--morandi-light-brown);">Our Space</h5>
+                            <h3>舒適隱私的紋繡空間<br>中壢龍岡工作室</h3>
+                            <div class="studio-deco-line"></div>
+                            <p style="color: #666; line-height: 1.8; text-align: justify;">
+                                位於桃園中壢龍岡地區，蒔黛美學特別打造了一個溫馨、靜謐的專屬美學空間。
+                            </p>
+                            <p style="color: #666; line-height: 1.8; text-align: justify;">
+                                不同於傳統美容室冰冷的商業感，我們更希望這裡能帶給您如家一般的放鬆氛圍。
+                                採<b>全預約制</b>的一對一服務，確保每位貴賓都能享有絕對的隱私與不受打擾的變美時光。
+                                柔和的燈光、輕柔的音樂，讓您在忙碌的生活中，能有一處暫時停歇、寵愛自己的角落。
+                            </p>
+                            <p class="mt-4 small text-muted">
+                                <i class="fas fa-map-marker-alt me-2"></i> 另有<b>桃園市區工作室</b>，歡迎依您的便利性選擇預約。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 堅持品質與安全承諾 (Quality & Safety Section) -->
+        <section class="safety-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 mb-5 mb-lg-0">
+                        <h2 class="mb-4">堅持品質與<br>安全承諾</h2>
+                        <div class="divider-custom" style="margin: 0 0 2rem 0;"></div>
+                        <p class="lead" style="color: var(--morandi-light-brown);">您的安心，是我們最重視的責任。</p>
+                        <p style="color: #666; line-height: 1.8;">
+                            在蒔黛美學，美麗不應有負擔。我們以醫療級的高標準嚴格把關每一個細節，
+                            從色乳的來源、操作的器具到環境的衛生，絕不妥協。
+                            因為我們知道，唯有安全無虞的基底，才能成就最完美的自信作品。
+                        </p>
+                    </div>
+                    
+                    <div class="col-lg-6 offset-lg-1">
+                        <!-- 安全項目 1 -->
+                        <div class="safety-item">
+                            <div class="safety-icon-wrapper">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="safety-content">
+                                <h4>頂級植物性色乳</h4>
+                                <p>嚴選通過 <b>SGS 認證</b>之高品質植物性色乳，不含重金屬，色彩穩定自然。代謝後不會變紅、變藍，給您最安全純淨的定妝體驗。</p>
+                            </div>
+                        </div>
+
+                        <!-- 安全項目 2 -->
+                        <div class="safety-item">
+                            <div class="safety-icon-wrapper">
+                                <i class="fas fa-syringe"></i>
+                            </div>
+                            <div class="safety-content">
+                                <h4>一人一針拋棄式耗材</h4>
+                                <p>堅持<b>「一人一套」</b>拋棄式無菌耗材。針具、色乳杯等接觸性用品，皆於操作前在您面前拆封，使用後立即丟棄，杜絕交叉感染風險。</p>
+                            </div>
+                        </div>
+
+                        <!-- 安全項目 3 -->
+                        <div class="safety-item">
+                            <div class="safety-icon-wrapper">
+                                <i class="fas fa-pump-medical"></i>
+                            </div>
+                            <div class="safety-content">
+                                <h4>完善消毒滅菌流程</h4>
+                                <p>操作前後針對環境、美容床及儀器進行全面消毒。操作人員全程配戴口罩與手套，以醫療級的衛生標準，守護您的健康與美麗。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 服務據點與行動呼籲 (Environment & CTA) -->
+        <section class="environment-cta-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4">準備好遇見更美的自己了嗎？</h2>
+                        <p class="lead mb-5" style="opacity: 0.9;">
+                            雙據點服務：桃園市區 / 中壢龍岡<br>
+                            立即預約，開啟您的專屬美學之旅
+                        </p>
+                        
+                        <!-- 修正：按鈕容器與樣式，解決跑框問題 -->
+                        <div class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3">
+                            <a href="services.html" class="btn btn-outline-light rounded-pill px-5 py-3 w-100 w-sm-auto">瀏覽服務項目</a>
+                            <!-- 使用新的 .btn-white-solid 樣式，避免樣式衝突 -->
+                            <a href="https://lin.ee/rYp0iyy" target="_blank" class="btn btn-white-solid rounded-pill w-100 w-sm-auto">立即預約諮詢</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="font-weight: 400; color: #fff;">蒔黛美學 Stelle studio</h5>
+                    <div class="mb-2 small" style="line-height: 1.8;">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span class="d-inline-block align-top">
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" class="text-decoration-none" style="color: var(--morandi-text-light);">
+                                桃園店：桃園市桃園區南海街
+                            </a><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" class="text-decoration-none" style="color: var(--morandi-text-light);">
+                                中壢店：桃園市中壢區龍和一街
+                            </a>
+                        </span>
+                    </div>
+                    <p class="mb-1 small">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:0925299653" class="text-decoration-none" style="color: var(--morandi-text-light);">電話：0925-299-653</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-2 small">Follow Us</p>
+                    <a href="https://www.facebook.com/p/%E8%92%94%E9%BB%9B%E7%BE%8E%E5%AD%B8%E7%B4%8B%E7%B9%A1%E5%B7%A5%E4%BD%9C%E5%AE%A4-61562007001270/" class="social-icon" title="追蹤 Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/stelle.studio_/" class="social-icon" title="追蹤 Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://lin.ee/rYp0iyy" class="social-icon" title="加入 LINE 好友" target="_blank"><i class="fa-brands fa-line"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="text-center small" style="opacity: 0.6;">
+                &copy; 2024 蒔黛美學 Stelle studio. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 導覽列滾動縮放腳本 -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-shrink');
+            } else {
+                navbar.classList.remove('navbar-shrink');
+            }
+        });
+    </script>
+</body>
+</html>
