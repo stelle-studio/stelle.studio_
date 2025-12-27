@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO 優化：針對「韓式睫毛管理」、「桃園中壢」進行強化，並使用合規用語 -->
+    <meta name="description" content="桃園中壢韓式睫毛管理推薦蒔黛美學。專為原生睫毛設計的角蛋白養護，非嫁接、無異物感。均均老師運用美術美感調整毛流走向，改善睫毛下垂遮擋視線問題，打造宛如天生的自然捲翹電眼。">
+    <meta name="keywords" content="韓式睫毛管理, 桃園角蛋白, 中壢角蛋白, 睫毛養護, 原生睫毛, 翹睫術, 桃園美睫推薦, 蒔黛美學">
+    <meta property="og:title" content="眼部凝視 | 韓式睫毛管理 & 角蛋白養護 | 蒔黛美學 Stelle studio">
+    <meta property="og:description" content="拒絕異物感，喚醒原生睫毛的靈動美感。桃園中壢專屬客製化眼部美學設計。">
+    <meta property="og:image" content="https://i.meee.com.tw/41ktZbU.png">
+    <title>眼部凝視 | 韓式睫毛管理・桃園中壢美睫推薦 | 蒔黛美學 Stelle studio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- 繼承原本的 CSS 變數與基礎設定 --- */
+        :root {
+            --morandi-dark-brown: #5E4B45;
+            --morandi-light-brown: #8F766B;
+            --morandi-bg: #F5F2EF;
+            --morandi-nav-bg: #3B2E2A;
+            --morandi-footer: #3B2E2A;
+            --morandi-text-light: #e0dcd9;
+            --morandi-accent: #D7C4BB;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: var(--morandi-bg);
+            color: var(--morandi-dark-brown);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 0;
+        }
+
+        h1, h2, h3, h4, h5 { color: var(--morandi-dark-brown); }
+
+        /* --- 導覽列樣式 --- */
+        .navbar-custom {
+            background-color: var(--morandi-nav-bg); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+            transition: padding 0.3s ease-in-out, background-color 0.3s ease;
+            padding-top: 1.5rem;    
+            padding-bottom: 1.5rem; 
+        }
+
+        .navbar-custom.navbar-shrink {
+            padding-top: 0.5rem;    
+            padding-bottom: 0.5rem; 
+            background-color: rgba(59, 46, 42, 0.98); 
+        }
+
+        .navbar-brand {
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #fff !important; 
+            transition: font-size 0.3s ease-in-out;
+            font-size: 1.75rem; 
+        }
+        
+        .navbar-custom.navbar-shrink .navbar-brand {
+            font-size: 1.25rem; 
+        }
+        
+        .navbar-brand span {
+            color: var(--morandi-text-light); 
+        }
+
+        .nav-link {
+            color: var(--morandi-text-light) !important;
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #fff !important; 
+            font-weight: 500;
+        }
+
+        .dropdown-menu {
+            background-color: var(--morandi-nav-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 0.5rem 0;
+            margin-top: 0;
+            left: 50%;
+            transform: translate(-50%, 0); 
+            text-align: center; 
+            min-width: 120px; 
+        }
+
+        .dropdown-item {
+            color: var(--morandi-text-light);
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover, .dropdown-item:focus {
+            background-color: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+
+        @media (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                animation: fadeInCenter 0.3s ease;
+            }
+        }
+
+        @keyframes fadeInCenter {
+            from { opacity: 0; transform: translate(-50%, 10px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-custom { padding-top: 0.8rem; padding-bottom: 0.8rem; }
+            .navbar-brand { font-size: 1.4rem; }
+            .dropdown-menu { 
+                position: static; transform: none !important; 
+                background-color: rgba(0,0,0,0.2); border: none; 
+                margin-top: 0.5rem; width: 100%; box-shadow: none; 
+            }
+            .navbar-collapse { 
+                background-color: var(--morandi-nav-bg); 
+                padding: 1rem; border-radius: 0 0 8px 8px; 
+                max-height: 80vh; overflow-y: auto; 
+            }
+            .page-header { padding-top: 120px !important; } 
+        }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.3); }
+        .navbar-toggler:focus { box-shadow: none; }
+        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+        .btn-reserve {
+            border: 1px solid #fff !important;
+            color: #fff !important;
+            background-color: transparent;
+            font-weight: 400 !important;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.5rem !important;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-reserve:hover {
+            background-color: #fff !important;
+            color: var(--morandi-footer) !important;
+            border-color: #fff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+        }
+
+        /* --- 頁面標題區塊 --- */
+        .page-header {
+            background-color: #e8e4e1;
+            padding-top: 130px; 
+            padding-bottom: 2.5rem;
+            text-align: center;
+            margin-top: 0;
+        }
+        
+        .page-title { 
+            font-size: 2.2rem; 
+            letter-spacing: 2px; 
+            margin-bottom: 0.8rem; 
+            color: var(--morandi-dark-brown);
+        }
+        
+        .page-subtitle { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--morandi-light-brown); 
+            font-size: 1.1rem; 
+            font-style: italic; 
+            margin-bottom: 0; 
+        }
+
+        /* --- 內容區塊專屬樣式 --- */
+        .service-detail-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+
+        .detail-img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(94, 75, 69, 0.1);
+        }
+
+        .section-heading {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 1rem;
+            border-left: 3px solid var(--morandi-light-brown);
+        }
+
+        .feature-box {
+            background-color: var(--morandi-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--morandi-light-brown);
+            margin-bottom: 1rem;
+        }
+
+        /* 價格資訊盒樣式 */
+        .price-info-box {
+            background-color: #fafafa;
+            border-radius: 8px;
+            border-left: 4px solid var(--morandi-light-brown);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .check-list { list-style: none; padding: 0; }
+        .check-list li { margin-bottom: 0.8rem; position: relative; padding-left: 1.5rem; }
+        .check-list li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--morandi-light-brown);
+        }
+
+        /* --- 環境氛圍 CTA 樣式 --- */
+        .environment-cta-section {
+            background-image: linear-gradient(rgba(59, 46, 42, 0.9), rgba(59, 46, 42, 0.9)), url('https://i.meee.com.tw/o6NV6M6.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 6rem 0;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .environment-cta-section h2 { color: #fff; }
+
+        .btn-white-solid {
+            background-color: #fff !important;
+            color: var(--morandi-dark-brown) !important;
+            border: 1px solid #fff !important;
+            font-weight: 500 !important;
+            letter-spacing: 1px;
+            padding: 0.8rem 2rem !important;
+            transition: all 0.3s ease;
+            white-space: nowrap; 
+        }
+
+        .btn-white-solid:hover {
+            background-color: #f0f0f0 !important;
+            color: #000 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        main { flex: 1; }
+
+        footer { background-color: #2b221f; color: var(--morandi-text-light); padding: 3rem 0; }
+        .social-icon { color: var(--morandi-text-light); margin: 0 10px; font-size: 1.2rem; }
+        .footer-divider { border-color: rgba(255,255,255,0.1); }
+        a { text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">蒔黛美學 <span style="font-size: 0.8em; font-weight: 300;">Stelle studio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-stelle-studio.html">關於蒔黛</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            服務項目
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services-eyebrows.html">眉部美學</a></li>
+                            <li><a class="dropdown-item active" href="services-eyes.html">眼部凝視</a></li>
+                            <li><a class="dropdown-item" href="services-lips.html">唇部柔光</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="faq.html">常見問題</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking-policy.html">預約須知</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">顧客好評</a></li>
+                    <li class="nav-item"><a class="nav-link" href="location.html">地點位置</a></li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-reserve rounded-pill" href="https://lin.ee/rYp0iyy" target="_blank">預約諮詢</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Header -->
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">眼部凝視</h1>
+                <p class="page-subtitle">Lash Lift & Care</p>
+            </div>
+        </header>
+
+        <!-- 服務介紹主區塊 (整合價目) -->
+        <section class="service-detail-section">
+            <div class="container">
+                <div class="row align-items-start mb-5">
+                    <div class="col-lg-6 mb-4 mb-lg-0 sticky-lg-top" style="top: 100px; z-index: 1;">
+                        <!-- 圖片 alt 標籤優化 -->
+                        <img src="https://i.meee.com.tw/41ktZbU.png" alt="桃園中壢韓式睫毛管理-角蛋白養護前後對比" class="detail-img">
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <h2 class="section-heading">韓式睫毛管理</h2>
+                        <h5 class="text-muted mb-3" style="font-weight: 300; letter-spacing: 1px;">喚醒原生睫毛的靈動美感</h5>
+                        <!-- 文案優化：避開醫療宣稱，使用物理調整用語 -->
+                        <p style="line-height: 1.9; color: #555;">
+                            眼睛是靈魂之窗，而睫毛則是窗戶的簾幔。均均老師堅持「不嫁接、無異物感」的美學理念，透過精細的韓式技術，<strong style="font-weight: 500; color: var(--morandi-dark-brown);">梳理並優化</strong>您原生睫毛的毛流走向與捲翹度。
+                        </p>
+                        <p style="line-height: 1.9; color: #555;">
+                            告別每天夾睫毛容易斷裂的困擾，也不必擔心嫁接睫毛後的尷尬過渡期。我們同時導入高品質的角蛋白滋養精華，在塑形的同時給予潤澤，讓每一根睫毛都展現健康強韌的光澤感，素顏也能擁有彷彿刷了睫毛膏般的有神雙眸。
+                        </p>
+
+                        <!-- 整合式價目資訊區塊 -->
+                        <div class="price-info-box">
+                            <div class="d-flex justify-content-between align-items-baseline mb-2">
+                                <h5 class="mb-0" style="color: var(--morandi-dark-brown); font-weight: 500;">單堂體驗價</h5>
+                                <span style="font-size: 1.5rem; color: var(--morandi-light-brown); font-family: 'Playfair Display', serif;">NT$ 1,290</span>
+                            </div>
+                            <p class="small text-muted mb-3">包含眼部清潔、毛流調整、定型及角蛋白深層滋養護理。</p>
+                            
+                            <!-- 優惠資訊 -->
+                            <div class="pt-3 border-top" style="border-color: rgba(94, 75, 69, 0.1) !important;">
+                                <span class="badge rounded-pill mb-2" style="background-color: var(--morandi-light-brown); font-weight: 400; letter-spacing: 1px;">Special Offer</span>
+                                <p class="mb-0" style="color: var(--morandi-dark-brown); font-weight: 500;">
+                                    <i class="fas fa-gift me-1" style="color: var(--morandi-light-brown);"></i> 
+                                    一次購買三堂 <span style="font-size: 0.9em; opacity: 0.8; font-weight: normal;">即贈「雙頭睫毛雨衣一支」</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 適合對象與特色 -->
+                <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="feature-box text-center">
+                            <div class="feature-icon"><i class="fas fa-eye"></i></div>
+                            <!-- 避規修正：將「導正」改為「調整」 -->
+                            <h4 class="mb-3">調整毛流</h4>
+                            <p class="small text-muted">針對睫毛向下生長、雜亂或容易遮擋視線的困擾，透過專業手法調整毛流角度，視覺上讓視野更加清晰明亮。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box text-center">
+                            <div class="feature-icon"><i class="fas fa-feather"></i></div>
+                            <h4 class="mb-3">輕盈無感</h4>
+                            <p class="small text-muted">完全使用自身真睫毛，無嫁接假睫毛的重量負擔與異物感，洗臉卸妝自在方便，適合喜愛自然妝感的妳。</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="feature-box text-center">
+                            <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                            <!-- 避規修正：將「修護」改為「滋養」，強調保養意涵 -->
+                            <h4 class="mb-3">深層滋養</h4>
+                            <p class="small text-muted">全程使用溫和產品，並搭配高規格角蛋白營養液，滋潤毛鱗片，維持睫毛健康彈性與光澤。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 適合對象列表 -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="p-4" style="background-color: var(--morandi-bg); border-radius: 8px;">
+                            <h3 class="text-center mb-4" style="font-size: 1.4rem;">誰適合韓式睫毛管理？</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="check-list">
+                                        <!-- 避規修正：避免使用「倒插」病名，改描述外觀現象 -->
+                                        <li>原生睫毛向下生長，容易遮擋視線者</li>
+                                        <li>睫毛毛流較雜亂，希望能更整齊者</li>
+                                        <li>不喜歡嫁接睫毛異物感與維護麻煩者</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="check-list">
+                                        <li>每天夾睫毛夾不翹，或容易夾斷者</li>
+                                        <li>追求偽素顏，希望眼睛自然有神者</li>
+                                        <li>想要縮短日常化妝時間者</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 底部 CTA (已同步 About 頁面樣式) -->
+        <section class="environment-cta-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="mb-4">想擁有會說話的眼睛嗎？</h2>
+                        <p class="lead mb-5" style="opacity: 0.9;">
+                            立即預約均均老師，打造專屬您的迷人電眼。
+                        </p>
+                        <a href="https://lin.ee/rYp0iyy" target="_blank" class="btn btn-white-solid rounded-pill px-5 py-3">
+                            <i class="fab fa-line me-2"></i> 立即諮詢 / 預約
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="font-weight: 400; color: #fff;">蒔黛美學 Stelle studio</h5>
+                    <div class="mb-2 small" style="line-height: 1.8;">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span class="d-inline-block align-top">
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" style="color: var(--morandi-text-light);">桃園店：桃園市桃園區南海街</a><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" style="color: var(--morandi-text-light);">中壢店：桃園市中壢區龍和一街</a>
+                        </span>
+                    </div>
+                    <p class="mb-1 small">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:0925299653" style="color: var(--morandi-text-light);">電話：0925-299-653</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-2 small">Follow Us</p>
+                    <a href="https://www.facebook.com/p/%E8%92%94%E9%BB%9B%E7%BE%8E%E5%AD%B8%E7%B4%8B%E7%B9%A1%E5%B7%A5%E4%BD%9C%E5%AE%A4-61562007001270/" class="social-icon" title="追蹤 Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/stelle.studio_/" class="social-icon" title="追蹤 Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://lin.ee/rYp0iyy" class="social-icon" title="加入 LINE 好友" target="_blank"><i class="fa-brands fa-line"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="text-center small" style="opacity: 0.6;">
+                &copy; 2024 蒔黛美學 Stelle studio. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-shrink');
+            } else {
+                navbar.classList.remove('navbar-shrink');
+            }
+        });
+    </script>
+</body>
+</html>
