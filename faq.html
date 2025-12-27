@@ -22,7 +22,7 @@
         :root {
             --morandi-dark-brown: #5E4B45;
             --morandi-light-brown: #8F766B;
-            /* 修改：背景改為純白 */
+            /* 背景維持純白 */
             --morandi-bg: #ffffff;
             --morandi-nav-bg: #3B2E2A;
             --morandi-footer: #3B2E2A;
@@ -41,6 +41,12 @@
         }
 
         h1, h2, h3, h4, h5 { color: var(--morandi-dark-brown); }
+        
+        /* 內容區塊手機版邊緣優化 */
+        .container {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
 
         /* --- 導覽列樣式 --- */
         .navbar-custom {
@@ -185,6 +191,9 @@
             justify-content: center;
             margin-bottom: 3rem;
             gap: 10px;
+            /* 預留一點動畫空間，避免切字 */
+            padding-top: 5px; 
+            padding-bottom: 10px;
         }
         
         .faq-nav-pills .nav-link {
@@ -194,15 +203,30 @@
             background-color: transparent;
             border: 1px solid var(--morandi-dark-brown);
             font-weight: 400;
+            /* 新增：平滑過渡效果 */
+            transition: all 0.3s ease;
+            position: relative;
         }
         
-        .faq-nav-pills .nav-link.active, 
+        /* 修改：Active 狀態與 Hover 效果 */
+        .faq-nav-pills .nav-link.active {
+            background-color: var(--morandi-dark-brown);
+            color: #fff !important;
+            /* Active 狀態也加上一點陰影 */
+            box-shadow: 0 4px 8px rgba(94, 75, 69, 0.2);
+        }
+
+        /* 新增：Hover 懸停上浮效果 (Desktop) */
         .faq-nav-pills .nav-link:hover {
             background-color: var(--morandi-dark-brown);
             color: #fff !important;
+            /* 上浮 3px */
+            transform: translateY(-3px);
+            /* 增加陰影 */
+            box-shadow: 0 6px 12px rgba(94, 75, 69, 0.15);
         }
 
-        /* 手機版按鈕修正：防止切掉與增加滑動體驗 */
+        /* 手機版樣式 */
         @media (max-width: 768px) {
             .faq-nav-pills {
                 flex-wrap: nowrap;
@@ -211,7 +235,6 @@
                 padding-bottom: 10px;
                 -ms-overflow-style: none;
                 scrollbar-width: none;
-                /* 增加左右內距，避免第一個和最後一個按鈕貼齊邊緣 */
                 padding-left: 5px;
                 padding-right: 5px;
             }
@@ -221,7 +244,6 @@
             .faq-nav-pills .nav-link {
                 white-space: nowrap;
             }
-            /* 強制項目不縮放，確保文字完整顯示 */
             .faq-nav-pills .nav-item {
                 flex: 0 0 auto;
             }
@@ -243,15 +265,14 @@
             padding: 1.25rem;
             font-size: 1.05rem;
             box-shadow: none !important;
-            transition: background-color 0.3s ease; /* 增加過渡效果 */
+            transition: background-color 0.3s ease; 
         }
 
-        /* 修正：加深展開時的背景色，並增加左側標示線 */
         .accordion-button:not(.collapsed) {
             color: var(--morandi-dark-brown);
-            background-color: #E0D0C6; /* 改為更明顯的暖藕色，與頁面 #F5F2EF 區分 */
+            background-color: #E0D0C6; 
             font-weight: 700;
-            border-left: 5px solid var(--morandi-light-brown); /* 左側強調線 */
+            border-left: 5px solid var(--morandi-light-brown); 
         }
 
         .accordion-button::after {
@@ -293,7 +314,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
                     <li class="nav-item"><a class="nav-link" href="about-stelle-studio.html">關於蒔黛</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" aria-expanded="false">
                             服務項目
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -374,7 +395,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- 法規修正：避免絕對「不痛」，改用「低痛感」、「舒適」 -->
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingBrows2">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrows2" aria-expanded="false" aria-controls="collapseBrows2">
@@ -438,7 +458,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- 法規修正：使用「操作」、「課程」取代「治療」、「療程」 -->
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingLips2">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips2" aria-expanded="false" aria-controls="collapseLips2">
@@ -465,7 +484,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- 法規修正：強調「藥局諮詢藥師」，不直接建議用藥 -->
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingLips4">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips4" aria-expanded="false" aria-controls="collapseLips4">
@@ -542,7 +560,6 @@
                             <div class="col-lg-8">
                                 <div class="accordion" id="accordionRemoval">
                                     
-                                    <!-- 法規修正：使用「淡色」強調非醫療 -->
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingRemoval1">
                                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemoval1" aria-expanded="true" aria-controls="collapseRemoval1">
@@ -556,7 +573,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- 法規修正：避免「無創」（醫療器材用語），改用「溫和」、「非雷射」 -->
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingRemoval2">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemoval2" aria-expanded="false" aria-controls="collapseRemoval2">
@@ -570,7 +586,6 @@
                                         </div>
                                     </div>
 
-                                    <!-- 法規修正：將「療程」改為「課程」或「操作次數」 -->
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="headingRemoval3">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemoval3" aria-expanded="false" aria-controls="collapseRemoval3">
@@ -649,6 +664,32 @@
                 navbar.classList.add('navbar-shrink');
             } else {
                 navbar.classList.remove('navbar-shrink');
+            }
+        });
+    </script>
+    
+    <!-- 手機版 Tabs 自動滑動提示腳本 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 檢測是否為手機版寬度
+            if (window.innerWidth <= 768) {
+                const tabContainer = document.querySelector('.faq-nav-pills');
+                if (tabContainer) {
+                    // 延遲一點時間讓使用者先看到畫面
+                    setTimeout(() => {
+                        // 計算需要捲動的距離：總寬度 - 可視寬度 = 最大可捲動距離
+                        // 這樣可以確保一定會滑到最右邊看到最後一個選項
+                        const maxScrollLeft = tabContainer.scrollWidth - tabContainer.clientWidth;
+                        
+                        // 向右滑到底
+                        tabContainer.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
+                        
+                        // 停留一下再滑回來 (時間稍微拉長一點，讓眼睛跟得上)
+                        setTimeout(() => {
+                            tabContainer.scrollTo({ left: 0, behavior: 'smooth' });
+                        }, 700); // 1.5秒後彈回
+                    }, 1000);
+                }
             }
         });
     </script>
