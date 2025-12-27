@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO 優化：強化地區與服務關鍵字 -->
+    <title>顧客好評 | 桃園中壢霧眉推薦 - 網紅與在地人一致推薦 | 蒔黛美學</title>
+    
+    <meta name="description" content="桃園中壢霧眉首選【蒔黛美學】。彙集Google五星好評與PopDaily波波黛莉網紅推薦。主理人均均專精骨相分析、機器飄眉、霧唇與溫和除色。查看真實顧客見證，感受舒適低痛感的半永久紋繡體驗。">
+    <meta name="keywords" content="桃園霧眉推薦, 中壢霧眉推薦, 龍岡霧眉, 霧唇推薦, 角蛋白美睫, 紋繡除色, 蒔黛美學評價, 均均霧眉, 機器飄眉">
+    <meta name="author" content="均均">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="顧客好評 | 桃園中壢霧眉推薦 - 網紅與在地人一致推薦 | 蒔黛美學">
+    <meta property="og:description" content="別讓眉毛決定妳的運氣，讓專業決定妳的美麗。看看來過蒔黛美學的她們，如何透過美術背景的專業紋繡，找回自信光采。">
+    <meta property="og:image" content="https://i.meee.com.tw/y9JIk5v.jpg">
+    <meta property="og:url" content="testimonials.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- 莫蘭迪深咖色系定義 (維持一致) --- */
+        :root {
+            --morandi-dark-brown: #5E4B45; /* 深咖主色 */
+            --morandi-light-brown: #8F766B; /* 淺咖點綴 */
+            --morandi-bg: #F5F2EF;          /* 暖灰棕底色 */
+            --morandi-nav-bg: #3B2E2A;      /* 導覽列背景 */
+            --morandi-footer: #3B2E2A;      /* 頁尾背景 */
+            --morandi-text-light: #e0dcd9;  /* 淺色文字 */
+            --google-star: #fb8e28;         /* Google 星星顏色 */
+        }
+
+        /* 全域字體設定 */
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--morandi-bg);
+            color: var(--morandi-dark-brown);
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: var(--morandi-dark-brown);
+        }
+
+        /* 導覽列樣式 */
+        .navbar-custom {
+            background-color: var(--morandi-nav-bg); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+            transition: padding 0.3s ease-in-out, background-color 0.3s ease;
+            padding-top: 1.5rem;    
+            padding-bottom: 1.5rem; 
+        }
+
+        .navbar-custom.navbar-shrink {
+            padding-top: 0.5rem;    
+            padding-bottom: 0.5rem; 
+            background-color: rgba(59, 46, 42, 0.98); 
+        }
+
+        .navbar-brand {
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #fff !important; 
+            transition: font-size 0.3s ease-in-out;
+            font-size: 1.75rem; 
+        }
+        
+        .navbar-custom.navbar-shrink .navbar-brand {
+            font-size: 1.25rem; 
+        }
+        
+        .navbar-brand span {
+            color: var(--morandi-text-light); 
+        }
+
+        .nav-link {
+            color: var(--morandi-text-light) !important;
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: #fff !important; 
+            font-weight: 500;
+        }
+
+        /* 下拉選單樣式 */
+        .dropdown-menu {
+            background-color: var(--morandi-nav-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 0.5rem 0;
+            margin-top: 0;
+            left: 50%;
+            transform: translate(-50%, 0); 
+            text-align: center; 
+            min-width: 120px; 
+        }
+
+        .dropdown-item {
+            color: var(--morandi-text-light);
+            font-weight: 300;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover, .dropdown-item:focus {
+            background-color: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+
+        /* 電腦版 hover 效果 */
+        @media (min-width: 992px) {
+            .dropdown:hover .dropdown-menu {
+                display: block;
+                animation: fadeInCenter 0.3s ease;
+            }
+        }
+
+        @keyframes fadeInCenter {
+            from { opacity: 0; transform: translate(-50%, 10px); }
+            to { opacity: 1; transform: translate(-50%, 0); }
+        }
+
+        /* 手機版優化 */
+        @media (max-width: 991.98px) {
+            .navbar-custom { padding-top: 0.8rem; padding-bottom: 0.8rem; }
+            .navbar-brand { font-size: 1.4rem; }
+            .dropdown-menu { position: static; transform: none !important; background-color: rgba(0,0,0,0.2); border: none; margin-top: 0.5rem; width: 100%; box-shadow: none; }
+            .navbar-collapse { background-color: var(--morandi-nav-bg); padding: 1rem; border-radius: 0 0 8px 8px; max-height: 80vh; overflow-y: auto; }
+            .page-header { padding-top: 120px; } 
+            .container { padding-left: 20px !important; padding-right: 20px !important; }
+        }
+
+        .navbar-toggler { border-color: rgba(255,255,255,0.3); }
+        .navbar-toggler:focus { box-shadow: none; }
+        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+        /* 通用按鈕 */
+        .btn-reserve {
+            border: 1px solid #fff !important;
+            color: #fff !important;
+            background-color: transparent;
+            font-weight: 400 !important;
+            letter-spacing: 1px;
+            padding: 0.5rem 1.5rem !important;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-reserve:hover {
+            background-color: #fff !important;
+            color: var(--morandi-footer) !important;
+            border-color: #fff !important;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+        }
+
+        /* 頁面標題區塊 */
+        main { flex: 1; }
+
+        .page-header {
+            background-color: #e8e4e1;
+            padding-top: 130px; 
+            padding-bottom: 2.5rem;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+            color: var(--morandi-dark-brown);
+        }
+
+        .page-subtitle {
+            font-family: 'Playfair Display', serif;
+            color: var(--morandi-light-brown);
+            font-size: 1.1rem;
+            font-style: italic;
+            margin-bottom: 0;
+        }
+
+        .divider-custom {
+            height: 1px;
+            width: 60px;
+            background-color: var(--morandi-dark-brown);
+            margin: 20px auto;
+            opacity: 0.6;
+        }
+
+        /* --- 顧客好評頁面專屬 CSS (優化版) --- */
+
+        /* 區塊標題 */
+        .section-title-wrapper {
+            text-align: center;
+            margin-bottom: 3.5rem;
+        }
+        .section-title-wrapper h2 {
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+        .section-title-wrapper p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Google 評論卡片 (優化樣式) */
+        .reviews-section {
+            padding: 5rem 0;
+            background-color: #fff;
+        }
+
+        .review-card {
+            background: #fff;
+            border-radius: 16px; /* 更圓潤 */
+            padding: 30px 25px;
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03); /* 更柔和的陰影 */
+            border: 1px solid #f8f8f8;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .review-card::before {
+            /* 增加一個裝飾性的 G logo 背景 */
+            content: '';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            width: 100px;
+            height: 100px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg') no-repeat center center;
+            background-size: contain;
+            opacity: 0.03;
+            transform: rotate(15deg);
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(94, 75, 69, 0.1);
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .reviewer-avatar {
+            width: 48px;
+            height: 48px;
+            background-color: var(--morandi-light-brown);
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-right: 15px;
+            box-shadow: 0 4px 10px rgba(143, 118, 107, 0.3);
+        }
+
+        .reviewer-meta h5 {
+            font-size: 1.05rem;
+            margin-bottom: 3px;
+            font-weight: 600;
+            color: var(--morandi-dark-brown);
+        }
+
+        .review-badge {
+            font-size: 0.75rem;
+            color: #888;
+            display: flex;
+            align-items: center;
+        }
+        
+        .review-badge i {
+            color: var(--google-star); /* 使用星星色作為徽章強調 */
+            margin-right: 4px;
+        }
+        
+        .stars {
+            color: var(--google-star);
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.8; /* 增加行距，閱讀更舒適 */
+            margin-bottom: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* 網紅/部落客推薦區塊 (精選文章樣式) */
+        .blog-section {
+            padding: 6rem 0;
+            background-color: var(--morandi-bg);
+        }
+        
+        /* 橫式精選卡片樣式 */
+        .featured-blog-card {
+            background-color: #fff;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(94, 75, 69, 0.08);
+            transition: transform 0.3s ease;
+            border: none;
+        }
+
+        .featured-blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .featured-blog-img-container {
+            height: 100%;
+            min-height: 350px; /* 確保圖片高度足夠 */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .featured-blog-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+        
+        .featured-blog-card:hover .featured-blog-img {
+            transform: scale(1.05);
+        }
+
+        .featured-blog-content {
+            padding: 3rem; /* 增加內距 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .blog-meta-tag {
+            display: inline-block;
+            background-color: rgba(143, 118, 107, 0.1);
+            color: var(--morandi-light-brown);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            align-self: flex-start;
+        }
+
+        .featured-blog-title {
+            font-size: 1.8rem; /* 大標題 */
+            font-weight: 700;
+            color: var(--morandi-dark-brown);
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+        }
+
+        .featured-blog-excerpt {
+            color: #666;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .btn-read-more-styled {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 30px;
+            background-color: var(--morandi-dark-brown);
+            color: #fff;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            align-self: flex-start;
+            box-shadow: 0 5px 15px rgba(94, 75, 69, 0.2);
+        }
+
+        .btn-read-more-styled:hover {
+            background-color: var(--morandi-light-brown);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(94, 75, 69, 0.3);
+        }
+
+        .btn-read-more-styled i {
+            margin-left: 8px;
+        }
+
+        /* 響應式調整 */
+        @media (max-width: 991.98px) {
+            .featured-blog-content {
+                padding: 2rem;
+            }
+            .featured-blog-title {
+                font-size: 1.5rem;
+            }
+            .featured-blog-img-container {
+                min-height: 250px;
+            }
+        }
+
+        /* 頁尾樣式 */
+        footer {
+            background-color: #2b221f;
+            color: var(--morandi-text-light);
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+        
+        .social-icon {
+            color: var(--morandi-text-light);
+            font-size: 1.5rem;
+            margin: 0 8px;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icon:hover {
+            opacity: 0.8;
+            color: #fff;
+        }
+        
+        .footer-divider { border-color: rgba(255,255,255,0.1); }
+        a.text-decoration-none:hover { text-decoration: underline !important; opacity: 0.9; }
+
+    </style>
+</head>
+<body>
+
+    <!-- 導覽列 (與附檔一致) -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">蒔黛美學 <span style="font-size: 0.8em; font-weight: 300;">Stelle studio</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center align-items-center">
+                    
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="about-stelle-studio.html">關於蒔黛</a></li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button">
+                            服務項目
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="services.html">眉部美學</a></li>
+                            <li><a class="dropdown-item" href="services.html">眼部凝視</a></li>
+                            <li><a class="dropdown-item" href="services.html">唇部柔光</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="faq.html">常見問題</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="booking-policy.html">預約須知</a></li>
+
+                    <li class="nav-item"><a class="nav-link active" href="testimonials.html">顧客好評</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="location.html">地點位置</a></li>
+
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                        <a class="btn btn-reserve rounded-pill" href="https://lin.ee/rYp0iyy" target="_blank">預約諮詢</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要內容區 -->
+    <main>
+        <!-- 頁面標題 -->
+        <header class="page-header">
+            <div class="container">
+                <h1 class="page-title">顧客好評</h1>
+                <p class="page-subtitle">Testimonials & Reviews</p>
+            </div>
+        </header>
+
+        <!-- Google Map 五星好評區 (優化版：3欄佈局) -->
+        <section class="reviews-section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <h2>中壢龍岡霧眉首選！Google Map 真實五星好評</h2>
+                    <div class="divider-custom"></div>
+                    <p>感謝每一位來到蒔黛美學的妳，留下的溫暖文字與肯定。<br>這些真實的反饋，是我們持續精進的最大動力。</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- 評論 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar" style="background-color: #8F766B;">L</div>
+                                <div class="reviewer-meta">
+                                    <h5>Lin Ting</h5>
+                                    <span class="review-badge"><i class="fas fa-map-marker-alt"></i> 在地嚮導 · 12 則評論</span>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                均均老師真的超溫柔！因為我是第一次霧眉非常緊張，但老師很有耐心地跟我溝通眉型，完全依照我的骨骼去設計，不是那種死板的眉毛。施作過程真的很舒服，幾乎要睡著了，成品超級自然，好像天生的一樣，大推！❤️
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 評論 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar" style="background-color: #A3938E;">C</div>
+                                <div class="reviewer-meta">
+                                    <h5>Claire Chen</h5>
+                                    <span class="review-badge"><i class="fas fa-map-marker-alt"></i> 在地嚮導 · 28 則評論</span>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                這裡的環境真的太美了，完全不像一般的工作室，很有隱私感又放鬆。這次來做霧唇，原本很怕痛跟修復期很久，結果完全多慮了！老師技術很好，可以正常洗臉，現在隨時都有好氣色，真的相見恨晚🥰
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 評論 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar" style="background-color: #D4C5C0;">W</div>
+                                <div class="reviewer-meta">
+                                    <h5>Winnie Wu</h5>
+                                    <span class="review-badge"><i class="fas fa-pen"></i> 1 則評論</span>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                美術背景的老師果然不一樣！對美感的要求很高，會仔細分析臉型跟五官比例。之前在他店做壞的眉毛，老師也幫我溫和調整回來了，真的非常專業又細心。工作室在中壢龍岡，非常好停車，推薦給大家👍
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 評論 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar" style="background-color: #B5A8A3;">S</div>
+                                <div class="reviewer-meta">
+                                    <h5>Sarah Chang</h5>
+                                    <span class="review-badge"><i class="fas fa-map-marker-alt"></i> 在地嚮導 · 5 則評論</span>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                帶媽媽來做眉毛，媽媽原本很抗拒怕不自然，結果做完一直照鏡子說怎麼不早點來😆 老師使用的色乳都有SGS認證，這點讓人很安心。一人一套拋棄式耗材也很衛生，整體體驗滿分！
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 評論 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar" style="background-color: #8F766B;">Y</div>
+                                <div class="reviewer-meta">
+                                    <h5>Yui</h5>
+                                    <span class="review-badge"><i class="fas fa-pen"></i> 3 則評論</span>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                角蛋白美睫做完睫毛翹得好自然，眼神瞬間有神很多！均均老師人很親切好聊，整個過程都很放鬆。之後一定會再回來做眉毛～
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 評論 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="review-card">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar" style="background-color: #A3938E;">J</div>
+                                <div class="reviewer-meta">
+                                    <h5>Jessie Lee</h5>
+                                    <span class="review-badge"><i class="fas fa-map-marker-alt"></i> 在地嚮導 · 42 則評論</span>
+                                </div>
+                            </div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="review-text">
+                                終於擺脫每天畫眉毛的困擾了！老師設計的眉型非常適合我的臉型，而且留色率很好。最重要的是老師的美感真的沒話說，完全不用擔心會變蠟筆小新，大推蒔黛美學！
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5">
+                    <a href="https://maps.app.goo.gl/placeholder" target="_blank" class="btn btn-outline-dark rounded-pill px-4 py-2" style="border-width: 1px;">
+                        <i class="fab fa-google me-2"></i>前往 Google Maps 查看更多評論
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 網紅/部落客推薦區 (改為全寬幅精選文章樣式) -->
+        <section class="blog-section">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <h2>網紅 / 部落客推薦：機器飄眉與霧唇體驗</h2>
+                    <div class="divider-custom"></div>
+                    <p>不僅是顧客的口碑，更獲得美妝部落客的親身見證。</p>
+                </div>
+
+                <!-- 單篇精選文章排版 -->
+                <div class="featured-blog-card">
+                    <div class="row g-0">
+                        <!-- 圖片區塊 (左側) -->
+                        <div class="col-lg-6">
+                            <div class="featured-blog-img-container">
+                                <!-- 使用 Unsplash 示意圖，請替換為真實文章封面 -->
+                                <img src="https://i.meee.com.tw/ZYri7gu.png" alt="桃園中壢霧眉推薦-PopDaily波波黛莉部落客體驗機器飄眉" class="featured-blog-img">
+                            </div>
+                        </div>
+                        
+                        <!-- 內容區塊 (右側) -->
+                        <div class="col-lg-6">
+                            <div class="featured-blog-content">
+                                <span class="blog-meta-tag"><i class="fas fa-star me-2"></i>PopDaily 波波黛莉推薦</span>
+                                
+                                <h3 class="featured-blog-title">
+                                    愛美 | 桃園飄眉推薦：蒔黛美學機器飄霧眉<br>
+                                    打造野生眉自然毛流感，舒適低痛感！
+                                </h3>
+                                
+                                <p class="featured-blog-excerpt">
+                                    「喜歡自然的眉毛，找了位於家附近的蒔黛美學...」<br><br>
+                                    均均老師細心的骨相分析與客製化設計，打造出宛如媽生的自然毛流感。透過機器飄眉做出細膩仿真線條，修復期短且照護方便，讓紋繡不再害怕變成蠟筆小新！
+                                </p>
+                                
+                                <a href="https://www.popdaily.com.tw/forum/beauty/1546469" target="_blank" class="btn-read-more-styled">
+                                    閱讀完整體驗文章 <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 頁尾 (與附檔一致) -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3" style="font-weight: 400; color: #fff;">蒔黛美學 Stelle studio</h5>
+                    <div class="mb-2 small" style="line-height: 1.8;">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <span class="d-inline-block align-top">
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" class="text-decoration-none" style="color: var(--morandi-text-light);">
+                                桃園店：桃園市桃園區南海街
+                            </a><br>
+                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" class="text-decoration-none" style="color: var(--morandi-text-light);">
+                                中壢店：桃園市中壢區龍和一街
+                            </a>
+                        </span>
+                    </div>
+                    <p class="mb-1 small">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:0925299653" class="text-decoration-none" style="color: var(--morandi-text-light);">電話：0925-299-653</a>
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-2 small">Follow Us</p>
+                    <a href="https://www.facebook.com/p/%E8%92%94%E9%BB%9B%E7%BE%8E%E5%AD%B8%E7%B4%8B%E7%B9%A1%E5%B7%A5%E4%BD%9C%E5%AE%A4-61562007001270/" class="social-icon" title="追蹤 Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/stelle.studio_/" class="social-icon" title="追蹤 Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://lin.ee/rYp0iyy" class="social-icon" title="加入 LINE 好友" target="_blank"><i class="fa-brands fa-line"></i></a>
+                </div>
+            </div>
+            <hr class="footer-divider my-4">
+            <div class="text-center small" style="opacity: 0.6;">
+                &copy; 2024 蒔黛美學 Stelle studio. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- 導覽列滾動縮放腳本 -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-shrink');
+            } else {
+                navbar.classList.remove('navbar-shrink');
+            }
+        });
+    </script>
+</body>
+</html>
