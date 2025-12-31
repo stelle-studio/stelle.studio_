@@ -398,7 +398,9 @@
 
         @media (min-width: 992px) {
             .hero-wrapper { height: 100vh; margin-top: 0; }
-            .hero-bg-layer { height: 100%; width: 60%; background-position: center center; }
+            /* [Desktop Only] Hero Background to Full Width */
+            .hero-bg-layer { height: 100%; width: 100%; background-position: center center; }
+            
             .hero-content-layer { flex-direction: row; align-items: stretch; min-height: 100vh; padding-top: 0; }
             .hero-title-group { width: 50%; padding-top: 30vh; padding-left: 6vw; }
             .hero-heading { font-size: 2rem; line-height: 1.25; }
@@ -409,34 +411,46 @@
                 margin-top: 0; border-radius: 0; border-top-left-radius: 80px; 
                 margin-left: 0; padding: 28vh 5rem 2rem 5rem; 
                 display: flex; flex-direction: column; justify-content: center;
-                background: rgba(255, 255, 255, 0.85); 
-                backdrop-filter: blur(15px);
+                background: rgba(255, 255, 255, 0.1); /* Changed to 10% Opacity */
+                backdrop-filter: blur(3px);
             }
             
+            /* UPDATED: Text color to white for better contrast on glassmorphism */
             .hero-card-container .hero-description { 
-                color: var(--morandi-dark-brown); 
-                text-shadow: none; 
+                color: #ffffff; 
+                text-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Added subtle shadow for readability */
                 font-size: 1.05rem; 
             }
             
             .hero-card-container .hero-highlight-title { 
-                color: var(--morandi-dark-brown); 
-                text-shadow: none; 
+                color: #ffffff; 
+                text-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Added subtle shadow for readability */
                 font-size: 1.8rem; 
             }
             
             /* Desktop SEO Button Style Override */
             .btn-seo-link {
-                color: var(--morandi-dark-brown);
-                border-color: var(--morandi-dark-brown);
+                color: #ffffff; /* Changed to white */
+                border-color: #ffffff; /* Changed to white */
             }
             .btn-seo-link:hover {
-                background-color: var(--morandi-dark-brown);
-                color: #fff;
+                background-color: #ffffff;
+                color: var(--morandi-dark-brown);
             }
             
-            .hero-cta-wrapper { margin-left: -5rem; margin-right: -5rem; margin-bottom: -2rem; }
-            .hero-cta-footer { padding: 2.2rem 5rem; border-radius: 0; }
+            /* [Desktop Only] CTA Button Changes */
+            .hero-cta-wrapper { 
+                margin-left: 0; 
+                margin-right: -5rem; 
+                margin-bottom: -2rem; 
+                background-color: transparent; /* Remove background strip */
+            }
+            .hero-cta-footer { 
+                padding: 2.2rem 5rem 2.2rem 3rem; 
+                border-radius: 50px 0 0 50px; /* Round left, square right */
+                margin-left: auto; /* Push to right */
+                width: fit-content; /* Only wrap content */
+            }
         }
 
         /* ----------------------------------------------------
@@ -529,6 +543,27 @@
             margin-bottom: 0;
         }
         
+        /* [NEW] Service Button Style */
+        .btn-service-view {
+            margin-top: auto; /* Push to bottom */
+            background-color: transparent;
+            border: 1px solid var(--morandi-dark-brown);
+            color: var(--morandi-dark-brown);
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .service-card:hover .btn-service-view {
+            background-color: var(--morandi-dark-brown);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(94, 75, 69, 0.2);
+        }
+
         /* ----------------------------------------------------
            SEO MODULE (Modified for 2x2 Mobile Grid & Premium Buttons)
         ---------------------------------------------------- */
@@ -804,7 +839,7 @@
             <div class="hero-bg-layer"></div>
             <div class="hero-content-layer">
                 <div class="hero-title-group">
-                    <!-- SEO H1 -->
+                    <!-- SEO H1: 唯一且關鍵 -->
                     <h1 class="hero-heading">
                         <span class="sub">桃園中壢霧眉推薦｜蒔黛美學</span>
                         骨相分析客製霧眉、飄眉、霧唇專門工作室
@@ -820,7 +855,7 @@
                 <div class="hero-card-container">
                     <div class="hero-text-content">
                         <span class="badge mb-3 fw-light">獨家美術骨相分析｜拒絕制式眉型</span>
-                        <p class="hero-highlight-title">拒絕流水線模板，妳的臉型值得專屬設計。</p>
+                        <p class="hero-highlight-title">拒絕制式眉型模板，專為桃園中壢顧客打造的骨相分析霧眉設計</p>
                         <p class="hero-description">
                             多數霧眉失敗，不是技術問題，而是錯誤的設計邏輯。
                             蒔黛美學位於桃園中壢，專注於霧眉、飄眉與霧唇設計，
@@ -850,8 +885,8 @@
         <section id="services" class="section-padding bg-light">
             <div class="container">
                 <div class="section-title text-center">
-                    <h2>從眉型開始，修正五官比例</h2>
-                    <p class="text-muted">中壢霧眉・眼部・唇部服務總覽</p>
+                    <h2>桃園中壢霧眉・飄眉・霧唇服務總覽</h2>
+                    <p class="text-muted">依臉型與骨相比例，提供真正適合你的半永久定妝設計</p>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <!-- Item 1 -->
@@ -859,7 +894,8 @@
                         <a href="services-eyebrows.html" class="service-card">
                             <img src="https://i.meee.com.tw/2fi65ui.png" alt="桃園霧眉推薦-粉黛柔霧眉" class="service-img">
                             <h3 class="h6">粉黛柔霧眉</h3>
-                            <p class="service-desc">適合想要自然妝感的中壢霧眉初次體驗者<br>查看詳細說明</p>
+                            <p class="service-desc">適合想要自然妝感的中壢霧眉初次體驗者</p>
+                            <span class="btn-service-view">查看詳細說明</span>
                         </a>
                     </div>
                     <!-- Item 2 -->
@@ -867,7 +903,8 @@
                         <a href="services-eyebrows.html" class="service-card">
                             <img src="https://i.meee.com.tw/ZYri7gu.png" alt="中壢飄眉推薦-立體野生眉" class="service-img">
                             <h3 class="h6">立體野生眉</h3>
-                            <p class="service-desc">仿真毛流設計，改善眉型斷裂與稀疏問題<br>查看詳細說明</p>
+                            <p class="service-desc">仿真毛流設計，改善眉型斷裂與稀疏問題</p>
+                            <span class="btn-service-view">查看詳細說明</span>
                         </a>
                     </div>
                     <!-- Item 3 -->
@@ -875,7 +912,8 @@
                         <a href="services-lips.html" class="service-card">
                             <img src="https://i.meee.com.tw/OLEIDE6.jpg" alt="桃園韓式霧唇-改善氣色" class="service-img">
                             <h3 class="h6">輕染潤霧唇</h3>
-                            <p class="service-desc">改善唇色暗沉，提升整體氣色與立體度<br>查看詳細說明</p>
+                            <p class="service-desc">改善唇色暗沉，提升整體氣色與立體度</p>
+                            <span class="btn-service-view">查看詳細說明</span>
                         </a>
                     </div>
                     <!-- Item 4 -->
@@ -883,7 +921,8 @@
                         <a href="services-lips.html" class="service-card">
                             <img src="https://i.meee.com.tw/pwZJ1MM.jpg" alt="中壢烏唇轉色-唇淡色還原" class="service-img">
                             <h3 class="h6">唇淡色還原</h3>
-                            <p class="service-desc">針對重度烏唇、蒼白唇進行校色，改善唇緣暗沈，還原裸唇健康粉嫩感<br>查看詳細說明</p>
+                            <p class="service-desc">針對重度烏唇、蒼白唇進行校色，還原裸唇健康粉嫩感</p>
+                            <span class="btn-service-view">查看詳細說明</span>
                         </a>
                     </div>
                     <!-- Item 5 -->
@@ -891,7 +930,8 @@
                         <a href="services-eyes.html" class="service-card">
                             <img src="https://i.meee.com.tw/41ktZbU.png" alt="桃園中壢美睫-韓式睫毛管理" class="service-img">
                             <h3 class="h6">韓式睫毛管理</h3>
-                            <p class="service-desc">非嫁接睫毛。調整原生睫毛捲翹度，改善倒插困擾，素顏眼神依然明亮有神<br>查看詳細說明</p>
+                            <p class="service-desc">眼部凝視設計服務</p>
+                            <span class="btn-service-view">查看詳細說明</span>
                         </a>
                     </div>
                     <!-- Item 6 -->
@@ -899,7 +939,8 @@
                         <a href="services-eyebrows.html" class="service-card">
                             <img src="https://i.meee.com.tw/l66dHeJ.png" alt="桃園中壢除眉-溫和除色" class="service-img">
                             <h3 class="h6">溫和除色</h3>
-                            <p class="service-desc">專門處理老式紅藍眉與失敗眉型。採用非雷射溫和代謝技術，安全重塑眉眼<br>查看詳細說明</p>
+                            <p class="service-desc">非雷射除色服務說明</p>
+                            <span class="btn-service-view">查看詳細說明</span>
                         </a>
                     </div>
                 </div>
@@ -925,7 +966,7 @@
                 <div class="section-title text-center mb-5">
                     <h2>中壢霧眉推薦｜<br>為什麼選擇蒔黛美學？</h2>
                     <div class="divider-custom"></div>
-                    <p>點擊下方卡片深入了解我們的堅持</p>
+                    <p>蒔黛美學是位於桃園中壢的專業霧眉工作室，專為在意自然度、安全性與長期耐看的顧客設計。</p>
                 </div>
 
                 <div class="row g-4">
@@ -977,7 +1018,7 @@
                         <a href="testimonials.html" class="feature-card">
                             <div class="feature-icon-wrapper">
                                 <!-- Enlarge Star Icon as requested -->
-                                <i class="fas fa-star feature-icon" style="font-size: 3.5rem;"></i>
+                                <i class="fas fa-star feature-icon" style="font-size: 1.5rem;"></i>
                             </div>
                             <h3 class="feature-title">Google 五星口碑<br>部落客推薦</h3>
                             <p class="feature-desc">搜尋『中壢霧眉推薦』、『桃園飄眉』都能看到我們的真實案例。Google 商家五星好評，在地客人口耳相傳的安心選擇。</p>
@@ -1138,10 +1179,10 @@
 
                         <div class="mt-5">
                             <div class="d-inline-flex flex-column align-items-end">
-                                <!-- Button with Text -->
+                                <!-- Button with Text - Updated Mobile Font Size -->
                                 <a href="https://lin.ee/rYp0iyy" class="btn btn-line btn-lg rounded-pill px-4 px-md-5 py-4 d-inline-flex align-items-center" target="_blank">
                                     <i class="fab fa-line me-2" style="font-size: 2rem;"></i>
-                                    <span class="fw-bold fs-5">加入 LINE｜先評估是否適合霧眉</span>
+                                    <span class="fw-bold fs-6 fs-md-5 text-nowrap">加入 LINE｜先評估是否適合霧眉</span>
                                 </a>
                                 <!-- Auxiliary Text Outside Button, Right Aligned -->
                                 <span class="mt-2 small text-light opacity-75">✔ 可只諮詢不預約</span>
