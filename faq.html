@@ -1,697 +1,3142 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
+<!doctype html>
+<html lang="zh-Hant-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO 優化：強化地域關鍵字 (桃園/中壢) 與長尾問答詞組 -->
-    <meta name="description" content="桃園中壢蒔黛美學常見問題 Q&A。專業解答霧眉痛感、飄眉維持度、霧唇修復期及韓式睫毛管理細節。提供非雷射溫和眉部除色諮詢，讓您安心變美。美術背景均均老師親自操作。">
-    <meta name="keywords" content="桃園霧眉推薦, 中壢霧眉, 霧眉會痛嗎, 霧唇修復期, 韓式睫毛管理, 桃園除色推薦, 紋繡常見問題, 蒔黛美學">
-    <meta property="og:title" content="常見問題 Q&A | 桃園中壢紋繡推薦 | 蒔黛美學 Stelle studio">
-    <meta property="og:image" content="https://i.meee.com.tw/2fi65ui.png">
-    <title>常見問題 Q&A | 桃園中壢紋繡推薦 | 蒔黛美學 Stelle studio</title>
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
 
-    <style>
-        /* --- 繼承原本的 CSS 變數與基礎設定 --- */
-        :root {
-            --morandi-dark-brown: #5E4B45;
-            --morandi-light-brown: #8F766B;
-            /* 背景維持純白 */
-            --morandi-bg: #ffffff;
-            --morandi-nav-bg: #3B2E2A;
-            --morandi-footer: #3B2E2A;
-            --morandi-text-light: #e0dcd9;
-            --morandi-accent: #D6C6B9;
-        }
+  <title>常見問題｜蒔黛美學 Stelle Studio｜桃園中壢霧眉・飄眉・美睫・霧唇</title>
+  <meta name="description" content="蒔黛美學 Stelle Studio 常見問題，整理桃園中壢霧眉、飄眉、美睫、睫毛管理與霧唇預約前常見疑問。依骨相比例、原生條件、膚質與日常妝感評估適合方向。" />
+  <meta name="keywords" content="蒔黛美學常見問題,Stelle Studio FAQ,桃園霧眉問題,中壢霧眉問題,桃園飄眉,中壢飄眉,桃園美睫,中壢美睫,桃園睫毛管理,中壢睫毛管理,桃園霧唇,中壢霧唇,霧眉飄眉差異,美睫睫毛管理差異,霧唇注意事項" />
+  <link rel="canonical" href="https://stelle-studio.com.tw/faq.html" />
 
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            background-color: var(--morandi-bg);
-            color: var(--morandi-dark-brown);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            padding-top: 0;
-        }
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:site_name" content="蒔黛美學 Stelle Studio" />
+  <meta property="og:title" content="常見問題｜蒔黛美學 Stelle Studio｜桃園中壢眉眼唇美學" />
+  <meta property="og:description" content="眉部、眼部、唇部 FAQ 分類整理，協助你在預約前理解適合方向、維持狀況與居家照顧重點。" />
+  <meta property="og:url" content="https://stelle-studio.com.tw/faq.html" />
+  <meta property="og:image" content="https://stelle-studio.com.tw/images/og-stelle-studio.jpg" />
+  <meta name="theme-color" content="#A68A7B" />
 
-        h1, h2, h3, h4, h5 { color: var(--morandi-dark-brown); }
-        
-        /* 內容區塊手機版邊緣優化 */
-        .container {
-            padding-left: 50px;
-            padding-right: 50px;
-        }
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-        /* --- 導覽列樣式 --- */
-        .navbar-custom {
-            background-color: var(--morandi-nav-bg); 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
-            transition: padding 0.3s ease-in-out, background-color 0.3s ease;
-            padding-top: 1.5rem;    
-            padding-bottom: 1.5rem; 
-        }
-
-        .navbar-custom.navbar-shrink {
-            padding-top: 0.5rem;    
-            padding-bottom: 0.5rem; 
-            background-color: rgba(59, 46, 42, 0.98); 
-        }
-
-        .navbar-brand {
-            font-weight: 500;
-            letter-spacing: 1px;
-            color: #fff !important; 
-            transition: font-size 0.3s ease-in-out;
-            font-size: 1.75rem; 
-        }
-        
-        .navbar-custom.navbar-shrink .navbar-brand {
-            font-size: 1.25rem; 
-        }
-        
-        .navbar-brand span {
-            color: var(--morandi-text-light); 
-        }
-
-        .nav-link {
-            color: var(--morandi-text-light) !important;
-            font-weight: 300;
-            transition: all 0.3s ease;
-        }
-
-        .nav-link:hover, .nav-link.active {
-            color: #fff !important; 
-            font-weight: 500;
-        }
-
-        .dropdown-menu {
-            background-color: var(--morandi-nav-bg);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 0.5rem 0;
-            margin-top: 0;
-            left: 50%;
-            transform: translate(-50%, 0); 
-            text-align: center; 
-            min-width: 120px; 
-        }
-
-        .dropdown-item {
-            color: var(--morandi-text-light);
-            font-weight: 300;
-            transition: all 0.3s ease;
-        }
-
-        .dropdown-item:hover, .dropdown-item:focus {
-            background-color: rgba(255,255,255,0.1);
-            color: #fff;
-        }
-
-        @media (min-width: 992px) {
-            .dropdown:hover .dropdown-menu {
-                display: block;
-                animation: fadeInCenter 0.3s ease;
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Stelle Studio 蒔黛美學",
+    "url": "https://stelle-studio.com.tw/faq.html",
+    "image": "https://stelle-studio.com.tw/images/og-stelle-studio.jpg",
+    "telephone": "+886-960-715-653",
+    "email": "stelle.studio2024@gmail.com",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "中壢區",
+        "addressRegion": "桃園市",
+        "addressCountry": "TW"
+    },
+    "areaServed": [
+        "桃園",
+        "中壢",
+        "內壢",
+        "平鎮",
+        "龍岡",
+        "忠貞"
+    ],
+    "sameAs": [
+        "https://www.instagram.com/stelle.studio_/",
+        "https://lin.ee/rYp0iyy"
+    ],
+    "description": "蒔黛美學 Stelle Studio 常見問題，整理桃園中壢霧眉、飄眉、美睫、睫毛管理與霧唇預約前常見疑問，重視原生條件、骨相比例與日常耐看度。"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "霧眉、飄眉、飄霧眉有什麼差異？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "霧眉偏向柔霧妝感，適合想補足眉型空洞、提升眉型乾淨度的人；飄眉偏向毛流線條感，較看重原生眉毛條件與毛流方向；飄霧眉則是眉頭保留線條、眉身到眉尾用柔霧銜接。蒔黛美學會依臉型、骨相、原生眉量、膚質與日常妝感評估，不直接套用固定眉型。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "桃園中壢霧眉適合油性肌嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "油脂分泌較明顯的人，通常會比較建議先評估柔霧眉或霧感比例較高的設計，因為線條型眉感可能受膚質與保養習慣影響。實際仍需看毛孔、出油量、原生眉量與舊色狀態，現場評估後才會確認適合方向。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "眉毛很稀疏，可以做飄眉嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "不一定。飄眉需要原生眉毛與線條感互相融合，若眉量太少、眉尾缺口太大，單純線條可能會顯得孤立。這類狀況可能更適合霧眉或飄霧眉，讓眉型先有乾淨輪廓，再保留自然感。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "有舊眉色或以前做過霧眉，還可以重新設計嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以先諮詢，但不保證能直接覆蓋。舊色的深淺、顏色偏移、位置高低與殘留面積，都會影響新眉型設計。若舊色仍明顯，可能會建議先做舊色淡化評估，再規劃新的眉型方向。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "霧眉或飄眉會不會看起來很濃、很像貼上去？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "蒔黛美學的眉部設計不追求短時間的強烈存在感，而是以日常耐看、素顏不突兀、上妝更俐落為目標。顏色深淺、眉峰位置與眉尾長度都會依五官比例調整；如果條件不適合做明顯妝感，也會在諮詢時先說明。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "眉型可以自己指定照片嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以提供喜歡的風格作為參考，但不會直接複製。每個人的眉骨高低、眉眼距離、臉型重心與原生毛流不同，同一款眉型放在不同臉上，結果可能差很多。蒔黛會把參考圖拆解成線條、濃淡與氣質方向，再重新設計成適合你的版本。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "眉部操作後多久看起來比較自然？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "剛完成時顏色通常會比較明顯，後續會依個人膚質、清潔方式、代謝速度與保養習慣逐漸變得柔和。實際留色狀況不是固定公式，諮詢時會先說明可能變化與居家照顧重點。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "修眉毛也可以預約嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以。修眉服務適合想先整理眉型、還不確定是否要做霧眉或飄眉的人，也適合男性、學生或只想維持乾淨眉型的人。若你第一次來蒔黛，也可以先從修眉與眉型諮詢開始。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "新中式美睫和一般嫁接美睫有什麼不同？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "新中式美睫更重視眼型比例、睫毛方向與整體氣質，不是只把睫毛做濃。設計會依眼長、眼尾走向、原生睫毛承重與日常妝感安排濃淡，讓眼神更乾淨、有精神，但不過度厚重。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "角蛋白睫毛管理和嫁接美睫怎麼選？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "想保留原生睫毛、希望視覺更自然，可以先評估睫毛管理；想讓睫毛存在感更明顯、拍照或上妝更有精神，可以評估嫁接美睫。兩者不是誰比較好，而是目標不同：一個偏整理原生條件，一個偏增加視覺效果。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "原生睫毛短或下垂，也可以做睫毛管理嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以評估，但效果會受原生睫毛長度、粗細、方向與生長週期影響。睫毛管理主要是讓原生睫毛呈現更整齊、捲翹的視覺狀態；若想要更明顯的長度或濃密感，可能會建議改以嫁接美睫討論。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "美睫會不會讓眼睛看起來太濃或太成熟？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "不一定。濃度取決於根數、長度、捲度、分布與眼尾設計。蒔黛美學會避開一味加長加濃的做法，先看眼型與五官比例，再決定要走柔和、乾淨、放大眼神或微妝感路線。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "嫁接美睫大概可以維持多久？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "常見維持時間約 3 到 5 週，但會受原生睫毛生長週期、清潔方式、睡姿、保養品油脂與生活習慣影響。若想維持穩定狀態，會建議依個人掉落狀況安排回補或重新整理。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "做完美睫或睫毛管理後可以正常洗臉嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以，但建議使用溫和清潔方式，避開大力搓揉眼周，也不要長時間使用高油脂產品直接接觸睫毛根部。清潔方式會影響維持度，完成後會提供簡單的居家照顧提醒。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "敏感眼或容易流淚，可以做美睫嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "需要先評估。若近期眼周有明顯不適、剛做完眼部相關處理、或正在使用特殊眼部產品，建議先暫緩並諮詢專業醫療人員。蒔黛不會在狀態不穩定時勉強操作。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "桃園中壢美睫預約前，需要先卸眼妝嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "建議預約前避免濃眼妝、睫毛膏與眼線膠，讓現場可以更準確判斷原生睫毛狀態。若眼周油脂或殘妝較多，可能會影響操作效率與維持表現。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "霧唇適合什麼樣的人？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "霧唇適合想讓唇色看起來更均勻、氣色更柔和，或希望日常少擦厚重唇彩的人。蒔黛美學的唇部設計不追求過度飽和，而是以自然漸層、唇形比例與膚色協調為主。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "唇色比較深，也可以做輕染潤霧唇嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以先評估，但不一定適合直接做明亮色。唇色深淺、唇周顏色、原生唇形與日常妝感都會影響色系選擇。若條件需要分階段調整，會先說明預期方向，不會承諾一次達到特定顏色。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "霧唇可以做成很自然的媽生感嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以以自然感為目標，但實際效果仍取決於原生唇色、膚色、唇部乾燥狀況與留色表現。蒔黛通常會以柔和色系、漸層感與唇形比例作為設計核心，避免過度厚重或過度銳利。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "霧唇和唇淡色還原有什麼差異？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "霧唇偏向調整整體唇色與唇形視覺；唇淡色還原則更重視原本唇色深淺不均、色感偏暗時的分階段評估。兩者都需要看原生條件，不能只用單一照片判斷。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "唇部操作後多久顏色會穩定？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "剛完成時顏色通常會比穩定後明顯，後續會依個人體質、保養方式、唇部乾燥程度與生活習慣產生變化。建議以階段性觀察為主，不要用剛完成當下直接判斷最後顏色。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "唇部很乾、容易脫皮，可以預約霧唇嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "可以先諮詢，但如果預約日前唇部狀態不穩定、乾裂明顯或有其他不適，通常會建議先把保濕與日常照顧做好，再評估操作時間。唇部狀態會直接影響舒適度與留色表現。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "霧唇顏色可以指定跟照片一樣嗎？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "照片可以作為色感參考，但不建議期待完全相同。每個人的底色、膚色、唇色深淺與留色反應都不同，同一色系在不同人身上會有差異。蒔黛會以適合你的氣色與日常妝感來調整方向。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "桃園中壢霧唇預約前需要注意什麼？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "預約前建議先維持唇部保濕，避免唇部過度乾燥；若近期唇部狀態不穩定、正在使用特殊產品，或有需要醫療判斷的情況，請先暫緩並諮詢專業醫療人員。"
             }
         }
+    ]
+}
+  </script>
 
-        @keyframes fadeInCenter {
-            from { opacity: 0; transform: translate(-50%, 10px); }
-            to { opacity: 1; transform: translate(-50%, 0); }
-        }
+  <style>
+    :root {
+      --bg-light: #FBF8F4;
+      --bg-warm: #F4EEE9;
+      --paper: #FFFDFB;
+      --brand-primary: #A68A7B;
+      --brand-hover: #8F7466;
+      --brand-light: #EBE1DC;
+      --text-main: #4A3B32;
+      --text-muted: #827267;
+      --border-color: #DFD3CC;
+      --serif: "Noto Serif TC", serif;
+      --sans: "Noto Sans TC", sans-serif;
+      --container-width: 1200px;
+      --transition: 0.3s ease;
+    }
 
-        @media (max-width: 991.98px) {
-            .navbar-custom { padding-top: 0.8rem; padding-bottom: 0.8rem; }
-            .navbar-brand { font-size: 1.4rem; }
-            .dropdown-menu { 
-                position: static; transform: none !important; 
-                background-color: rgba(0,0,0,0.2); border: none; 
-                margin-top: 0.5rem; width: 100%; box-shadow: none; 
-            }
-            .navbar-collapse { 
-                background-color: var(--morandi-nav-bg); 
-                padding: 1rem; border-radius: 0 0 8px 8px; 
-                max-height: 80vh; overflow-y: auto; 
-            }
-            .page-header { padding-top: 120px !important; } 
-        }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg-light);
+      color: var(--text-main);
+      font-family: var(--sans);
+      line-height: 1.8;
+      letter-spacing: 0.05em;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; transition: color var(--transition), background-color var(--transition), border-color var(--transition), transform var(--transition); }
+    img { max-width: 100%; display: block; }
+    button { font-family: inherit; cursor: pointer; border: 0; background: none; }
+    .container {
+      width: 90%;
+      max-width: var(--container-width);
+      margin: 0 auto;
+    }
 
-        .navbar-toggler { border-color: rgba(255,255,255,0.3); }
-        .navbar-toggler:focus { box-shadow: none; }
-        .navbar-toggler-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 36px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      letter-spacing: 0.1em;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
 
-        .btn-reserve {
-            border: 1px solid #fff !important;
-            color: #fff !important;
-            background-color: transparent;
-            font-weight: 400 !important;
-            letter-spacing: 1px;
-            padding: 0.5rem 1.5rem !important;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-reserve:hover {
-            background-color: #fff !important;
-            color: var(--morandi-footer) !important;
-            border-color: #fff !important;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 10px rgba(255,255,255,0.2);
-        }
+    .btn-solid {
+      background-color: var(--brand-primary);
+      color: #fff;
+    }
 
-        /* --- 頁面標題區塊 --- */
-        .page-header {
-            background-color: #e8e4e1;
-            padding-top: 130px; 
-            padding-bottom: 2.5rem;
-            text-align: center;
-            margin-top: 0;
-        }
-        
-        .page-title { 
-            font-size: 2.2rem; 
-            letter-spacing: 2px; 
-            margin-bottom: 0.8rem; 
-            color: var(--morandi-dark-brown);
-        }
-        
-        .page-subtitle { 
-            font-family: 'Playfair Display', serif; 
-            color: var(--morandi-light-brown); 
-            font-size: 1.1rem; 
-            font-style: italic; 
-            margin-bottom: 0; 
-        }
+    .btn-solid:hover {
+      background-color: var(--brand-hover);
+      transform: translateY(-2px);
+    }
 
-        /* --- FAQ 特定樣式 --- */
-        .faq-nav-pills {
-            justify-content: center;
-            margin-bottom: 3rem;
-            gap: 10px;
-            /* 預留一點動畫空間，避免切字 */
-            padding-top: 5px; 
-            padding-bottom: 10px;
-        }
-        
-        .faq-nav-pills .nav-link {
-            border-radius: 50px;
-            padding: 0.6rem 2rem;
-            color: var(--morandi-dark-brown) !important;
-            background-color: transparent;
-            border: 1px solid var(--morandi-dark-brown);
-            font-weight: 400;
-            /* 新增：平滑過渡效果 */
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        /* 修改：Active 狀態與 Hover 效果 */
-        .faq-nav-pills .nav-link.active {
-            background-color: var(--morandi-dark-brown);
-            color: #fff !important;
-            /* Active 狀態也加上一點陰影 */
-            box-shadow: 0 4px 8px rgba(94, 75, 69, 0.2);
-        }
+    .btn-outline {
+      border: 1px solid var(--border-color);
+      background-color: transparent;
+      color: var(--text-main);
+    }
 
-        /* 新增：Hover 懸停上浮效果 (Desktop) */
-        .faq-nav-pills .nav-link:hover {
-            background-color: var(--morandi-dark-brown);
-            color: #fff !important;
-            /* 上浮 3px */
-            transform: translateY(-3px);
-            /* 增加陰影 */
-            box-shadow: 0 6px 12px rgba(94, 75, 69, 0.15);
-        }
+    .btn-outline:hover {
+      border-color: var(--brand-primary);
+      color: var(--brand-primary);
+      background-color: rgba(166, 138, 123, 0.05);
+    }
 
-        /* 手機版樣式 */
-        @media (max-width: 768px) {
-            .faq-nav-pills {
-                flex-wrap: nowrap;
-                overflow-x: auto;
-                justify-content: flex-start;
-                padding-bottom: 10px;
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-                padding-left: 5px;
-                padding-right: 5px;
-            }
-            .faq-nav-pills::-webkit-scrollbar {
-                display: none;
-            }
-            .faq-nav-pills .nav-link {
-                white-space: nowrap;
-            }
-            .faq-nav-pills .nav-item {
-                flex: 0 0 auto;
-            }
-        }
+    .btn-dark {
+      background-color: #6a574f;
+      color: #fff;
+      padding: 10px 28px;
+      font-size: 0.9rem;
+      border: none;
+    }
 
-        .accordion-item {
-            border: none;
-            margin-bottom: 1rem;
-            background-color: #fff;
-            border-radius: 8px !important;
-            box-shadow: 0 4px 6px rgba(94, 75, 69, 0.05);
-            overflow: hidden;
-        }
+    .btn-dark:hover {
+      background-color: #55443d;
+      color: #fff;
+      transform: translateY(-2px);
+    }
 
-        .accordion-button {
-            color: var(--morandi-dark-brown);
-            font-weight: 500;
-            background-color: #fff;
-            padding: 1.25rem;
-            font-size: 1.05rem;
-            box-shadow: none !important;
-            transition: background-color 0.3s ease; 
-        }
+    .section { padding: 90px 0; position: relative; }
+    .section-soft { background: linear-gradient(180deg, rgba(244,238,233,0.55), rgba(251,248,244,0)); }
+    .section-head { margin-bottom: 42px; max-width: 760px; }
+    .section-eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      color: var(--brand-primary);
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .section-title {
+      font-family: var(--serif);
+      font-size: clamp(1.85rem, 3vw, 2.7rem);
+      line-height: 1.55;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--text-main);
+    }
+    .section-lead {
+      margin-top: 18px;
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      max-width: 680px;
+    }
+    .vertical-rule {
+      width: 1px;
+      height: 70px;
+      background: var(--border-color);
+      margin: 28px 0;
+    }
 
-        .accordion-button:not(.collapsed) {
-            color: var(--morandi-dark-brown);
-            background-color: #E0D0C6; 
-            font-weight: 700;
-            border-left: 5px solid var(--morandi-light-brown); 
-        }
+    /* =========================================
+       頁首 Header
+       ========================================= */
+    .site-header {
+      position: sticky;
+      top: 0;
+      background-color: rgba(251, 248, 244, 0.95);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+      border-bottom: 1px solid rgba(223, 211, 204, 0.3);
+    }
 
-        .accordion-button::after {
-            filter: grayscale(100%) brightness(0.5) sepia(1) hue-rotate(350deg) saturate(50%);
-        }
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+    }
 
-        .accordion-body {
-            color: #666;
-            line-height: 1.8;
-            padding: 1.5rem;
-            border-top: 1px solid rgba(0,0,0,0.05);
-        }
+    .logo {
+      display: flex;
+      flex-direction: column;
+    }
 
-        .faq-icon {
-            color: var(--morandi-light-brown);
-            margin-right: 10px;
-        }
+    .logo-en {
+      font-family: Georgia, serif;
+      font-size: 1.5rem;
+      color: var(--text-main);
+      letter-spacing: 0.05em;
+      line-height: 1.1;
+    }
 
-        main { flex: 1; }
+    .logo-tw {
+      font-family: var(--serif);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      letter-spacing: 0.25em;
+    }
 
-        /* Footer */
-        footer { background-color: #2b221f; color: var(--morandi-text-light); padding: 3rem 0; }
-        .social-icon { color: var(--morandi-text-light); margin: 0 10px; font-size: 1.2rem; }
-        .footer-divider { border-color: rgba(255,255,255,0.1); }
-        a { text-decoration: none; }
-    </style>
+    .main-nav {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .main-nav a {
+      font-size: 0.9rem;
+      color: var(--text-main);
+      letter-spacing: 0.1em;
+    }
+
+    .main-nav a:hover {
+      color: var(--brand-primary);
+    }
+
+    .header-cta {
+      padding: 8px 24px;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      color: var(--text-main);
+    }
+
+        /* About page editorial header */
+    .about-page-hero {
+      padding: 90px 0 55px;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(235,225,220,0.8), transparent 28%),
+        linear-gradient(180deg, #FBF8F4 0%, #F6F0EC 100%);
+      border-bottom: 1px solid rgba(223,211,204,0.65);
+    }
+    .about-hero-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: clamp(42px, 6vw, 80px); align-items: end; }
+    .page-label { display: flex; align-items: center; gap: 14px; color: var(--brand-primary); font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 24px; }
+    .page-label::before { content: ""; width: 38px; height: 1px; background: currentColor; opacity: 0.55; }
+    .about-hero-title {
+      font-family: var(--serif);
+      font-size: clamp(2.3rem, 3vw, 4.1rem);
+      line-height: 1.35;
+      letter-spacing: 0.16em;
+      font-weight: 500;
+      max-width: 720px;
+    }
+    .about-hero-copy { color: var(--text-muted); max-width: 620px; margin-top: 26px; font-size: 1rem; }
+    .about-hero-note {
+      margin-top: 34px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--text-main);
+      font-family: var(--serif);
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+    }
+    .about-hero-note span { width: 7px; height: 7px; background: var(--brand-primary); transform: rotate(45deg); opacity: 0.75; }
+    .about-hero-visual { position: relative; display: flex; justify-content: flex-end; }
+    .about-arch {
+      width: min(100%, 420px);
+      aspect-ratio: 3 / 4.1;
+      border-radius: 220px 220px 0 0;
+      overflow: hidden;
+      border: 10px solid #fff;
+      box-shadow: 0 22px 50px rgba(83,63,52,0.08);
+      background: #fff;
+      position: relative;
+      z-index: 2;
+    }
+    .about-arch img { width: 100%; height: 100%; object-fit: cover; }
+    .arch-shadow {
+      position: absolute;
+      right: -28px;
+      bottom: -28px;
+      width: 78%;
+      height: 88%;
+      border: 1px solid rgba(166,138,123,0.38);
+      border-radius: 220px 220px 0 0;
+      z-index: 1;
+    }
+    .side-caption {
+      position: absolute;
+      right: -42px;
+      top: 45px;
+      writing-mode: vertical-rl;
+      color: var(--brand-primary);
+      font-family: var(--serif);
+      font-size: 0.82rem;
+      letter-spacing: 0.22em;
+      opacity: 0.75;
+    }
+
+    /* Narrative intro */
+    .narrative-grid { display: grid; grid-template-columns: 0.75fr 1.25fr; gap: clamp(34px, 6vw, 82px); align-items: start; }
+    .narrative-aside { position: sticky; top: 118px; }
+    .aside-mark {
+      width: 74px;
+      height: 1px;
+      background: rgba(166,138,123,0.42);
+      position: relative;
+      margin: 0 0 38px;
+    }
+    .aside-mark::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 8px;
+      height: 8px;
+      border: 1px solid rgba(166,138,123,0.56);
+      background: var(--bg-light);
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .aside-title { margin-top: 18px; font-family: var(--serif); font-size: 1.35rem; letter-spacing: 0.14em; font-weight: 500; }
+    .aside-text { margin-top: 14px; color: var(--text-muted); font-size: 0.9rem; }
+    .narrative-aside svg { width: 42px; height: 42px; fill: none; stroke: currentColor; }
+    .story-block {
+      background: rgba(255,255,255,0.68);
+      border: 1px solid rgba(223,211,204,0.7);
+      border-radius: 26px;
+      padding: clamp(28px, 5vw, 56px);
+      box-shadow: 0 18px 45px rgba(83,63,52,0.035);
+    }
+    .story-block h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.55rem, 2.6vw, 2.25rem);
+      line-height: 1.7;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      margin-bottom: 24px;
+    }
+    .story-block p { color: var(--text-muted); margin-bottom: 18px; }
+    .story-block strong { color: var(--text-main); font-weight: 500; }
+    .quote-line {
+      margin-top: 34px;
+      padding: 26px 0 0 30px;
+      border-left: 1px solid var(--brand-primary);
+      color: var(--text-main);
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      line-height: 1.85;
+      letter-spacing: 0.1em;
+    }
+
+    /* Founder */
+    .founder-card {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: clamp(34px, 5vw, 70px);
+      align-items: center;
+      background: var(--paper);
+      border: 1px solid rgba(223,211,204,0.8);
+      border-radius: 34px;
+      padding: clamp(22px, 4vw, 48px);
+      box-shadow: 0 20px 55px rgba(83,63,52,0.04);
+    }
+    .founder-photo {
+      border-radius: 180px 180px 16px 16px;
+      overflow: hidden;
+      aspect-ratio: 3 / 4;
+      border: 8px solid var(--bg-light);
+      background: var(--brand-light);
+    }
+    .founder-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .founder-meta { color: var(--brand-primary); font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 12px; }
+    .founder-content h2 { font-family: var(--serif); font-size: clamp(1.75rem, 3vw, 2.5rem); line-height: 1.55; letter-spacing: 0.13em; font-weight: 500; margin-bottom: 20px; }
+    .founder-content p { color: var(--text-muted); margin-bottom: 17px; }
+    .signature { text-align: right; color: var(--brand-primary); font-family: var(--serif); font-size: 1.75rem; margin-top: 28px; letter-spacing: 0.08em; }
+
+    /* Manifesto */
+    .manifesto-wrap { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .manifesto-item {
+      min-height: 260px;
+      background: #fff;
+      border: 1px solid rgba(223,211,204,0.85);
+      border-radius: 22px;
+      padding: 34px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .manifesto-number { font-family: Georgia, serif; color: rgba(166,138,123,0.35); font-size: 2.5rem; line-height: 1; }
+    .manifesto-item h3 { font-family: var(--serif); font-size: 1.2rem; letter-spacing: 0.12em; font-weight: 500; margin: 24px 0 12px; }
+    .manifesto-item p { color: var(--text-muted); font-size: 0.92rem; }
+
+    /* Standards */
+    .standards-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .standard-card {
+      background: rgba(255,255,255,0.7);
+      border: 1px solid rgba(223,211,204,0.8);
+      border-radius: 22px;
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 58px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .standard-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(166,138,123,0.35);
+      color: var(--brand-primary);
+      background: #fff;
+      font-family: Georgia, serif;
+      font-size: 1rem;
+      letter-spacing: 0;
+      font-variant-numeric: lining-nums;
+    }
+    .standard-card h3 { font-family: var(--serif); font-size: 1.1rem; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 8px; }
+    .standard-card p { color: var(--text-muted); font-size: 0.9rem; }
+
+    /* Fit section */
+    .fit-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid rgba(223,211,204,0.85);
+      border-radius: 30px;
+      overflow: hidden;
+      background: #fff;
+    }
+    .fit-column { padding: clamp(30px, 5vw, 52px); }
+    .fit-column:first-child { background: #fff; }
+    .fit-column:last-child { background: rgba(235,225,220,0.45); }
+    .fit-column h3 { font-family: var(--serif); font-size: 1.32rem; font-weight: 500; letter-spacing: 0.12em; margin-bottom: 24px; }
+    .fit-list { list-style: none; display: grid; gap: 14px; }
+    .fit-list li { color: var(--text-muted); padding-left: 28px; position: relative; font-size: 0.94rem; }
+    .fit-list li::before { content: "✦"; position: absolute; left: 0; top: 0; color: var(--brand-primary); font-size: 0.75rem; }
+
+    /* CTA */
+    .closing-cta {
+      text-align: center;
+      background: linear-gradient(135deg, rgba(235,225,220,0.9), rgba(255,253,251,0.95));
+      border: 1px solid rgba(223,211,204,0.8);
+      border-radius: 34px;
+      padding: clamp(42px, 7vw, 76px) 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .closing-cta::before, .closing-cta::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border: 1px solid rgba(166,138,123,0.22);
+      border-radius: 999px;
+    }
+    .closing-cta::before { left: -80px; top: -90px; }
+    .closing-cta::after { right: -90px; bottom: -100px; }
+    .closing-cta h2 { position: relative; z-index: 1; font-family: var(--serif); font-size: clamp(1.7rem, 3vw, 2.35rem); line-height: 1.55; font-weight: 500; letter-spacing: 0.14em; }
+    .closing-cta p { position: relative; z-index: 1; color: var(--text-muted); margin: 18px auto 30px; max-width: 640px; }
+    .closing-actions { position: relative; z-index: 1; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    .compliance-note {
+      margin-top: 34px;
+      padding: 22px 26px;
+      border: 1px solid rgba(223,211,204,0.85);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.62);
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      line-height: 1.8;
+    }
+    .compliance-note strong { color: var(--text-main); font-weight: 500; }
+
+/* =========================================
+       頁尾 Footer (精簡版)
+       ========================================= */
+    .site-footer {
+      border-top: 1px solid var(--border-color);
+      padding: 60px 0 30px;
+      background-color: var(--bg-light);
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 44px;
+      color: var(--text-muted);
+    }
+
+    .footer-brand {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .footer-links-col {
+      flex: 0 1 300px;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      margin: 15px 0 20px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-links a {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--border-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-main);
+    }
+
+    .social-links a:hover {
+      background-color: var(--brand-primary);
+      color: #fff;
+      border-color: var(--brand-primary);
+    }
+
+    .social-links svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .footer-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: 0.1em;
+      color: var(--text-main);
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-contact-item {
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-contact-item svg {
+      width: 16px;
+      height: 16px;
+      color: var(--brand-primary);
+      flex-shrink: 0;
+    }
+
+    .copyright {
+      text-align: center;
+      color: #A3968F;
+      font-size: 0.8rem;
+      padding-top: 20px;
+      border-top: 1px solid rgba(223, 211, 204, 0.5);
+      margin-top: 40px;
+    }
+
+    /* 手機版懸浮預約按鈕 */
+    .mobile-floating-cta {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 90;
+      width: 90%;
+      box-shadow: 0 10px 20px rgba(166, 138, 123, 0.2);
+    }
+
+    @media (max-width: 1024px) {
+      .about-hero-grid, .narrative-grid, .founder-card { grid-template-columns: 1fr; }
+      .about-hero-visual { justify-content: center; }
+      .side-caption { right: 0; }
+      .narrative-aside { position: relative; top: auto; }
+      .manifesto-wrap { grid-template-columns: 1fr; }
+      .footer-grid {
+        justify-content: flex-start;
+        gap: 60px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section { padding: 64px 0; }
+      .main-nav, .header-cta { display: none; }
+      .menu-toggle { display: block; }
+      .about-page-hero { padding: 62px 0 42px; }
+      .about-hero-copy { font-size: 0.95rem; }
+      .about-arch { width: min(88%, 360px); border-width: 8px; }
+      .arch-shadow, .side-caption { display: none; }
+      .story-block { border-radius: 22px; }
+      .quote-line { padding-left: 20px; font-size: 1.02rem; }
+      .founder-card { border-radius: 24px; }
+      .standards-grid, .fit-panel { grid-template-columns: 1fr; }
+      .standard-card { grid-template-columns: 1fr; gap: 14px; padding: 26px; }
+      .closing-actions { flex-direction: column; align-items: stretch; }
+      .footer-grid { flex-direction: column; gap: 40px; }
+      .mobile-floating-cta { display: flex; }
+    }
+
+    @media (max-width: 480px) {
+      body { letter-spacing: 0.035em; }
+      .about-hero-title { letter-spacing: 0.11em; }
+      .page-label { letter-spacing: 0.13em; }
+      .fit-column { padding: 28px 22px; }
+    }
+
+    /* =========================================
+       v6 refinement: About page flow optimization
+       目的：降低「一塊一塊卡片感」，改成更連續的 editorial 敘事版面
+       ========================================= */
+    body {
+      background:
+        radial-gradient(circle at 7% 9%, rgba(235,225,220,0.62), transparent 26rem),
+        radial-gradient(circle at 92% 34%, rgba(244,238,233,0.7), transparent 30rem),
+        linear-gradient(180deg, #FBF8F4 0%, #F8F3EF 44%, #FBF8F4 100%);
+    }
+
+    main {
+      position: relative;
+      overflow: hidden;
+    }
+
+    main::before {
+      content: "";
+      position: absolute;
+      top: 40px;
+      bottom: 80px;
+      left: 50%;
+      width: 1px;
+      background: linear-gradient(
+        180deg,
+        rgba(223,211,204,0),
+        rgba(223,211,204,0.35) 14%,
+        rgba(223,211,204,0.24) 82%,
+        rgba(223,211,204,0)
+      );
+      transform: translateX(-50%);
+      pointer-events: none;
+      opacity: 0.55;
+    }
+
+    .about-page-hero {
+      padding: 92px 0 76px;
+      background: transparent;
+      border-bottom: 0;
+    }
+
+    .about-page-hero::after {
+      content: "";
+      display: block;
+      width: min(90%, var(--container-width));
+      height: 1px;
+      margin: 70px auto 0;
+      background: linear-gradient(90deg, rgba(223,211,204,0), rgba(223,211,204,0.8), rgba(223,211,204,0));
+    }
+
+    .section {
+      padding: 74px 0;
+      position: relative;
+      background: transparent;
+    }
+
+    .section-soft {
+      background: transparent;
+    }
+
+    .section + .section {
+      margin-top: 0;
+    }
+
+    .section-head {
+      margin-bottom: 34px;
+    }
+
+    .section-eyebrow {
+      letter-spacing: 0.2em;
+    }
+
+    .section-title {
+      max-width: 820px;
+    }
+
+    .section-lead {
+      max-width: 720px;
+    }
+
+    .narrative-grid {
+      align-items: start;
+    }
+
+    .narrative-aside {
+      padding-top: 10px;
+    }
+
+    .aside-mark {
+      margin-bottom: 30px;
+    }
+
+    .story-block {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0 0 0 clamp(8px, 2vw, 28px);
+    }
+
+    .story-block h2 {
+      max-width: 760px;
+    }
+
+    .story-block p {
+      max-width: 760px;
+    }
+
+    .quote-line {
+      max-width: 760px;
+      margin-top: 32px;
+      padding: 24px 0 0 28px;
+      border-left: 1px solid rgba(166,138,123,0.78);
+    }
+
+    .founder-card {
+      background: transparent;
+      border: 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-bottom: 1px solid rgba(223,211,204,0.82);
+      border-radius: 0;
+      box-shadow: none;
+      padding: 72px 0;
+    }
+
+    .founder-photo {
+      border-radius: 210px 210px 0 0;
+      border: 10px solid rgba(255,255,255,0.88);
+      box-shadow: 0 22px 48px rgba(83,63,52,0.07);
+      background: transparent;
+    }
+
+    .founder-content {
+      padding-right: clamp(0px, 2vw, 28px);
+    }
+
+    .manifesto-wrap {
+      gap: 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-bottom: 1px solid rgba(223,211,204,0.82);
+    }
+
+    .manifesto-item {
+      min-height: auto;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      padding: 34px clamp(22px, 3vw, 38px);
+      display: block;
+    }
+
+    .manifesto-item + .manifesto-item {
+      border-left: 1px solid rgba(223,211,204,0.72);
+    }
+
+    .manifesto-number {
+      font-size: 2.15rem;
+      color: rgba(166,138,123,0.32);
+    }
+
+    .manifesto-item h3 {
+      margin-top: 20px;
+    }
+
+    .standards-grid {
+      gap: 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+    }
+
+    .standard-card {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      padding: 30px clamp(16px, 3vw, 34px);
+      grid-template-columns: 48px 1fr;
+      gap: 16px;
+      border-bottom: 1px solid rgba(223,211,204,0.72);
+    }
+
+    .standard-card:nth-child(odd) {
+      border-right: 1px solid rgba(223,211,204,0.72);
+    }
+
+    .standard-icon {
+      width: 34px;
+      height: 42px;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      color: rgba(166,138,123,0.72);
+      font-size: 1.15rem;
+      align-items: start;
+      padding-top: 2px;
+      position: relative;
+    }
+
+    .standard-icon::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 32px;
+      width: 1px;
+      height: 26px;
+      background: rgba(166,138,123,0.34);
+      transform: translateX(-50%);
+    }
+
+    .compliance-note {
+      background: transparent;
+      border: 0;
+      border-left: 1px solid rgba(166,138,123,0.42);
+      border-radius: 0;
+      padding: 4px 0 4px 22px;
+      margin-top: 34px;
+      max-width: 980px;
+    }
+
+    .fit-panel {
+      gap: clamp(34px, 6vw, 76px);
+      border: 0;
+      border-radius: 0;
+      overflow: visible;
+      background: transparent;
+    }
+
+    .fit-column {
+      background: transparent !important;
+      padding: 0;
+    }
+
+    .fit-column:last-child {
+      border-left: 1px solid rgba(223,211,204,0.82);
+      padding-left: clamp(34px, 6vw, 76px);
+    }
+
+    .fit-column h3 {
+      margin-bottom: 20px;
+    }
+
+    .fit-list {
+      gap: 16px;
+    }
+
+    .closing-cta {
+      background: transparent;
+      border: 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-bottom: 1px solid rgba(223,211,204,0.82);
+      border-radius: 0;
+      padding: clamp(50px, 7vw, 78px) 24px;
+      overflow: visible;
+    }
+
+    .closing-cta::before,
+    .closing-cta::after {
+      display: none;
+    }
+
+    .closing-cta p {
+      max-width: 700px;
+    }
+
+    @media (max-width: 1024px) {
+      main::before {
+        left: 7%;
+        opacity: 0.35;
+      }
+
+      .story-block {
+        padding-left: 0;
+      }
+
+      .manifesto-item + .manifesto-item {
+        border-left: 0;
+        border-top: 1px solid rgba(223,211,204,0.72);
+      }
+    }
+
+    @media (max-width: 768px) {
+      main::before {
+        display: none;
+      }
+
+      .about-page-hero {
+        padding: 64px 0 46px;
+      }
+
+      .about-page-hero::after {
+        margin-top: 48px;
+      }
+
+      .section {
+        padding: 58px 0;
+      }
+
+      .story-block {
+        border-radius: 0;
+      }
+
+      .founder-card {
+        border-radius: 0;
+        padding: 52px 0;
+      }
+
+      .standard-card {
+        grid-template-columns: 42px 1fr;
+        padding: 24px 0;
+      }
+
+      .standard-card:nth-child(odd) {
+        border-right: 0;
+      }
+
+      .standard-icon::after {
+        height: 20px;
+      }
+
+      .fit-panel {
+        gap: 0;
+      }
+
+      .fit-column {
+        padding: 0;
+      }
+
+      .fit-column + .fit-column {
+        margin-top: 34px;
+        padding-top: 34px;
+        border-top: 1px solid rgba(223,211,204,0.82);
+      }
+
+      .fit-column:last-child {
+        border-left: 0;
+        padding-left: 0;
+      }
+
+      .closing-cta {
+        padding: 46px 0;
+      }
+    }
+
+
+
+    /* =========================================
+       v8 patch: sticky narrative, mobile hero, name origin
+       ========================================= */
+    main {
+      overflow: visible;
+    }
+
+    main::before {
+      display: none !important;
+    }
+
+    .narrative-aside {
+      position: sticky;
+      top: 118px;
+      align-self: start;
+    }
+
+    .name-origin {
+      padding-top: 46px;
+      padding-bottom: 46px;
+    }
+
+    .name-origin-layout {
+      display: grid;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: clamp(34px, 6vw, 82px);
+      align-items: start;
+      padding: 64px 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-bottom: 1px solid rgba(223,211,204,0.82);
+    }
+
+    .name-origin-intro .section-title {
+      margin-bottom: 14px;
+    }
+
+    .name-origin-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+
+    .name-origin-item {
+      padding: 4px clamp(22px, 3vw, 34px) 4px;
+      border-left: 1px solid rgba(223,211,204,0.72);
+    }
+
+    .name-origin-character {
+      font-family: var(--serif);
+      font-size: clamp(2.35rem, 4.2vw, 4rem);
+      line-height: 1;
+      color: var(--brand-primary);
+      letter-spacing: 0.04em;
+      margin-bottom: 24px;
+      opacity: 0.92;
+    }
+
+    .name-origin-item h3 {
+      font-family: var(--serif);
+      font-size: 1.08rem;
+      line-height: 1.65;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+      color: var(--text-main);
+    }
+
+    .name-origin-item p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.85;
+      margin: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .narrative-aside {
+        position: relative;
+        top: auto;
+      }
+
+      .name-origin-layout {
+        grid-template-columns: 1fr;
+        padding: 52px 0;
+      }
+
+      .name-origin-list {
+        grid-template-columns: 1fr;
+      }
+
+      .name-origin-item {
+        border-left: 0;
+        border-top: 1px solid rgba(223,211,204,0.72);
+        padding: 28px 0;
+      }
+
+      .name-origin-item:first-child {
+        border-top: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-page-hero {
+        min-height: 85vh;
+        padding: 100px 0 42px;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        background: var(--bg-light);
+      }
+
+      .about-page-hero .container {
+        position: relative;
+        z-index: 2;
+        width: 90%;
+      }
+
+      .about-page-hero::after {
+        display: none;
+      }
+
+      .about-hero-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 0;
+        width: 100%;
+      }
+
+      .about-hero-grid > div:first-child {
+        position: relative;
+        z-index: 2;
+      }
+
+      .about-hero-visual {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .about-arch {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        aspect-ratio: auto;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+      }
+
+      .about-arch img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 18%;
+        opacity: 0.5;
+        transform: scale(1.08);
+      }
+
+      .arch-shadow,
+      .side-caption {
+        display: none;
+      }
+
+      .page-label {
+        margin-bottom: 18px;
+        color: var(--brand-primary);
+        text-shadow: 0 2px 20px rgba(255,255,255,0.75);
+      }
+
+      .about-hero-title {
+        font-size: 2.45rem;
+        line-height: 1.35;
+        color: var(--text-main);
+        text-shadow: 0 2px 24px rgba(255,255,255,0.9);
+      }
+
+      .about-hero-copy {
+        max-width: 94%;
+        margin-top: 18px;
+        color: var(--text-main);
+        text-shadow: 0 2px 18px rgba(255,255,255,0.85);
+      }
+
+      .about-hero-note {
+        margin-top: 24px;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.58);
+        border: 1px solid rgba(255,255,255,0.62);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(106,78,62,0.08);
+      }
+
+      .name-origin {
+        padding-top: 42px;
+        padding-bottom: 42px;
+      }
+
+      .name-origin-layout {
+        padding: 46px 0;
+      }
+
+      .name-origin-character {
+        font-size: 2.6rem;
+        margin-bottom: 18px;
+      }
+    }
+
+    /* =========================================
+       聯絡預約 CTA Banner - same as homepage
+       ========================================= */
+    .cta-card {
+      display: flex;
+      align-items: center;
+      background: #fbf9f6;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+      min-height: 220px;
+    }
+
+    .cta-image-wrap {
+      width: 40%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+      mask-image: linear-gradient(to right, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    }
+
+    .cta-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0;
+    }
+
+    .cta-content-wrap {
+      flex: 1;
+      padding: 40px 60px 40px 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .cta-content-wrap h2 {
+      font-family: var(--serif);
+      font-size: 1.7rem;
+      color: #5d4a42;
+      margin: 0 0 12px 0;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+    }
+
+    .cta-content-wrap p {
+      color: #8c7b72;
+      font-size: 0.95rem;
+      margin: 0 0 24px 0;
+      letter-spacing: 0.05em;
+    }
+
+    .cta-action-btn {
+      background: #a48677;
+      color: #fff;
+      padding: 12px 36px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 0.1em;
+      transition: background-color 0.3s;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .cta-action-btn:hover {
+      background: #8e7264;
+    }
+
+    .cta-action-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .cta-deco-heart {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      color: #d1bcaf;
+      pointer-events: none;
+    }
+
+    .cta-deco-heart svg {
+      width: 100%;
+      height: auto;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 0.6;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* v7 correction: remove full-page center line */
+    main::before {
+      display: none !important;
+      content: none !important;
+    }
+
+    @media (max-width: 768px) {
+      .cta-card {
+        flex-direction: column;
+        min-height: auto;
+      }
+      .cta-image-wrap {
+        position: relative;
+        width: 100%;
+        height: 180px;
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 100%);
+      }
+      .cta-content-wrap {
+        padding: 0 20px 40px;
+        margin-top: -30px;
+      }
+      .cta-deco-heart {
+        display: none;
+      }
+    }
+
+
+    /* =========================================
+       v9 correction: mobile hero full-background + single divider
+       ========================================= */
+    #founder .founder-card {
+      border-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      .about-page-hero {
+        position: relative;
+        min-height: 85vh;
+        padding: 100px 0 42px;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        background: var(--bg-light);
+      }
+
+      .about-page-hero .container {
+        position: static;
+        z-index: auto;
+        width: 90%;
+      }
+
+      .about-hero-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 0;
+        width: 100%;
+      }
+
+      .about-hero-grid > div:first-child {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding-bottom: 0;
+      }
+
+      .about-hero-visual {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      .about-arch {
+        width: 100%;
+        max-width: none;
+        height: 100%;
+        aspect-ratio: auto;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+      }
+
+      .about-arch img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 24%;
+        opacity: 0.5;
+        transform: scale(1.14);
+        transform-origin: center center;
+      }
+
+      .about-page-hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+        background: linear-gradient(
+          180deg,
+          rgba(251,248,244,0.5) 0%,
+          rgba(251,248,244,0.22) 38%,
+          rgba(251,248,244,0.62) 100%
+        );
+      }
+
+      .about-page-hero::after,
+      .arch-shadow,
+      .side-caption {
+        display: none;
+      }
+
+      .page-label,
+      .about-hero-title,
+      .about-hero-copy {
+        text-shadow: 0 2px 20px rgba(255,255,255,0.92);
+      }
+
+      .about-hero-title {
+        font-size: 2.45rem;
+        line-height: 1.35;
+        color: var(--text-main);
+      }
+
+      .about-hero-copy {
+        max-width: 94%;
+        margin-top: 18px;
+        color: var(--text-main);
+      }
+
+      .about-hero-note {
+        margin-top: 24px;
+        display: inline-flex;
+        padding: 10px 16px;
+        border-radius: 999px;
+        background: rgba(255,255,255,0.58);
+        border: 1px solid rgba(255,255,255,0.62);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(106,78,62,0.08);
+      }
+
+      #founder .founder-card {
+        border-top: 0;
+      }
+    }
+
+  
+
+    /* =========================================
+       Services Page — v1 based on About editorial system
+       ========================================= */
+    .nav-item { position: relative; display: flex; align-items: center; }
+    .nav-parent { display: inline-flex; align-items: center; gap: 6px; }
+    .nav-parent::after { content: "⌄"; font-size: 0.72rem; color: var(--brand-primary); transform: translateY(-1px); }
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+      min-width: 150px;
+      padding: 12px;
+      display: grid;
+      gap: 4px;
+      background: rgba(255,253,251,0.96);
+      border: 1px solid rgba(223,211,204,0.75);
+      border-radius: 18px;
+      box-shadow: 0 18px 38px rgba(83,63,52,0.08);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition), transform var(--transition);
+      z-index: 120;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .dropdown a {
+      display: block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.84rem;
+      letter-spacing: 0.12em;
+    }
+    .dropdown a:hover { background: rgba(166,138,123,0.08); color: var(--brand-primary); }
+    .nav-item:hover .dropdown, .nav-item:focus-within .dropdown { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(8px); }
+    .service-page-hero .about-hero-title { max-width: 780px; }
+    .service-page-hero .about-hero-copy { max-width: 660px; }
+    .service-page-hero .about-hero-note { flex-wrap: wrap; }
+
+    .service-quick-nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-bottom: 1px solid rgba(223,211,204,0.82);
+    }
+    .service-quick-card {
+      padding: clamp(28px, 4vw, 44px) clamp(20px, 3vw, 36px);
+      min-height: 240px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .service-quick-card + .service-quick-card { border-left: 1px solid rgba(223,211,204,0.72); }
+    .service-quick-number { font-family: Georgia, serif; font-size: 2.2rem; line-height: 1; color: rgba(166,138,123,0.32); }
+    .service-quick-card h2 { font-family: var(--serif); font-size: 1.32rem; letter-spacing: 0.14em; font-weight: 500; margin: 22px 0 12px; }
+    .service-quick-card p { color: var(--text-muted); font-size: 0.92rem; }
+    .service-quick-link { margin-top: 24px; color: var(--brand-primary); font-size: 0.84rem; letter-spacing: 0.16em; }
+    .service-quick-card:hover .service-quick-link { transform: translateX(4px); }
+
+    .service-section-layout {
+      display: grid;
+      grid-template-columns: 0.72fr 1.28fr;
+      gap: clamp(34px, 6vw, 82px);
+      align-items: start;
+      padding: 70px 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+    }
+    .service-section-layout:first-child { border-top: 0; }
+    .service-aside { position: sticky; top: 118px; align-self: start; }
+    .service-aside .aside-title { font-size: clamp(1.35rem, 2vw, 1.8rem); line-height: 1.75; }
+    .service-aside .aside-text { max-width: 300px; }
+    .service-tagline {
+      margin-top: 28px;
+      padding-left: 18px;
+      border-left: 1px solid rgba(166,138,123,0.62);
+      color: var(--text-main);
+      font-family: var(--serif);
+      font-size: 1rem;
+      letter-spacing: 0.1em;
+      line-height: 1.85;
+    }
+
+    .service-content-head { margin-bottom: 26px; }
+    .service-content-head h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 2.5vw, 2.25rem);
+      line-height: 1.65;
+      font-weight: 500;
+      letter-spacing: 0.13em;
+      margin-bottom: 14px;
+    }
+    .service-content-head p { color: var(--text-muted); max-width: 760px; }
+    .service-list { display: grid; gap: 0; border-top: 1px solid rgba(223,211,204,0.78); }
+    .service-item {
+      display: grid;
+      grid-template-columns: 0.95fr 1.35fr;
+      gap: clamp(20px, 4vw, 44px);
+      padding: 30px 0;
+      border-bottom: 1px solid rgba(223,211,204,0.72);
+    }
+    .service-item-title { display: flex; flex-direction: column; gap: 9px; }
+    .service-item-title h3 { font-family: var(--serif); font-size: 1.18rem; letter-spacing: 0.12em; font-weight: 500; }
+    .service-item-title span { color: var(--brand-primary); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; }
+    .service-item p { color: var(--text-muted); font-size: 0.92rem; margin-bottom: 14px; }
+    .service-points { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 8px 18px; }
+    .service-points li { color: var(--text-muted); font-size: 0.86rem; position: relative; padding-left: 20px; }
+    .service-points li::before { content: "✦"; color: var(--brand-primary); position: absolute; left: 0; top: 0; font-size: 0.68rem; }
+
+    .fit-note-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+      margin-top: 34px;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-bottom: 1px solid rgba(223,211,204,0.82);
+    }
+    .fit-note {
+      padding: 28px clamp(18px, 3vw, 32px);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .fit-note + .fit-note { border-left: 1px solid rgba(223,211,204,0.72); }
+    .fit-note strong { display: block; color: var(--text-main); font-family: var(--serif); font-size: 1.05rem; letter-spacing: 0.12em; font-weight: 500; margin-bottom: 10px; }
+
+    .process-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-bottom: 1px solid rgba(223,211,204,0.82);
+    }
+    .process-step { padding: 30px clamp(18px, 3vw, 32px); }
+    .process-step + .process-step { border-left: 1px solid rgba(223,211,204,0.72); }
+    .process-step span { font-family: Georgia, serif; color: rgba(166,138,123,0.42); font-size: 2rem; line-height: 1; }
+    .process-step h3 { font-family: var(--serif); font-size: 1.06rem; font-weight: 500; letter-spacing: 0.12em; margin: 14px 0 8px; }
+    .process-step p { color: var(--text-muted); font-size: 0.88rem; }
+
+    .legal-copy {
+      margin-top: 34px;
+      padding-left: 22px;
+      border-left: 1px solid rgba(166,138,123,0.42);
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      line-height: 1.9;
+      max-width: 980px;
+    }
+    .legal-copy strong { color: var(--text-main); font-weight: 500; }
+
+    @media (max-width: 1024px) {
+      .service-section-layout { grid-template-columns: 1fr; }
+      .service-aside { position: relative; top: auto; }
+      .service-quick-nav, .fit-note-row, .process-strip { grid-template-columns: 1fr; }
+      .service-quick-card + .service-quick-card, .fit-note + .fit-note, .process-step + .process-step { border-left: 0; border-top: 1px solid rgba(223,211,204,0.72); }
+    }
+
+    @media (max-width: 768px) {
+      .main-nav .nav-item { width: 100%; flex-direction: column; align-items: center; }
+      .main-nav .nav-parent::after { display: none; }
+      .main-nav .dropdown {
+        position: static;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width: auto;
+        padding: 8px 0 2px;
+        margin-bottom: 4px;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        backdrop-filter: none;
+      }
+      .main-nav .dropdown a { padding: 3px 9px; font-size: 0.78rem; color: var(--brand-primary); background: rgba(166,138,123,0.08); }
+      .service-section-layout { padding: 52px 0; }
+      .service-item { grid-template-columns: 1fr; gap: 12px; padding: 28px 0; }
+      .service-points { grid-template-columns: 1fr; }
+      .service-page-hero .about-hero-title { font-size: 2.28rem; }
+      .service-page-hero .about-arch img { object-position: center 35%; }
+    }
+
+  
+
+    /* =========================================
+       v2 Services page: compact overview + photo blocks
+       ========================================= */
+    .compact-service-hero .about-hero-title {
+      max-width: 720px;
+    }
+
+    .compact-service-hero .about-hero-copy {
+      max-width: 620px;
+    }
+
+    .compact-head {
+      margin-bottom: 38px;
+      max-width: 760px;
+    }
+
+    .center-head {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(18px, 2vw, 26px);
+    }
+
+    .overview-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      background: rgba(255,253,251,0.72);
+      border: 1px solid rgba(223,211,204,0.82);
+      border-radius: 28px 28px 8px 8px;
+      overflow: hidden;
+      box-shadow: 0 18px 42px rgba(83,63,52,0.035);
+    }
+
+    .overview-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(166,138,123,0.52);
+      box-shadow: 0 22px 52px rgba(83,63,52,0.06);
+    }
+
+    .overview-photo {
+      aspect-ratio: 4 / 3.2;
+      overflow: hidden;
+      background: var(--brand-light);
+    }
+
+    .overview-photo img,
+    .category-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overview-body {
+      padding: 26px 26px 28px;
+    }
+
+    .overview-body span {
+      display: block;
+      color: var(--brand-primary);
+      font-size: 0.76rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .overview-body h3 {
+      font-family: var(--serif);
+      font-size: 1.45rem;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      margin-bottom: 10px;
+    }
+
+    .overview-body p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.8;
+      min-height: 3.6em;
+    }
+
+    .overview-body b {
+      display: inline-block;
+      margin-top: 18px;
+      color: var(--brand-primary);
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
+      font-weight: 500;
+    }
+
+    .category-section {
+      padding: 76px 0;
+    }
+
+    .category-layout {
+      display: grid;
+      grid-template-columns: minmax(320px, 0.86fr) minmax(0, 1.14fr);
+      gap: clamp(36px, 6vw, 82px);
+      align-items: center;
+      padding: 70px 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-bottom: 1px solid rgba(223,211,204,0.82);
+    }
+
+    .reverse-layout .category-photo {
+      order: 2;
+    }
+
+    .arch-photo {
+      width: min(100%, 420px);
+      max-width: 420px;
+      aspect-ratio: 3 / 3.75;
+      justify-self: center;
+      border-radius: 220px 220px 0 0;
+      overflow: hidden;
+      border: 10px solid rgba(255,255,255,0.82);
+      box-shadow: 0 22px 48px rgba(83,63,52,0.075);
+      background: var(--brand-light);
+    }
+
+    .category-content .section-title {
+      margin-bottom: 12px;
+    }
+
+    .category-summary {
+      color: var(--text-muted);
+      max-width: 680px;
+      margin-bottom: 28px;
+      font-size: 0.96rem;
+    }
+
+    .menu-list {
+      border-top: 1px solid rgba(223,211,204,0.78);
+    }
+
+    .menu-row {
+      display: grid;
+      grid-template-columns: 54px 1fr;
+      gap: 22px;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(223,211,204,0.72);
+    }
+
+    .menu-row > span {
+      font-family: Georgia, serif;
+      color: rgba(166,138,123,0.52);
+      font-size: 1.35rem;
+      line-height: 1.4;
+    }
+
+    .menu-row h3 {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      margin-bottom: 4px;
+    }
+
+    .menu-row p {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .process-section {
+      padding-top: 76px;
+    }
+
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-bottom: 1px solid rgba(223,211,204,0.82);
+    }
+
+    .flow-step {
+      padding: 30px clamp(16px, 2vw, 28px);
+    }
+
+    .flow-step + .flow-step {
+      border-left: 1px solid rgba(223,211,204,0.72);
+    }
+
+    .flow-step span {
+      display: block;
+      font-family: Georgia, serif;
+      color: rgba(166,138,123,0.42);
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 14px;
+    }
+
+    .flow-step h3 {
+      font-family: var(--serif);
+      font-size: 1.02rem;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .flow-step p {
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      line-height: 1.75;
+    }
+
+    .compact-legal {
+      margin-top: 32px;
+      max-width: 980px;
+    }
+
+    @media (max-width: 1024px) {
+      .overview-grid,
+      .category-layout,
+      .flow-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .reverse-layout .category-photo {
+        order: 0;
+      }
+
+      .arch-photo {
+        max-width: 460px;
+        margin: 0 auto;
+      }
+
+      .flow-step + .flow-step {
+        border-left: 0;
+        border-top: 1px solid rgba(223,211,204,0.72);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .compact-service-hero .about-hero-title {
+        font-size: 2.28rem;
+      }
+
+      .category-section,
+      .process-section {
+        padding: 58px 0;
+      }
+
+      .category-layout {
+        padding: 48px 0;
+        gap: 32px;
+      }
+
+      .overview-body p {
+        min-height: auto;
+      }
+
+      .arch-photo {
+        width: min(100%, 360px);
+        border-width: 8px;
+      }
+
+      .menu-row {
+        grid-template-columns: 42px 1fr;
+        gap: 16px;
+        padding: 18px 0;
+      }
+
+      .center-head {
+        text-align: left;
+      }
+    }
+
+
+    /* =========================================
+       v4 correction: overview arch cards + remove eye section dividers
+       ========================================= */
+    .overview-card {
+      border-radius: 220px 220px 0 0;
+      overflow: hidden;
+    }
+
+    .overview-photo {
+      aspect-ratio: 3 / 3.35;
+      border-radius: 220px 220px 0 0;
+    }
+
+    .overview-body {
+      background: rgba(255,253,251,0.72);
+    }
+
+    #eyes .category-layout {
+      border-top: 0;
+      border-bottom: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .overview-card,
+      .overview-photo {
+        border-radius: 180px 180px 0 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .overview-card,
+      .overview-photo {
+        border-radius: 160px 160px 0 0;
+      }
+    }
+
+
+    /* =========================================
+       v5 final correction: About-style mobile menu + stable desktop dropdown
+       目的：保留 About 頁乾淨文字型手機選單，並修正桌機下拉選單 hover 斷層
+       ========================================= */
+    .site-header {
+      z-index: 1000;
+    }
+
+    .main-nav {
+      align-items: center;
+    }
+
+    .nav-item.has-dropdown {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    /* 桌機 hover 安全區：填補「服務項目」與下拉選單中間的空隙 */
+    .nav-item.has-dropdown::after {
+      content: "";
+      position: absolute;
+      left: -18px;
+      right: -18px;
+      top: 100%;
+      height: 18px;
+      background: transparent;
+      pointer-events: auto;
+    }
+
+    .nav-item.has-dropdown .dropdown {
+      top: calc(100% + 14px);
+      visibility: hidden;
+      transform: translateX(-50%) translateY(4px);
+    }
+
+    .nav-item.has-dropdown:hover .dropdown,
+    .nav-item.has-dropdown:focus-within .dropdown {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        position: relative;
+      }
+
+      /* 覆蓋舊版 inline/膠囊式選單邏輯，回到 About 頁的乾淨文字選單 */
+      .main-nav {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        width: 100vw;
+        transform: translateX(-50%);
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 26px;
+
+        padding: 30px 0 32px;
+        margin: 0;
+        background: rgba(251, 248, 244, 0.98);
+        border-top: 1px solid rgba(223, 211, 204, 0.45);
+        border-bottom: 1px solid rgba(223, 211, 204, 0.45);
+        box-shadow: 0 18px 42px rgba(83, 63, 52, 0.06);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        z-index: 999;
+      }
+
+      .main-nav.is-open {
+        display: flex;
+      }
+
+      .main-nav a,
+      .main-nav .nav-parent,
+      .main-nav .dropdown a {
+        width: auto !important;
+        min-width: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        color: var(--text-main);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        letter-spacing: 0.12em;
+        text-align: center;
+      }
+
+      .main-nav a:hover,
+      .main-nav .nav-parent:hover,
+      .main-nav .dropdown a:hover {
+        color: var(--brand-primary);
+        background: transparent !important;
+      }
+
+      .main-nav .nav-item,
+      .main-nav .nav-item.has-dropdown {
+        width: auto !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .nav-item.has-dropdown::after {
+        display: none;
+      }
+
+      .main-nav .nav-parent {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      .main-nav .nav-parent::after {
+        content: "⌄";
+        display: inline-block !important;
+        margin-left: 8px;
+        color: var(--brand-primary);
+        font-size: 0.72rem;
+        line-height: 1;
+        transform: translateY(-1px);
+        transition: transform var(--transition);
+      }
+
+      .main-nav .nav-item.is-open .nav-parent::after {
+        transform: rotate(180deg) translateY(1px);
+      }
+
+      .main-nav .dropdown,
+      .main-nav .nav-item.has-dropdown .dropdown {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+
+        display: none;
+        min-width: 0;
+        width: auto;
+        padding: 12px 0 0 !important;
+        margin: 0;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+        background: transparent !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
+
+      .main-nav .nav-item.is-open .dropdown {
+        display: flex;
+      }
+
+      .main-nav .dropdown a {
+        color: var(--text-muted);
+        font-size: 0.82rem;
+        letter-spacing: 0.12em;
+        white-space: nowrap;
+      }
+
+      .main-nav .dropdown a:hover {
+        color: var(--brand-primary);
+      }
+    }
+
+
+
+    /* =========================================
+       FAQ page only：內容版型
+       - 不覆蓋導覽列、不覆蓋 CTA，讓它們和其他頁完全一致
+       ========================================= */
+
+    .quick-index {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid rgba(223,211,204,0.72);
+      border-bottom: 1px solid rgba(223,211,204,0.72);
+    }
+
+    .index-link {
+      min-height: 210px;
+      padding: 34px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: color var(--transition), background-color var(--transition);
+    }
+
+    .index-link + .index-link {
+      border-left: 1px solid rgba(223,211,204,0.72);
+    }
+
+    .index-link span {
+      display: block;
+      color: rgba(166,138,123,0.72);
+      font-family: Georgia, serif;
+      font-size: 1.8rem;
+      letter-spacing: 0;
+      margin-bottom: 18px;
+    }
+
+    .index-link h2 {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .index-link p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+
+    .index-link b {
+      color: var(--brand-primary);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      margin-top: 24px;
+    }
+
+    .index-link:hover {
+      color: var(--brand-primary);
+      background: rgba(235,225,220,0.28);
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: 0.36fr 0.64fr;
+      gap: clamp(42px, 6vw, 82px);
+      align-items: start;
+    }
+
+    .faq-aside {
+      position: sticky;
+      top: 118px;
+      padding-top: 8px;
+    }
+
+    .faq-aside h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.55rem, 2.7vw, 2.25rem);
+      line-height: 1.65;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+
+    .faq-aside p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .faq-tags {
+      margin-top: 26px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .faq-tags a {
+      padding: 8px 14px;
+      border: 1px solid rgba(223,211,204,0.88);
+      border-radius: 999px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      background: rgba(255,255,255,0.46);
+    }
+
+    .faq-tags a:hover {
+      color: var(--brand-primary);
+      border-color: rgba(166,138,123,0.48);
+    }
+
+    .faq-section {
+      margin-bottom: 72px;
+      scroll-margin-top: 110px;
+    }
+
+    .faq-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .faq-section-title {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid rgba(166,138,123,0.44);
+      padding-bottom: 18px;
+      margin-bottom: 8px;
+    }
+
+    .faq-section-title h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.45rem, 2.4vw, 2rem);
+      letter-spacing: 0.12em;
+      font-weight: 500;
+    }
+
+    .faq-section-title span {
+      color: var(--brand-primary);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    details.faq-item {
+      border-bottom: 1px solid rgba(223,211,204,0.78);
+      background: transparent;
+      border-radius: 0;
+      padding: 0;
+      box-shadow: none;
+    }
+
+    details.faq-item summary {
+      list-style: none;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr) 24px;
+      align-items: center;
+      gap: 18px;
+      padding: 25px 0;
+      color: var(--text-main);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+    }
+
+    details.faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.faq-item summary::after {
+      content: "+";
+      color: var(--brand-primary);
+      font-family: Georgia, serif;
+      font-size: 1.25rem;
+      line-height: 1;
+      justify-self: end;
+    }
+
+    details.faq-item[open] summary::after {
+      content: "−";
+    }
+
+    .faq-label {
+      width: 28px;
+      height: 28px;
+      border: 1px solid rgba(166,138,123,0.42);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--brand-primary);
+      font-family: Georgia, serif;
+      font-size: 0.78rem;
+      letter-spacing: 0;
+    }
+
+    .faq-answer {
+      padding: 0 0 28px 52px;
+      color: var(--text-muted);
+      font-size: 0.93rem;
+      line-height: 1.9;
+    }
+
+    .compliance-panel {
+      background: transparent;
+      border: 0;
+      border-left: 1px solid rgba(166,138,123,0.55);
+      border-radius: 0;
+      padding: 8px 0 8px 28px;
+      margin-top: 20px;
+    }
+
+    .compliance-panel h2 {
+      font-family: var(--serif);
+      font-size: clamp(1.45rem, 2.4vw, 2rem);
+      letter-spacing: 0.12em;
+      font-weight: 500;
+      margin-bottom: 14px;
+    }
+
+    .compliance-panel p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .risk-words {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .risk-words div {
+      background: transparent;
+      border: 0;
+      border-top: 1px solid rgba(223,211,204,0.82);
+      border-radius: 0;
+      padding: 18px 0 0;
+    }
+
+    .risk-words h3 {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      color: var(--text-main);
+      letter-spacing: 0.08em;
+    }
+
+    .risk-words p {
+      font-size: 0.83rem;
+    }
+
+    @media (max-width: 1024px) {
+      .faq-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .faq-aside {
+        position: relative;
+        top: auto;
+      }
+
+      .quick-index {
+        grid-template-columns: 1fr;
+      }
+
+      .index-link + .index-link {
+        border-left: 0;
+        border-top: 1px solid rgba(223,211,204,0.72);
+      }
+
+      .risk-words {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .index-link {
+        min-height: auto;
+        padding: 26px 0;
+      }
+
+      .faq-layout {
+        gap: 36px;
+      }
+
+      .faq-aside h2 {
+        font-size: 1.65rem;
+      }
+
+      .faq-tags a {
+        background: transparent;
+      }
+
+      .faq-section {
+        margin-bottom: 56px;
+      }
+
+      .faq-section-title {
+        padding-bottom: 14px;
+      }
+
+      .faq-section-title span {
+        font-size: 0.72rem;
+      }
+
+      details.faq-item summary {
+        grid-template-columns: 32px minmax(0, 1fr) 22px;
+        padding: 22px 0;
+      }
+
+      .faq-answer {
+        padding: 0 0 24px 0;
+      }
+
+      .compliance-panel {
+        padding-left: 22px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      details.faq-item summary {
+        grid-template-columns: 28px minmax(0, 1fr) 20px;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="logo" href="index.html#top">
+        <span class="logo-en">Stelle studio</span>
+        <span class="logo-tw">蒔黛美學</span>
+      </a>
 
-    <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">蒔黛美學 <span style="font-size: 0.8em; font-weight: 300;">Stelle studio</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav text-center align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about-stelle-studio.html">關於蒔黛</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" role="button" aria-expanded="false">
-                            服務項目
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="services-eyebrows.html">眉部美學</a></li>
-                            <li><a class="dropdown-item" href="services-eyes.html">眼部凝視</a></li>
-                            <li><a class="dropdown-item" href="services-lips.html">唇部柔光</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link active" href="faq.html">常見問題</a></li>
-                    <li class="nav-item"><a class="nav-link" href="booking-policy.html">預約須知</a></li>
-                    <li class="nav-item"><a class="nav-link" href="testimonials.html">顧客好評</a></li>
-                    <li class="nav-item"><a class="nav-link" href="location.html">地點位置</a></li>
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-reserve rounded-pill" href="https://lin.ee/rYp0iyy" target="_blank">預約諮詢</a>
-                    </li>
-                </ul>
-            </div>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">首頁</a>
+        <a href="about-stelle-studio.html">關於蒔黛</a>
+        <div class="nav-item has-dropdown">
+          <a class="nav-parent" href="services.html">服務項目</a>
+          <div class="dropdown" aria-label="服務項目分類">
+            <a href="services-eyebrows.html">眉部</a>
+            <a href="services-eyes.html">眼部</a>
+            <a href="services-lips.html">唇部</a>
+          </div>
         </div>
-    </nav>
+        <a href="faq.html">常見問題</a>
+        <a href="booking-policy.html">預約須知</a>
+        <a href="testimonials.html">顧客好評</a>
+        <a href="location.html">地點位置</a>
+      </nav>
 
-    <main>
-        <!-- Header -->
-        <header class="page-header">
-            <div class="container">
-                <h1 class="page-title">常見問題</h1>
-                <p class="page-subtitle">Q & A</p>
-            </div>
-        </header>
+      <a class="btn btn-solid header-cta" href="https://lin.ee/rYp0iyy" target="_blank">預約諮詢</a>
+      <button class="menu-toggle" type="button" aria-label="開啟選單">☰</button>
+    </div>
+  </header>
 
-        <!-- FAQ Content Section -->
-        <section class="py-5">
-            <div class="container">
-                
-                <!-- 分類導覽 Tabs -->
-                <ul class="nav nav-pills faq-nav-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-brows-tab" data-bs-toggle="pill" data-bs-target="#pills-brows" type="button" role="tab" aria-controls="pills-brows" aria-selected="true">
-                            霧眉/飄眉
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-lips-tab" data-bs-toggle="pill" data-bs-target="#pills-lips" type="button" role="tab" aria-controls="pills-lips" aria-selected="false">
-                            霧唇
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-lashes-tab" data-bs-toggle="pill" data-bs-target="#pills-lashes" type="button" role="tab" aria-controls="pills-lashes" aria-selected="false">
-                            韓式睫毛管理
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-removal-tab" data-bs-toggle="pill" data-bs-target="#pills-removal" type="button" role="tab" aria-controls="pills-removal" aria-selected="false">
-                            眉部淡色
-                        </button>
-                    </li>
-                </ul>
-
-                <!-- Tabs 內容 -->
-                <div class="tab-content" id="pills-tabContent">
-                    
-                    <!-- 1. 霧眉/飄眉 FAQ -->
-                    <div class="tab-pane fade show active" id="pills-brows" role="tabpanel" aria-labelledby="pills-brows-tab">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="accordion" id="accordionBrows">
-                                    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingBrows1">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrows1" aria-expanded="true" aria-controls="collapseBrows1">
-                                                <i class="far fa-question-circle faq-icon"></i> 霧眉跟飄眉(野生眉)有什麼不同？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseBrows1" class="accordion-collapse collapse show" aria-labelledby="headingBrows1" data-bs-parent="#accordionBrows">
-                                            <div class="accordion-body">
-                                                <strong>霧眉 (Mist Brows)</strong> 呈現的是片狀、帶有妝感的柔霧效果，就像是用眉粉掃過的感覺，適合喜歡出門自帶底妝感的女孩。<br><br>
-                                                <strong>飄眉/野生眉 (Hairstroke Brows)</strong> 則是模擬真實毛流的線條感，根根分明，適合追求自然、宛如原生眉毛效果的人，或是原本眉毛較稀疏想要增加毛流感的人。均均老師會根據您的骨相與風格建議最適合的方案。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingBrows2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrows2" aria-expanded="false" aria-controls="collapseBrows2">
-                                                <i class="far fa-question-circle faq-icon"></i> 施作過程會痛嗎？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseBrows2" class="accordion-collapse collapse" aria-labelledby="headingBrows2" data-bs-parent="#accordionBrows">
-                                            <div class="accordion-body">
-                                                均均老師非常重視顧客的舒適度。操作前我們會使用美容專用舒緩膏，且手法輕柔。大多數客人在過程中感受相當舒適、痛感極低，甚至有許多客人在過程中會放鬆到睡著。如果您比較敏感，也可以隨時告知，我們會隨時調整。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingBrows3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrows3" aria-expanded="false" aria-controls="collapseBrows3">
-                                                <i class="far fa-question-circle faq-icon"></i> 做完會變「蠟筆小新」嗎？有修復期嗎？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseBrows3" class="accordion-collapse collapse" aria-labelledby="headingBrows3" data-bs-parent="#accordionBrows">
-                                            <div class="accordion-body">
-                                                現在的技術已經非常進步，蒔黛美學主打「做完即自然」。剛操作完的顏色會稍微深一點點，但不會像傳統紋繡那樣又黑又粗。修復期大約 5-7 天，期間會有薄薄的皮屑脫落（結痂），過程很自然，不影響日常生活與上班。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingBrows4">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBrows4" aria-expanded="false" aria-controls="collapseBrows4">
-                                                <i class="far fa-question-circle faq-icon"></i> 眉毛可以維持多久？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseBrows4" class="accordion-collapse collapse" aria-labelledby="headingBrows4" data-bs-parent="#accordionBrows">
-                                            <div class="accordion-body">
-                                                半永久紋繡一般可維持 <strong>1 ~ 2 年</strong>，具體時間會因個人的膚質（油性肌膚代謝較快）、生活習慣（常運動流汗、美白保養品使用）而有所不同。顏色會隨著時間慢慢變淡，這也是半永久紋繡的優點，方便日後根據流行趨勢調整眉型。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2. 霧唇 FAQ -->
-                    <div class="tab-pane fade" id="pills-lips" role="tabpanel" aria-labelledby="pills-lips-tab">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="accordion" id="accordionLips">
-                                    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingLips1">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips1" aria-expanded="true" aria-controls="collapseLips1">
-                                                <i class="far fa-question-circle faq-icon"></i> 霧唇後嘴巴會腫嗎？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseLips1" class="accordion-collapse collapse show" aria-labelledby="headingLips1" data-bs-parent="#accordionLips">
-                                            <div class="accordion-body">
-                                                每個人的體質不同，大部分人在操作後會有輕微的腫脹感，類似剛吃完麻辣鍋的感覺，通常在數小時內就會自然緩解。我們採用輕柔的手法操作，盡量減少不適感與腫脹程度。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingLips2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips2" aria-expanded="false" aria-controls="collapseLips2">
-                                                <i class="far fa-question-circle faq-icon"></i> 唇色很深/烏唇可以做嗎？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseLips2" class="accordion-collapse collapse" aria-labelledby="headingLips2" data-bs-parent="#accordionLips">
-                                            <div class="accordion-body">
-                                                可以的！這正是我們擅長的項目。針對烏唇或暗沉唇，我們會先進行「轉色/調整底色」的步驟，將底色修飾回健康的粉嫩色調，再上目標色。嚴重烏唇通常建議需要 2 次以上的操作，才能達到最完美的效果。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingLips3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips3" aria-expanded="false" aria-controls="collapseLips3">
-                                                <i class="far fa-question-circle faq-icon"></i> 霧唇後可以擦口紅嗎？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseLips3" class="accordion-collapse collapse" aria-labelledby="headingLips3" data-bs-parent="#accordionLips">
-                                            <div class="accordion-body">
-                                                修復期間（約 3-5 天）建議保持唇部清潔與滋潤，避免塗抹口紅。待脫痂完全結束後，您的雙唇會呈現自然的粉嫩感，平時只要擦護唇膏就很有氣色！如果遇到重要場合想要更換妝感，直接疊擦口紅也是完全沒問題的。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingLips4">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLips4" aria-expanded="false" aria-controls="collapseLips4">
-                                                <i class="far fa-question-circle faq-icon"></i> 曾經得過單純皰疹可以霧唇嗎？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseLips4" class="accordion-collapse collapse" aria-labelledby="headingLips4" data-bs-parent="#accordionLips">
-                                            <div class="accordion-body">
-                                                如果您有皰疹體質（免疫力低下時嘴唇容易長水泡），建議在操作前先至藥局諮詢專業藥師，詢問是否適合服用抗病毒保健品或塗抹藥膏，以降低皰疹復發的機率。預約時請務必先告知均均老師喔！
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3. 韓式睫毛管理 FAQ -->
-                    <div class="tab-pane fade" id="pills-lashes" role="tabpanel" aria-labelledby="pills-lashes-tab">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="accordion" id="accordionLashes">
-                                    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingLashes1">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLashes1" aria-expanded="true" aria-controls="collapseLashes1">
-                                                <i class="far fa-question-circle faq-icon"></i> 韓式睫毛管理跟接睫毛一樣嗎？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseLashes1" class="accordion-collapse collapse show" aria-labelledby="headingLashes1" data-bs-parent="#accordionLashes">
-                                            <div class="accordion-body">
-                                                不一樣喔！<br>
-                                                <strong>接睫毛</strong> 是將假睫毛黏在真睫毛上，會有異物感，需要小心維護。<br>
-                                                <strong>韓式睫毛管理 (Lash Lift)</strong> 則是完全使用您「自己的真睫毛」，透過技術調整毛流與捲翹度，並搭配角蛋白保養。做完後睫毛會自然捲翹，且可以正常洗臉、揉眼睛，非常方便。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingLashes2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLashes2" aria-expanded="false" aria-controls="collapseLashes2">
-                                                <i class="far fa-question-circle faq-icon"></i> 可以維持多久？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseLashes2" class="accordion-collapse collapse" aria-labelledby="headingLashes2" data-bs-parent="#accordionLashes">
-                                            <div class="accordion-body">
-                                                一般可以維持 <strong>4 ~ 6 週</strong> 左右。這取決於您個人睫毛的生長週期。當新的直睫毛長出來，舊的捲翹睫毛自然脫落後，捲度就會慢慢變得沒那麼整齊，這時候就可以回來重新整理囉！
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingLashes3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLashes3" aria-expanded="false" aria-controls="collapseLashes3">
-                                                <i class="far fa-question-circle faq-icon"></i> 做完後需要注意什麼？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseLashes3" class="accordion-collapse collapse" aria-labelledby="headingLashes3" data-bs-parent="#accordionLashes">
-                                            <div class="accordion-body">
-                                                操作後 <strong>4-6 小時內</strong> 請保持乾燥，避免碰水或處於高溫蒸氣環境（如溫泉、桑拿），以讓捲度定型。之後就可以正常洗臉、化妝。若想要維持更久，建議每天早晚使用睫毛滋養液，保持睫毛健康強韌。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4. 眉部淡色 FAQ -->
-                    <div class="tab-pane fade" id="pills-removal" role="tabpanel" aria-labelledby="pills-removal-tab">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="accordion" id="accordionRemoval">
-                                    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingRemoval1">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemoval1" aria-expanded="true" aria-controls="collapseRemoval1">
-                                                <i class="far fa-question-circle faq-icon"></i> 什麼情況需要做眉部淡色？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseRemoval1" class="accordion-collapse collapse show" aria-labelledby="headingRemoval1" data-bs-parent="#accordionRemoval">
-                                            <div class="accordion-body">
-                                                如果您以前做過的眉毛變成了紅眉、藍眉，或者是眉型過時、太粗太黑不滿意，都可以透過眉部淡色/除色來修飾。我們會先評估底色殘留的狀況，再建議是需要完全除色，還是可以直接透過「改眉」的方式調整。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingRemoval2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemoval2" aria-expanded="false" aria-controls="collapseRemoval2">
-                                                <i class="far fa-question-circle faq-icon"></i> 除色會傷害毛囊讓眉毛長不出來嗎？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseRemoval2" class="accordion-collapse collapse" aria-labelledby="headingRemoval2" data-bs-parent="#accordionRemoval">
-                                            <div class="accordion-body">
-                                                不用擔心！我們使用的是<strong>專業溫和除色</strong>技術，主要針對皮膚表層的色素進行淡化，非雷射強烈破壞，因此在正確操作下<strong>不會傷害到毛囊</strong>，不會影響眉毛的正常生長。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingRemoval3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRemoval3" aria-expanded="false" aria-controls="collapseRemoval3">
-                                                <i class="far fa-question-circle faq-icon"></i> 需要做幾次才能乾淨？
-                                            </button>
-                                        </h2>
-                                        <div id="collapseRemoval3" class="accordion-collapse collapse" aria-labelledby="headingRemoval3" data-bs-parent="#accordionRemoval">
-                                            <div class="accordion-body">
-                                                除色的次數因人而異，取決於您舊眉毛的「入針深度」、「色料品質」以及「殘留顏色深淺」。淺色的眉毛可能 1-2 次就能淡化到可以重新設計的程度；顏色較深或卡色嚴重的眉毛則可能需要 3 次以上的操作課程。建議傳照片給均均老師進行初步評估。
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="py-5 text-center" style="background-color: var(--morandi-dark-brown); color: #fff;">
-            <div class="container">
-                <h3 class="mb-4" style="color: #fff;">還有其他疑問嗎？</h3>
-                <p class="lead mb-4" style="opacity: 0.9;">歡迎加入官方 LINE，直接與均均老師諮詢，我們會盡快回覆您！</p>
-                <a href="https://lin.ee/rYp0iyy" target="_blank" class="btn btn-light rounded-pill px-5 py-3" style="color: var(--morandi-dark-brown); font-weight: bold;">
-                    <i class="fab fa-line me-2"></i> 立即諮詢 / 預約
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row align-items-center text-center text-md-start">
-                <div class="col-md-6 mb-4 mb-md-0">
-                    <h5 class="mb-3" style="font-weight: 400; color: #fff;">蒔黛美學 Stelle studio</h5>
-                    <div class="mb-2 small" style="line-height: 1.8;">
-                        <i class="fas fa-map-marker-alt me-2"></i>
-                        <span class="d-inline-block align-top">
-                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市桃園區南海街28號" target="_blank" style="color: var(--morandi-text-light);">桃園店：桃園市桃園區南海街</a><br>
-                            <a href="https://www.google.com/maps/search/?api=1&query=桃園市中壢區龍和一街249巷7號" target="_blank" style="color: var(--morandi-text-light);">中壢店：桃園市中壢區龍和一街</a>
-                        </span>
-                    </div>
-                    <p class="mb-1 small">
-                        <i class="fas fa-phone me-2"></i>
-                        <a href="tel:0925299653" style="color: var(--morandi-text-light);">電話：0925-299-653</a>
-                    </p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-2 small">Follow Us</p>
-                    <a href="https://www.facebook.com/p/%E8%92%94%E9%BB%9B%E7%BE%8E%E5%AD%B8%E7%B4%8B%E7%B9%A1%E5%B7%A5%E4%BD%9C%E5%AE%A4-61562007001270/" class="social-icon" title="追蹤 Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/stelle.studio_/" class="social-icon" title="追蹤 Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://lin.ee/rYp0iyy" class="social-icon" title="加入 LINE 好友" target="_blank"><i class="fa-brands fa-line"></i></a>
-                </div>
-            </div>
-            <hr class="footer-divider my-4">
-            <div class="text-center small" style="opacity: 0.6;">
-                &copy; 2024 蒔黛美學 Stelle studio. All Rights Reserved.
-            </div>
+  <main>
+    <section class="about-page-hero service-page-hero compact-service-hero" id="top">
+      <div class="container">
+        <div class="about-hero-grid">
+          <div>
+            <div class="page-label">FAQ / Before Booking</div>
+            <h1 class="about-hero-title">眉・眼・唇常見問題</h1>
+            <p class="about-hero-copy">
+              第一次預約霧眉、飄眉、美睫、睫毛管理或霧唇前，先理解原生條件、日常妝感與維持期待，會比追流行更重要。這一頁整理眉部、眼部與唇部常見疑問，協助你在預約前先釐清適合方向。
+            </p>
+            <div class="about-hero-note"><span></span>眉部・眼部・唇部分類整理</div>
+          </div>
+          <div class="about-hero-visual" aria-hidden="true">
+            <div class="side-caption">quiet answers, clear decision</div>
+            <div class="arch-shadow"></div>
+            <figure class="about-arch">
+              <img src="images/faq-hero.jpg" alt="蒔黛美學常見問題形象圖" onerror="this.src='https://i.meee.com.tw/DDSZXrc.png'" />
+            </figure>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <section class="section" id="faq-index">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow">Question Map</span>
+          <h2 class="section-title">先找你的問題類型。</h2>
+          <p class="section-lead">FAQ 不是話術，而是預約前的風險控管。先理解每項服務的限制與適合條件，現場溝通會更有效率。</p>
+        </div>
+        <div class="quick-index">
+          <a class="index-link" href="#brow-faq">
+            <div><span>01</span><h2>眉部 FAQ</h2><p>霧眉、飄眉、飄霧眉、修眉與舊色狀態評估。</p></div>
+            <b>查看眉部問題 →</b>
+          </a>
+          <a class="index-link" href="#eye-faq">
+            <div><span>02</span><h2>眼部 FAQ</h2><p>新中式美睫、嫁接美睫與角蛋白睫毛管理。</p></div>
+            <b>查看眼部問題 →</b>
+          </a>
+          <a class="index-link" href="#lip-faq">
+            <div><span>03</span><h2>唇部 FAQ</h2><p>輕染潤霧唇、唇色美化、漸層感與保養提醒。</p></div>
+            <b>查看唇部問題 →</b>
+          </a>
+        </div>
+      </div>
+    </section>
 
-    <!-- 導覽列滾動縮放腳本 -->
-    <script>
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar-custom');
-            if (window.scrollY > 50) {
-                navbar.classList.add('navbar-shrink');
-            } else {
-                navbar.classList.remove('navbar-shrink');
-            }
+    <section class="section section-soft" id="questions">
+      <div class="container faq-layout">
+        <aside class="faq-aside">
+          <span class="section-eyebrow">FAQ Categories</span>
+          <h2>把問題拆清楚，<br>比急著預約更重要。</h2>
+          <p>蒔黛美學採全預約制、一對一服務。以下回答以一般預約溝通為主，實際適合度仍需依膚質、毛流、原生條件、舊色狀態與現場評估判斷。</p>
+          <div class="faq-tags">
+            <a href="#brow-faq">眉部</a>
+            <a href="#eye-faq">眼部</a>
+            <a href="#lip-faq">唇部</a>
+            <a href="#compliance">合規說明</a>
+          </div>
+        </aside>
+
+        <div>
+          <section class="faq-section" id="brow-faq">
+            <div class="faq-section-title"><h2>眉部常見問題</h2><span>Brow FAQ</span></div>
+            <div class="faq-list">
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>霧眉、飄眉、飄霧眉有什麼差異？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>霧眉偏向柔霧妝感，適合想補足眉型空洞、提升眉型乾淨度的人；飄眉偏向毛流線條感，較看重原生眉毛條件與毛流方向；飄霧眉則是眉頭保留線條、眉身到眉尾用柔霧銜接。蒔黛美學會依臉型、骨相、原生眉量、膚質與日常妝感評估，不直接套用固定眉型。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>桃園中壢霧眉適合油性肌嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>油脂分泌較明顯的人，通常會比較建議先評估柔霧眉或霧感比例較高的設計，因為線條型眉感可能受膚質與保養習慣影響。實際仍需看毛孔、出油量、原生眉量與舊色狀態，現場評估後才會確認適合方向。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>眉毛很稀疏，可以做飄眉嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>不一定。飄眉需要原生眉毛與線條感互相融合，若眉量太少、眉尾缺口太大，單純線條可能會顯得孤立。這類狀況可能更適合霧眉或飄霧眉，讓眉型先有乾淨輪廓，再保留自然感。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>有舊眉色或以前做過霧眉，還可以重新設計嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>可以先諮詢，但不保證能直接覆蓋。舊色的深淺、顏色偏移、位置高低與殘留面積，都會影響新眉型設計。若舊色仍明顯，可能會建議先做舊色淡化評估，再規劃新的眉型方向。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>霧眉或飄眉會不會看起來很濃、很像貼上去？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>蒔黛美學的眉部設計不追求短時間的強烈存在感，而是以日常耐看、素顏不突兀、上妝更俐落為目標。顏色深淺、眉峰位置與眉尾長度都會依五官比例調整；如果條件不適合做明顯妝感，也會在諮詢時先說明。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>眉型可以自己指定照片嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>可以提供喜歡的風格作為參考，但不會直接複製。每個人的眉骨高低、眉眼距離、臉型重心與原生毛流不同，同一款眉型放在不同臉上，結果可能差很多。蒔黛會把參考圖拆解成線條、濃淡與氣質方向，再重新設計成適合你的版本。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>眉部操作後多久看起來比較自然？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>剛完成時顏色通常會比較明顯，後續會依個人膚質、清潔方式、代謝速度與保養習慣逐漸變得柔和。實際留色狀況不是固定公式，諮詢時會先說明可能變化與居家照顧重點。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>修眉毛也可以預約嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>可以。修眉服務適合想先整理眉型、還不確定是否要做霧眉或飄眉的人，也適合男性、學生或只想維持乾淨眉型的人。若你第一次來蒔黛，也可以先從修眉與眉型諮詢開始。</p>
+              </div>
+            </details>
+            </div>
+          </section>
+
+          <section class="faq-section" id="eye-faq">
+            <div class="faq-section-title"><h2>眼部常見問題</h2><span>Lash FAQ</span></div>
+            <div class="faq-list">
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>新中式美睫和一般嫁接美睫有什麼不同？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>新中式美睫更重視眼型比例、睫毛方向與整體氣質，不是只把睫毛做濃。設計會依眼長、眼尾走向、原生睫毛承重與日常妝感安排濃淡，讓眼神更乾淨、有精神，但不過度厚重。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>角蛋白睫毛管理和嫁接美睫怎麼選？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>想保留原生睫毛、希望視覺更自然，可以先評估睫毛管理；想讓睫毛存在感更明顯、拍照或上妝更有精神，可以評估嫁接美睫。兩者不是誰比較好，而是目標不同：一個偏整理原生條件，一個偏增加視覺效果。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>原生睫毛短或下垂，也可以做睫毛管理嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>可以評估，但效果會受原生睫毛長度、粗細、方向與生長週期影響。睫毛管理主要是讓原生睫毛呈現更整齊、捲翹的視覺狀態；若想要更明顯的長度或濃密感，可能會建議改以嫁接美睫討論。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>美睫會不會讓眼睛看起來太濃或太成熟？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>不一定。濃度取決於根數、長度、捲度、分布與眼尾設計。蒔黛美學會避開一味加長加濃的做法，先看眼型與五官比例，再決定要走柔和、乾淨、放大眼神或微妝感路線。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>嫁接美睫大概可以維持多久？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>常見維持時間約 3 到 5 週，但會受原生睫毛生長週期、清潔方式、睡姿、保養品油脂與生活習慣影響。若想維持穩定狀態，會建議依個人掉落狀況安排回補或重新整理。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>做完美睫或睫毛管理後可以正常洗臉嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>可以，但建議使用溫和清潔方式，避開大力搓揉眼周，也不要長時間使用高油脂產品直接接觸睫毛根部。清潔方式會影響維持度，完成後會提供簡單的居家照顧提醒。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>敏感眼或容易流淚，可以做美睫嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>需要先評估。若近期眼周有明顯不適、剛做完眼部相關處理、或正在使用特殊眼部產品，建議先暫緩並諮詢專業醫療人員。蒔黛不會在狀態不穩定時勉強操作。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>桃園中壢美睫預約前，需要先卸眼妝嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>建議預約前避免濃眼妝、睫毛膏與眼線膠，讓現場可以更準確判斷原生睫毛狀態。若眼周油脂或殘妝較多，可能會影響操作效率與維持表現。</p>
+              </div>
+            </details>
+            </div>
+          </section>
+
+          <section class="faq-section" id="lip-faq">
+            <div class="faq-section-title"><h2>唇部常見問題</h2><span>Lip FAQ</span></div>
+            <div class="faq-list">
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>霧唇適合什麼樣的人？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>霧唇適合想讓唇色看起來更均勻、氣色更柔和，或希望日常少擦厚重唇彩的人。蒔黛美學的唇部設計不追求過度飽和，而是以自然漸層、唇形比例與膚色協調為主。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>唇色比較深，也可以做輕染潤霧唇嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>可以先評估，但不一定適合直接做明亮色。唇色深淺、唇周顏色、原生唇形與日常妝感都會影響色系選擇。若條件需要分階段調整，會先說明預期方向，不會承諾一次達到特定顏色。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>霧唇可以做成很自然的媽生感嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>可以以自然感為目標，但實際效果仍取決於原生唇色、膚色、唇部乾燥狀況與留色表現。蒔黛通常會以柔和色系、漸層感與唇形比例作為設計核心，避免過度厚重或過度銳利。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>霧唇和唇淡色還原有什麼差異？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>霧唇偏向調整整體唇色與唇形視覺；唇淡色還原則更重視原本唇色深淺不均、色感偏暗時的分階段評估。兩者都需要看原生條件，不能只用單一照片判斷。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>唇部操作後多久顏色會穩定？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>剛完成時顏色通常會比穩定後明顯，後續會依個人體質、保養方式、唇部乾燥程度與生活習慣產生變化。建議以階段性觀察為主，不要用剛完成當下直接判斷最後顏色。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>唇部很乾、容易脫皮，可以預約霧唇嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>可以先諮詢，但如果預約日前唇部狀態不穩定、乾裂明顯或有其他不適，通常會建議先把保濕與日常照顧做好，再評估操作時間。唇部狀態會直接影響舒適度與留色表現。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>霧唇顏色可以指定跟照片一樣嗎？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>照片可以作為色感參考，但不建議期待完全相同。每個人的底色、膚色、唇色深淺與留色反應都不同，同一色系在不同人身上會有差異。蒔黛會以適合你的氣色與日常妝感來調整方向。</p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary>
+                <span class="faq-label">Q</span>
+                <span>桃園中壢霧唇預約前需要注意什麼？</span>
+              </summary>
+              <div class="faq-answer">
+                <p>預約前建議先維持唇部保濕，避免唇部過度乾燥；若近期唇部狀態不穩定、正在使用特殊產品，或有需要醫療判斷的情況，請先暫緩並諮詢專業醫療人員。</p>
+              </div>
+            </details>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="compliance">
+      <div class="container">
+        <div class="compliance-panel">
+          <span class="section-eyebrow">Compliance Note</span>
+          <h2>文案合規說明</h2>
+          <p>
+            本頁內容為眉眼唇美學服務與預約前資訊整理，不作為醫療診斷、治療、矯正、用藥建議或療效保證。若有皮膚或眼唇周圍明顯不適、正在就醫、使用特殊產品，或任何需要醫療判斷的情況，請先諮詢合格醫療專業人員。蒔黛美學會依現場狀態評估是否適合操作，不以單一照片或他人案例作為保證。
+          </p>
+          <div class="risk-words">
+            <div>
+              <h3>避免療效型字眼</h3>
+              <p>不使用治療、修復、根治、改善疾病、保證有效等醫療效果式表述。</p>
+            </div>
+            <div>
+              <h3>避免絕對保證</h3>
+              <p>不承諾永久、完全不掉色、零風險、百分百留色或一定適合。</p>
+            </div>
+            <div>
+              <h3>回到美學評估</h3>
+              <p>以比例、濃淡、日常妝感、原生條件與居家照顧作為溝通重點。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 聯絡預約 CTA Banner (與首頁一致) -->
+    <section class="section" id="contact" style="padding-top: 50px;">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-image-wrap">
+            <img src="images/cta-studio.jpg" alt="準備好遇見更美的自己了嗎" onerror="this.src='https://i.meee.com.tw/RDLbAiB.png'" />
+          </div>
+          <div class="cta-content-wrap">
+            <h2 id="contact-title">準備好遇見更美的自己了嗎？</h2>
+            <p>立即透過 LINE 預約諮詢，將依你的膚質、毛流、舊色與日常妝感進行初步了解。</p>
+            <a class="cta-action-btn" href="https://lin.ee/rYp0iyy" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.23 1.03 4.29 2.8 5.9.36.33.58.82.51 1.33l-.33 2.1c-.06.42.36.78.75.64l2.45-.9c.4-.15.84-.15 1.25-.03C10.23 20.37 11.1 20.5 12 20.5c5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+              加入 LINE 諮詢預約
+            </a>
+          </div>
+          <div class="cta-deco-heart" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#top">
+          <span class="logo-en">Stelle studio</span>
+          <span class="logo-tw">蒔黛美學</span>
+        </a>
+        <p>專屬於你的，舒適之美。</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/stelle.studio_/" target="_blank" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://lin.ee/rYp0iyy" target="_blank" aria-label="LINE">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.23 1.03 4.29 2.8 5.9.36.33.58.82.51 1.33l-.33 2.1c-.06.42.36.78.75.64l2.45-.9c.4-.15.84-.15 1.25-.03C10.23 20.37 11.1 20.5 12 20.5c5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h3 class="footer-title">地點位置 / 聯絡我們</h3>
+        <div class="footer-links">
+          <span class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>0960-715-653</span>
+          <span class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>@stelle2024</span>
+          <span class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>stelle.studio2024@gmail.com</span>
+          <span class="footer-contact-item" id="location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>中壢店｜桃園市中壢區龍和一街<br>桃園店｜桃園市桃園區南海街<br>(請於LINE預約索取詳細地址)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright">
+      © 2024 Stelle Studio 蒔黛美學 All Rights Reserved. 本站內容為美學服務資訊，非醫療廣告或醫療建議。
+    </div>
+  </footer>
+
+  <a class="btn btn-solid mobile-floating-cta" href="https://lin.ee/rYp0iyy" target="_blank">加入 LINE 諮詢預約</a>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.querySelector('#mainNav');
+    const navContainer = document.querySelector('.nav-container');
+    const serviceDropdownItem = document.querySelector('.nav-item.has-dropdown');
+    const serviceParent = document.querySelector('.nav-parent');
+
+    function isMobileNav() {
+      return window.innerWidth <= 768;
+    }
+
+    function closeMobileNav() {
+      mainNav?.classList.remove('is-open');
+      serviceDropdownItem?.classList.remove('is-open');
+      menuToggle?.setAttribute('aria-expanded', 'false');
+    }
+
+    menuToggle?.setAttribute('aria-expanded', 'false');
+
+    menuToggle?.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const willOpen = !mainNav.classList.contains('is-open');
+      mainNav.classList.toggle('is-open', willOpen);
+      menuToggle.setAttribute('aria-expanded', String(willOpen));
+
+      if (!willOpen) {
+        serviceDropdownItem?.classList.remove('is-open');
+      }
+    });
+
+    serviceParent?.addEventListener('click', (event) => {
+      if (!isMobileNav()) return;
+      event.preventDefault();
+      event.stopPropagation();
+      serviceDropdownItem?.classList.toggle('is-open');
+    });
+
+    mainNav?.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (!isMobileNav()) return;
+        if (link.classList.contains('nav-parent')) return;
+        closeMobileNav();
+      });
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!isMobileNav()) return;
+      if (!navContainer?.contains(event.target)) {
+        closeMobileNav();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (!isMobileNav()) {
+        closeMobileNav();
+      }
+    });
+
+
+    // FAQ accordion：點開下一題時，上一題自動收起。
+    document.querySelectorAll('details.faq-item > summary').forEach((summary) => {
+      summary.addEventListener('click', (event) => {
+        event.preventDefault();
+        const currentItem = summary.parentElement;
+        const willOpen = !currentItem.open;
+
+        document.querySelectorAll('details.faq-item').forEach((item) => {
+          item.open = false;
         });
-    </script>
-    
-    <!-- 手機版 Tabs 自動滑動提示腳本 -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // 檢測是否為手機版寬度
-            if (window.innerWidth <= 768) {
-                const tabContainer = document.querySelector('.faq-nav-pills');
-                if (tabContainer) {
-                    // 延遲一點時間讓使用者先看到畫面
-                    setTimeout(() => {
-                        // 計算需要捲動的距離：總寬度 - 可視寬度 = 最大可捲動距離
-                        // 這樣可以確保一定會滑到最右邊看到最後一個選項
-                        const maxScrollLeft = tabContainer.scrollWidth - tabContainer.clientWidth;
-                        
-                        // 向右滑到底
-                        tabContainer.scrollTo({ left: maxScrollLeft, behavior: 'smooth' });
-                        
-                        // 停留一下再滑回來 (時間稍微拉長一點，讓眼睛跟得上)
-                        setTimeout(() => {
-                            tabContainer.scrollTo({ left: 0, behavior: 'smooth' });
-                        }, 700); // 1.5秒後彈回
-                    }, 1000);
-                }
-            }
-        });
-    </script>
+
+        currentItem.open = willOpen;
+      });
+    });
+  </script>
 </body>
 </html>
